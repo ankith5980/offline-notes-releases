@@ -17,16 +17,16 @@
 
 ## What is OffNote?
 
-OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock it all behind a PIN or your fingerprint.
+OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
 ## Features
 
 - **Notes with formatting**: headings, bold, italic, strikethrough, highlights, lists, quotes and code.
-- **Checklists**: tick off tasks right inside a note.
+- **Checklists**: tick off tasks right inside a note. Press Enter to add the next task; long tasks wrap onto more lines.
 - **Drawings**: sketch with your finger and save the drawing in the note.
 - **Photos and files**: take a photo, pick from your gallery, or attach documents (PDF, Word, Excel and more).
 - **Reminders**: one-time or repeating (daily, weekly, monthly), with Snooze and Done buttons on the notification.
-- **Folders, tags and colours** to keep things organised.
+- **Folders, tags and colours** to keep things organised. Long folder names, note titles and tags scroll by themselves so you can read them in full.
 - **Pin and favourite** your most important notes.
 - **Archive** notes you want to keep but don't need to see every day.
 - **Trash** with automatic clean-up after the number of days you choose.
@@ -34,9 +34,10 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Version history**: go back to an earlier version of a note.
 - **Note links**: link notes together by typing `[[Note title]]`.
 - **App lock** with a 4-digit PIN and fingerprint/face unlock.
+- **Locked folders**: keep private folders behind their own folder PIN or fingerprint, separate from the app lock.
 - **Backup and restore** everything to a single file.
 - **Import and export** notes as Markdown, text, JSON or HTML (and import from Google Keep).
-- **Light and dark themes**, and grid, list or compact layouts.
+- **Light and dark themes** with a one-tap switch on the home screen, and grid, list or compact layouts.
 - **Automatic saving**: there's no save button; your notes save as you type.
 - **In-app updates**: get new versions without the Play Store.
 
@@ -52,7 +53,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 OffNote isn't on the Play Store, so you install it directly from this page.
 
 1. On your phone, open the **[latest release](https://github.com/ankith5980/offline-notes-releases/releases/latest)**.
-2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.0.0.apk`) to download it.
+2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.2.1.apk`) to download it.
 3. Open the downloaded file (from your notifications or the **Downloads** / **Files** app).
 4. If Android says *"For your security, your phone is not allowed to install unknown apps from this source"*, tap **Settings**, turn on **Allow from this source**, then go back.
 5. Tap **Install**, then **Open**.
@@ -64,7 +65,7 @@ OffNote isn't on the Play Store, so you install it directly from this page.
 You don't need to come back to this page for updates.
 
 - OffNote checks for a new version each time you open it. When one is available you'll see **"Update available"** with a list of what's new.
-- You can also check any time in **Settings → Check for Updates**.
+- You can also check any time in **Settings → Check for Updates** (open Settings from the menu ☰ on the home screen).
 - Tap **Update**, wait for the download, then tap **Install**. The first time, Android may ask you to allow OffNote to install apps; allow it and go back.
 
 **Your notes, folders, tags and settings are kept when you update.**
@@ -96,6 +97,10 @@ In a note, tap **⋮** (top right) and choose **Take Photo**, **Pick Image from 
 - **Long-press** any note in the list for quick actions (pin, favourite, archive, move, tags, duplicate, export, delete).
 - The buttons along the top of the home screen (**All Notes, Pinned, Favorites, Tasks, Reminders**) filter your list.
 - Tap the layout icon at the top to switch between **grid, list and compact** views.
+- Tap the theme icon next to it to switch between **Auto, Light and Dark**. Each tap moves to the next one.
+
+### Checklists
+In a checklist, type a task and press **Enter** on the keyboard to start the next one; the keyboard stays open. Each task starts with a capital letter, and long tasks wrap onto more lines. Drag the handle on the left to reorder tasks, and tap **×** to delete one.
 
 ### Search
 Tap the search bar at the top of the home screen. You can narrow results to favourites, pinned notes, checklists, notes with attachments, or a specific folder.
@@ -147,6 +152,33 @@ Use **Lock App Now** to test it.
 
 ---
 
+## Locked Folders
+
+You can lock any folder so its notes stay private, even from someone who can open the app. All locked folders share one **folder PIN**, which is **separate from your App Lock PIN**. Unlocking the app does not unlock your folders.
+
+### Set your folder PIN
+1. Open the menu (☰) → **Folders**.
+2. Tap the **lock icon** at the top (next to the new-folder icon) to open **Folder Lock**.
+3. Tap **Set Folder PIN** and enter a 4-digit PIN twice.
+4. Optionally turn on **Unlock with Biometrics** to open locked folders with your fingerprint or face.
+
+To change it later, open **Folder Lock → Change Folder PIN**, enter your current PIN, then the new PIN twice.
+
+### Lock a folder
+On the Folders screen, tap **⋯** on a folder and choose **Lock** (or **Lock Folder** from the menu inside the folder). If you haven't set a folder PIN yet, you'll be asked to create one first. Locked folders show a small lock badge.
+
+### How locked folders behave
+- Opening, editing or removing the lock from a locked folder asks for your folder PIN or fingerprint.
+- A folder **locks again as soon as you leave it**, and every folder locks when you leave the app.
+- While a folder is locked, its notes are hidden from the home screen, search, tags, Archive, Trash and the Reminders list.
+- **Deleting** a locked folder always asks for your folder PIN. Its notes are kept and moved out of the folder, where they are no longer locked.
+- Making or restoring a backup asks for your folder PIN while any folder is locked.
+- After 5 wrong PINs you have to wait 30 seconds before trying again.
+
+> ⚠️ **Don't forget your folder PIN.** It can't be reset. If you turned on biometrics you can still use your fingerprint or face.
+
+---
+
 ## Backup and Restore
 
 Because your notes live only on your phone, **back them up regularly**, especially before changing or resetting your phone.
@@ -175,7 +207,7 @@ Long-press a note → **Export Note**, or open it and tap **⋮** → choose a f
 
 | Format | Best for |
 |---|---|
-| **HTML** | A nicely styled page you can open in any browser, with photos, drawings and attached files included. Files can be opened or saved straight from the page. |
+| **HTML** | A nicely styled page you can open in any browser, with photos, drawings and attached files included. Photos and drawings can be opened or saved, and attached files saved, straight from the page. |
 | **Markdown (.md)** | Other notes apps such as Obsidian, or editing on a computer |
 | **Text (.txt)** | Plain text anywhere |
 | **JSON** | Moving data between apps |
@@ -193,9 +225,9 @@ After exporting you can **Open** the file or share it.
 
 | Setting | What it does |
 |---|---|
-| **Theme Mode** | Auto (follow your phone), Light or Dark |
+| **Theme Mode** | Auto (follow your phone), Light or Dark (also one tap away on the home screen) |
 | **Note Card Layout** | Grid, List or Compact |
-| **App Lock / Biometrics / Auto-Lock** | Protect the app with a PIN and fingerprint |
+| **App Lock / Biometrics / Auto-Lock** | Protect the app with a PIN and fingerprint (folder locks are set on the Folders screen) |
 | **Backup & Restore** | Save or restore all your data |
 | **Import Notes** | Bring in notes from files or Google Keep |
 | **Trash Auto-Purge** | How long deleted notes are kept |
@@ -229,6 +261,9 @@ After exporting you can **Open** the file or share it.
 
 **I forgot my PIN**
 - If you turned on fingerprint/face unlock, use that. Otherwise the PIN can't be recovered; see the warning in [App Lock](#app-lock-pin-and-fingerprint).
+
+**I forgot my folder PIN**
+- If you turned on **Unlock with Biometrics** in Folder Lock, use your fingerprint or face. Otherwise the folder PIN can't be recovered. Your App Lock PIN won't open locked folders.
 
 ---
 
