@@ -22,7 +22,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 ## Features
 
 - **Notes with formatting**: headings, bold, italic, strikethrough, highlights, lists, quotes and code.
-- **Checklists**: tick off tasks right inside a note. Press Enter to add the next task; long tasks wrap onto more lines.
+- **Checklists**: add as many named task lists as you like to a note (for example "Groceries" and "Packing") and tick off tasks right inside it. Each list shows how many tasks are done, and the note's card shows the overall percentage. Press Enter to add the next task; long tasks wrap onto more lines.
 - **Drawings**: sketch with your finger and save the drawing in the note. The drawing board never ends: move around it in any direction and pinch to zoom in for fine detail, like in Figma.
 - **Photos and files**: take a photo, pick from your gallery, or attach documents (PDF, Word, Excel and more).
 - **Reminders**: one-time or repeating (daily, weekly, monthly), with Snooze and Done buttons on the notification.
@@ -53,7 +53,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 OffNote isn't on the Play Store, so you install it directly from this page.
 
 1. On your phone, open the **[latest release](https://github.com/ankith5980/offline-notes-releases/releases/latest)**.
-2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.3.0.apk`) to download it.
+2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.3.1.apk`) to download it.
 3. Open the downloaded file (from your notifications or the **Downloads** / **Files** app).
 4. If Android says *"For your security, your phone is not allowed to install unknown apps from this source"*, tap **Settings**, turn on **Allow from this source**, then go back.
 5. Tap **Install**, then **Open**.
@@ -117,8 +117,13 @@ The drawing board is endless in every direction, with faint dots so you can see 
 - Tap the layout icon at the top to switch between **grid, list and compact** views.
 - Tap the theme icon next to it to switch between **Auto, Light and Dark**. Each tap moves to the next one.
 
-### Checklists
-In a checklist, type a task and press **Enter** on the keyboard to start the next one; the keyboard stays open. Each task starts with a capital letter, and long tasks wrap onto more lines. Drag the handle on the left to reorder tasks, and tap **×** to delete one.
+### Checklists (task lists)
+- **Add a task list:** in a note, tap the **checkbox** button in the formatting toolbar, or **⋮ → Add Task List**. Every tap adds a **new, separate list**, so one note can hold several, like "Groceries", "Packing" and "Calls to make".
+- **Name a list:** the cursor starts in the new list's name field; type a name and press **Enter** to jump to its first task. Tap the name any time to change it. A list without a name is shown as "Tasks".
+- **Add tasks:** type a task and press **Enter** on the keyboard to start the next one; the keyboard stays open. Each task starts with a capital letter, and long tasks wrap onto more lines. You can also tap **Add task** under a list.
+- **Reorder or remove tasks:** drag the handle on the left to reorder, and tap **×** to delete a task.
+- **Delete a list:** tap the **bin** icon next to its name. If it still has tasks, you'll be asked first.
+- **Progress:** inside the note, each list shows how many of its tasks are done (for example **2 of 5 done**) with a progress bar. On the home screen and in folders, the note's card shows the **percentage** of all its tasks that are done (for example **40%**).
 
 ### Search
 Tap the search bar at the top of the home screen. You can narrow results to favourites, pinned notes, checklists, notes with attachments, or a specific folder.
@@ -242,7 +247,7 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 
 ### Import notes
 **Settings → Import Notes**, then pick one or more files:
-- **.md**, **.txt** and **.json** files, including notes previously exported from OffNote (their title, tags, folder and checklist come back too).
+- **.md**, **.txt** and **.json** files, including notes previously exported from OffNote (their title, tags, folder and task lists, with their names, come back too).
 - **Google Keep** notes: download them from [Google Takeout](https://takeout.google.com) (choose *Keep*), unzip the download, and import the `.json` files.
 
 ---
