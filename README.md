@@ -21,7 +21,8 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 
 ## Features
 
-- **Notes with formatting**: headings, bold, italic, strikethrough, highlights, lists, quotes and code.
+- **Notes with formatting**: headings, bold, italic, strikethrough, highlights, lists, quotes and code, shown right in the note as you write.
+- **Select several notes at once**: long-press a note, tap others, then pin, favourite, archive, move, tag, colour, duplicate, export or delete them all together.
 - **Checklists**: add as many named task lists as you like to a note (for example "Groceries" and "Packing") and tick off tasks right inside it. Each list shows how many tasks are done, and the note's card shows the overall percentage. Press Enter to add the next task; long tasks wrap onto more lines.
 - **Drawings**: sketch with your finger and save the drawing in the note. The drawing board never ends: move around it in any direction and pinch to zoom in for fine detail, like in Figma.
 - **Photos and files**: take a photo, pick from your gallery, or attach documents (PDF, Word, Excel and more).
@@ -53,7 +54,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 OffNote isn't on the Play Store, so you install it directly from this page.
 
 1. On your phone, open the **[latest release](https://github.com/ankith5980/offline-notes-releases/releases/latest)**.
-2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.3.1.apk`) to download it.
+2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.4.1.apk`) to download it.
 3. Open the downloaded file (from your notifications or the **Downloads** / **Files** app).
 4. If Android says *"For your security, your phone is not allowed to install unknown apps from this source"*, tap **Settings**, turn on **Allow from this source**, then go back.
 5. Tap **Install**, then **Open**.
@@ -83,7 +84,16 @@ Tap **+ Note** at the bottom right and choose:
 Give it a title and start typing. Everything saves automatically. Tap the back arrow when you're done.
 
 ### Format your text
-Use the formatting toolbar at the bottom of the note to add headings, **bold**, *italic*, ~~strikethrough~~, highlights, bullet lists, quotes, code and dividers.
+Use the formatting toolbar at the bottom of the note to add headings (**H1**, **H2**, **H3**), **bold**, *italic*, ~~strikethrough~~, highlights, bullet and numbered lists, quotes, code and dividers.
+
+- The formatting shows **right in the note**: headings are large, bold text is bold, highlights are highlighted, quotes have a coloured bar down their side, dividers are drawn as a line across the note, and code blocks sit in a shaded box.
+- Select some text first to format it, or tap a button and start typing.
+- Tap a button again to **remove** that formatting. Choosing another heading size replaces the old one.
+- Lists, quotes and headings apply to every line you've selected.
+- The buttons light up to show the formatting where your cursor is.
+- On the line you're editing, small faded symbols (like `#` or `**`) appear so you can change the formatting by hand; they disappear when you move to another line. While your cursor is inside a code block, its ``` marks show in colour at the top and bottom of the box, and the ` marks around inline code show while you edit that line.
+- Made a mistake? Tap **Undo** (↶) at the left of the toolbar, and **Redo** (↷) to bring the change back. They undo typing and formatting alike, a few words at a time.
+- Very long notes are edited in parts behind the scenes so typing stays smooth. You won't see the parts, but in a very long note a text selection (and Undo) covers one part, a few paragraphs, at a time.
 
 ### Add photos, files and drawings
 In a note, tap **⋮** (top right) and choose **Take Photo**, **Pick Image from Gallery**, **Attach Document** or **Add Hand Drawing**. Tap an attachment to open it.
@@ -112,10 +122,21 @@ The drawing board is endless in every direction, with faint dots so you can see 
 - **Colour:** tap the palette icon.
 - **Folder:** tap the folder icon.
 - **Tags:** tap **⋮ → Manage Tags**.
-- **Long-press** any note in the list for quick actions (pin, favourite, archive, move, tags, duplicate, export, delete).
+- **Long-press** any note in the list to select it and see its actions (see below).
 - The buttons along the top of the home screen (**All Notes, Pinned, Favorites, Tasks, Reminders**) filter your list.
 - Tap the layout icon at the top to switch between **grid, list and compact** views.
-- Tap the theme icon next to it to switch between **Auto, Light and Dark**. Each tap moves to the next one.
+- Tap the theme icon next to it to switch between **Auto, Light and Dark**. Each tap moves to the next one, and the colours change smoothly. **Auto** follows your phone's own light/dark setting.
+
+### Select several notes at once
+1. **Long-press** a note. A tick appears on it and the bar at the top shows how many notes are selected.
+2. **Tap** other notes to add them (tap a selected note again to remove it), or tap the **select-all** icon at the top right.
+3. Choose what to do from the bar at the bottom: **Pin**, **Favorite**, **Archive**, **Move** (to a folder) or **Trash**. Tap **More** for **Manage Tags**, **Change Color**, **Duplicate** and **Export**.
+
+- To stop selecting, tap **✕** at the top left or press your phone's **Back** button.
+- If all the selected notes are already pinned (or favourites), the button changes to **Unpin** (or **Unfavorite**).
+- **Manage Tags** shows the tags all the selected notes share. Tags you tick are added to all of them; shared tags you untick are removed from all of them. Tags only some of the notes have are left alone.
+- Archiving or moving notes to Trash shows an **Undo** button for a few seconds.
+- Selecting works the same way inside a folder (with **Remove from Folder**), a tag (with **Remove** that tag), the **Archive** (with **Unarchive**) and the **Trash** (with **Restore** and **Delete Forever**).
 
 ### Checklists (task lists)
 - **Add a task list:** in a note, tap the **checkbox** button in the formatting toolbar, or **⋮ → Add Task List**. Every tap adds a **new, separate list**, so one note can hold several, like "Groceries", "Packing" and "Calls to make".
@@ -147,18 +168,19 @@ To see or change all your reminders, open the menu (☰) → **Reminders**. Swip
 ## Archive and Trash
 
 **Archive** hides notes from your main list without deleting them.
-- **To archive:** swipe a note left or right in your list, long-press it and choose **Archive Note**, or tap **⋮ → Archive** inside a note.
+- **To archive:** swipe a note left or right in your list, long-press it (and any others) and tap **Archive**, or tap **⋮ → Archive** inside a note.
 - **To find archived notes:** menu (☰) → **Archive**.
-- **To bring a note back:** swipe it in the Archive, or open it and tap **Unarchive**.
+- **To bring a note back:** swipe it in the Archive, open it and tap **Unarchive**, or long-press to select several and tap **Unarchive**.
 - Archived notes still show up in search and keep their reminders.
 
 **Trash** holds deleted notes for a while before removing them for good.
 - Menu (☰) → **Trash**. Each note shows how many days it has left.
 - **Restore** puts a note back where it was.
 - **Delete forever** removes it right away; **Empty Trash** removes everything.
+- Long-press a note in Trash to select several, then tap **Restore** or **Delete Forever**.
 - Change how long notes stay in Trash in **Settings → Trash Auto-Purge** (7, 14, 30 or 60 days).
 
-Archiving and unarchiving show an **Undo** button for a few seconds, in case you change your mind. Deleted notes can always be restored from Trash until they are purged.
+Archiving, unarchiving and moving notes to Trash show an **Undo** button for a few seconds, in case you change your mind. Deleted notes can always be restored from Trash until they are purged.
 
 ---
 
@@ -225,17 +247,17 @@ Make a backup on the old phone, copy the `.zip` file to the new phone (or save i
 
 ## Import and Export
 
-### Export a note
-Long-press a note → **Export Note**, or open it and tap **⋮** → choose a format:
+### Export notes
+Open a note and tap **⋮** → choose a format. To export **several notes at once**, long-press a note, tap the others, then **More → Export**: each note becomes its own file and they are all shared together.
 
-| Format | Best for |
-|---|---|
-| **HTML** | A nicely styled page you can open in any browser, with photos, drawings and attached files included. Tap a photo or drawing to open it in a zoomable viewer (see below); attached files can be saved straight from the page. |
-| **Markdown (.md)** | Other notes apps such as Obsidian, or editing on a computer |
-| **Text (.txt)** | Plain text anywhere |
-| **JSON** | Moving data between apps |
+| Format | Best for | Formatting |
+|---|---|---|
+| **HTML** | A nicely styled page you can open in any browser, with photos, drawings and attached files included. Tap a photo or drawing to open it in a zoomable viewer (see below); attached files can be saved straight from the page. | Shown as in the note: headings, bold, highlights, lists and so on |
+| **Markdown (.md)** | Other notes apps such as Obsidian, or editing on a computer | Kept as Markdown, which those apps show formatted |
+| **Text (.txt)** | Plain text anywhere | Just the words, without symbols like `#` or `**`; headings are underlined and lists use bullets |
+| **JSON** | Moving data between apps | Includes the note both with its formatting and as plain text |
 
-After exporting you can **Open** the file or share it.
+After exporting one note you can **Open** the file or share it.
 
 #### Zooming photos and drawings in an HTML export
 Tap or click a photo or drawing in the exported page to open the viewer:
