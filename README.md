@@ -23,7 +23,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 
 - **Notes with formatting**: headings, bold, italic, strikethrough, highlights, lists, quotes and code.
 - **Checklists**: tick off tasks right inside a note. Press Enter to add the next task; long tasks wrap onto more lines.
-- **Drawings**: sketch with your finger and save the drawing in the note.
+- **Drawings**: sketch with your finger and save the drawing in the note. The drawing board never ends: move around it in any direction and pinch to zoom in for fine detail, like in Figma.
 - **Photos and files**: take a photo, pick from your gallery, or attach documents (PDF, Word, Excel and more).
 - **Reminders**: one-time or repeating (daily, weekly, monthly), with Snooze and Done buttons on the notification.
 - **Folders, tags and colours** to keep things organised. Long folder names, note titles and tags scroll by themselves so you can read them in full.
@@ -36,7 +36,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **App lock** with a 4-digit PIN and fingerprint/face unlock.
 - **Locked folders**: keep private folders behind their own folder PIN or fingerprint, separate from the app lock.
 - **Backup and restore** everything to a single file.
-- **Import and export** notes as Markdown, text, JSON or HTML (and import from Google Keep).
+- **Import and export** notes as Markdown, text, JSON or HTML (and import from Google Keep). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
 - **Light and dark themes** with a one-tap switch on the home screen, and grid, list or compact layouts.
 - **Automatic saving**: there's no save button; your notes save as you type.
 - **In-app updates**: get new versions without the Play Store.
@@ -53,7 +53,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 OffNote isn't on the Play Store, so you install it directly from this page.
 
 1. On your phone, open the **[latest release](https://github.com/ankith5980/offline-notes-releases/releases/latest)**.
-2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.2.2.apk`) to download it.
+2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.3.0.apk`) to download it.
 3. Open the downloaded file (from your notifications or the **Downloads** / **Files** app).
 4. If Android says *"For your security, your phone is not allowed to install unknown apps from this source"*, tap **Settings**, turn on **Allow from this source**, then go back.
 5. Tap **Install**, then **Open**.
@@ -87,6 +87,24 @@ Use the formatting toolbar at the bottom of the note to add headings, **bold**, 
 
 ### Add photos, files and drawings
 In a note, tap **⋮** (top right) and choose **Take Photo**, **Pick Image from Gallery**, **Attach Document** or **Add Hand Drawing**. Tap an attachment to open it.
+
+### Draw, zoom and move around
+The drawing board is endless in every direction, with faint dots so you can see it move. It opens at **100%**, which is also as far out as it zooms.
+
+| To… | Do this |
+|---|---|
+| Draw | Use one finger (a tap makes a dot) |
+| Zoom in or out | Pinch with two fingers; the spot between your fingers stays put |
+| Move around | Drag with two fingers, as far as you like in any direction (you can pinch and drag at the same time) |
+| Zoom in steps | Tap **−** or **+** in the zoom bar at the bottom right |
+| Jump to a zoom level | Tap the **%** in the zoom bar and choose 100%, 200%, 400% or 700% |
+| Get back to where you started | Tap the **%** and choose **Back to start** |
+
+- You can zoom from **100% to 700%**. Pen and marker lines are sized to the drawing, so they look thicker when you zoom in, just as they will in the saved drawing.
+- When you save, the drawing includes the area you started on plus anything you drew outside it.
+- If a second finger touches down while you're drawing a line, that line is cancelled and the board zooms instead, so you won't get stray marks.
+- With a mouse: scroll to move, **Ctrl + scroll** to zoom, and drag with the right or middle button to move.
+- Drawings are saved in high resolution, so they stay sharp when you zoom in on them later.
 
 ### Organise your notes
 - **Pin:** tap the pin icon in a note to keep it at the top of your list.
@@ -207,12 +225,20 @@ Long-press a note → **Export Note**, or open it and tap **⋮** → choose a f
 
 | Format | Best for |
 |---|---|
-| **HTML** | A nicely styled page you can open in any browser, with photos, drawings and attached files included. Photos and drawings can be opened or saved, and attached files saved, straight from the page. |
+| **HTML** | A nicely styled page you can open in any browser, with photos, drawings and attached files included. Tap a photo or drawing to open it in a zoomable viewer (see below); attached files can be saved straight from the page. |
 | **Markdown (.md)** | Other notes apps such as Obsidian, or editing on a computer |
 | **Text (.txt)** | Plain text anywhere |
 | **JSON** | Moving data between apps |
 
 After exporting you can **Open** the file or share it.
+
+#### Zooming photos and drawings in an HTML export
+Tap or click a photo or drawing in the exported page to open the viewer:
+- **On a phone:** drag to move, pinch to zoom, double-tap to zoom in (double-tap again to fit).
+- **On a computer:** scroll or drag to move, **Ctrl + scroll** (or **⌘ + scroll** / trackpad pinch on a Mac) to zoom at the pointer, double-click to zoom in or back to fit. Keys: **+** and **−** to zoom, **Shift + 1** to fit, **Shift + 0** for actual size, arrow keys to move, **Esc** to close.
+- **Drawings** open just like the drawing board: on an endless dotted page at **100%** (the size they were drawn), zooming up to **700%**. **Reset** (or **Shift + 1**) takes you back to the start.
+- **Photos** open fitted to the screen and can zoom further out or in; **1:1** shows actual size.
+- The bar at the bottom has **− / % / +**, **Fit** and **1:1** for photos (**Reset** for drawings), **Open**, **Save** and **Close**.
 
 ### Import notes
 **Settings → Import Notes**, then pick one or more files:
