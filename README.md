@@ -19,6 +19,10 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 2.7.1
+
+- **Sharp photos in PDFs:** photos in a PDF export are now exactly as you took them (with **Full quality**, the default), instead of being shrunk, so small text in a photo stays readable when you zoom in. **Smaller file** keeps PDFs small. See [Export as PDF](#export-as-pdf).
+
 ## What's new in 2.7.0
 
 - **Voice notes:** record your voice right inside a note, pause and carry on, and watch the sound as you speak. Play it back with a waveform you can tap or drag through, skip 10 seconds back or forward, or speed it up. See [Voice notes](#voice-notes).
@@ -318,7 +322,7 @@ Open a note and tap **⋮ → Export as PDF** (or select several notes and choos
 - **Paper:** A4 or US Letter.
 - **Margins:** Narrow, Normal or Wide, or set them exactly with the slider (10 to 40 mm). The little page beside them shows how much room the text gets.
 - **Details under the title:** choose whether to show the dates, the tags and folder, and the task progress (for example "Tasks: 3 of 5 done (60%)").
-- **Photos and drawings:** **High (300 dpi)** for the sharpest prints, or **Standard (150 dpi)** for a smaller file. Photos make the biggest difference: one photo can add a few megabytes at High.
+- **Photos and drawings:** **Full quality** puts your photos in exactly as you took them, so you can zoom in on small text in a photo; the PDF grows by about the size of each photo. **Smaller file** shrinks photos to 150 dpi: fine for reading on screen, but small text in photos may blur.
 - **Notes longer than one page:** **Page numbers** ("Page 2 of 5" at the bottom) and **Contents**, a list of the note's headings, task lists and attachment sections with their page numbers, on the first page.
 
 For one note you then see a **preview** of every page, with **Share**, **Open** and a button to change the settings. Several notes become one PDF each, shared together. Your settings are remembered for next time.
