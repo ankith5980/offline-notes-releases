@@ -19,6 +19,10 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 2.7.2
+
+- **Several attachments at once:** pick many photos or files in one go, and long-press attachments in a note to select several, then share or delete them together. See [Add photos, files and drawings](#add-photos-files-and-drawings).
+
 ## What's new in 2.7.1
 
 - **Sharp photos in PDFs:** photos in a PDF export are now exactly as you took them (with **Full quality**, the default), instead of being shrunk, so small text in a photo stays readable when you zoom in. **Smaller file** keeps PDFs small. See [Export as PDF](#export-as-pdf).
@@ -127,6 +131,8 @@ Use the formatting toolbar at the bottom of the note to add headings (**H1**, **
 
 ### Add photos, files and drawings
 In a note, tap **⋮** (top right) and choose **Take Photo**, **Pick Image from Gallery**, **Attach Document** or **Add Hand Drawing**. Tap an attachment to open it.
+- **Several at once:** in **Pick Image from Gallery** and **Attach Document** you can choose as many photos or files as you like in one go.
+- **Select several in a note:** long-press a photo, drawing or file, then tap others to add them (tap again to leave one out). The bar at the bottom shows how many are selected, with **Select All**, **Share** (sends them together) and **Delete** (asks first). Tap **✕** or Back to stop selecting.
 
 ### Voice notes
 **Record:** in a note, tap the **microphone** in the formatting bar (or **⋮ → Record Voice Note**). The first time, allow OffNote to use the microphone. While recording you see the time and the sound as moving bars.
