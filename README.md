@@ -24,6 +24,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Notes with formatting**: headings, bold, italic, strikethrough, highlights, lists, quotes and code, shown right in the note as you write.
 - **Select several notes at once**: long-press a note, tap others, then pin, favourite, archive, move, tag, colour, duplicate, export or delete them all together.
 - **Checklists**: add as many named task lists as you like to a note (for example "Groceries" and "Packing") and tick off tasks right inside it. Each list shows how many tasks are done, and the note's card shows the overall percentage. Press Enter to add the next task; long tasks wrap onto more lines.
+- **Templates**: start a note from a ready-made layout (Daily Journal & Gratitude, Meeting Minutes, Project Plan / Sprint Log, Cornell Study Notes, Weekly Review & Habit Tracker), or save any note as your own template.
 - **Drawings**: sketch with your finger and save the drawing in the note. The drawing board never ends: move around it in any direction and pinch to zoom in for fine detail, like in Figma.
 - **Photos and files**: take a photo, pick from your gallery, or attach documents (PDF, Word, Excel and more).
 - **Reminders**: one-time or repeating (daily, weekly, monthly), with Snooze and Done buttons on the notification.
@@ -54,7 +55,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 OffNote isn't on the Play Store, so you install it directly from this page.
 
 1. On your phone, open the **[latest release](https://github.com/ankith5980/offline-notes-releases/releases/latest)**.
-2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.4.1.apk`) to download it.
+2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.5.0.apk`) to download it.
 3. Open the downloaded file (from your notifications or the **Downloads** / **Files** app).
 4. If Android says *"For your security, your phone is not allowed to install unknown apps from this source"*, tap **Settings**, turn on **Allow from this source**, then go back.
 5. Tap **Install**, then **Open**.
@@ -80,8 +81,23 @@ Tap **+ Note** at the bottom right and choose:
 - **Text Note** for normal notes
 - **Checklist Task** for a to-do list
 - **Drawing Note** to start with a sketch
+- **From Template** to start from a ready-made layout (see [Templates](#templates))
 
 Give it a title and start typing. Everything saves automatically. Tap the back arrow when you're done.
+
+### Templates
+Templates give a new note its headings, prompts and task lists, so you only fill in the blanks.
+
+- **Use a template:** tap **+ Note → From Template**, or open the menu (☰) and tap **Templates**. Tap a template to see a preview, then tap **Use template**. The new note opens straight away. If you start it from inside a folder or a tag, the note goes into that folder or gets that tag.
+- **Built-in templates:**
+  - **Daily Journal & Gratitude**: mood, three things you're grateful for, top 3 priorities and a recap of the day.
+  - **Meeting Minutes**: date and time, attendees, agenda, decisions and an "Action items" list.
+  - **Project Plan / Sprint Log**: overview, goals, risks, "Milestones" and "Deliverables" lists, and a dated sprint log.
+  - **Cornell Study Notes**: cues, notes and a summary, plus a short review checklist.
+  - **Weekly Review & Habit Tracker**: wins, challenges, lessons and next week's focus, with a Monday-to-Sunday list for each habit (rename the habits to your own).
+- **Save your own:** open any note, tap **⋮ → Save as Template** and give it a name. The template keeps the note's title, text, task lists (with every task unticked), colour and tags. Photos, files, drawings and reminders are not included. Your templates appear under **My templates**, where **⋮** lets you rename or delete them. Deleting a template doesn't change notes already made from it.
+- **Automatic dates:** write `{{date}}`, `{{weekday}}`, `{{time}}` or `{{week}}` (the week number) in a note's title or text before saving it as a template. Each note made from the template gets that day's date, day, time or week number instead.
+- Your templates are included in backups.
 
 ### Format your text
 Use the formatting toolbar at the bottom of the note to add headings (**H1**, **H2**, **H3**), **bold**, *italic*, ~~strikethrough~~, highlights, bullet and numbered lists, quotes, code and dividers.
@@ -232,7 +248,7 @@ Because your notes live only on your phone, **back them up regularly**, especial
 1. **Settings → Backup & Restore → Create Full ZIP Backup**.
 2. Choose **Save to device** (for example to your Downloads folder) or **Share** (to Google Drive, email, or another app).
 
-The backup is a single `.zip` file containing all your notes, folders, tags, checklists, reminders, photos, drawings and files.
+The backup is a single `.zip` file containing all your notes, folders, tags, checklists, reminders, photos, drawings, files and your own templates.
 
 ### Restore a backup
 1. **Settings → Backup & Restore → Restore from Backup ZIP**.
