@@ -19,10 +19,12 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
-## What's new in 2.6.0
+## What's new in 2.7.0
 
-- **Export as PDF:** turn any note into a print-ready PDF on A4 or US Letter, with the margins you choose, optional dates, tags and task progress, sharp photos and drawings, and page numbers and a contents page for long notes. Malayalam, Hindi and other scripts and emoji come out exactly as on your phone, and you can look through every page before sharing. See [Export as PDF](#export-as-pdf).
-- **Version history, fixed and improved:** restoring an earlier version now really brings it back (before, it could be overwritten when you left the note), and your note as it was is kept first, with **Undo**. Versions now include task lists, you can read a version in full and compare it with your note line by line, and you can delete versions. A version is saved when you come back to edit a note and every 10 minutes while you keep editing, instead of filling up with near-copies. See [Version history](#version-history).
+- **Voice notes:** record your voice right inside a note, pause and carry on, and watch the sound as you speak. Play it back with a waveform you can tap or drag through, skip 10 seconds back or forward, or speed it up. See [Voice notes](#voice-notes).
+- **Speech turned into text, on your phone, when you want it:** tap **⋮ → Transcribe** on a recording and its English speech is written out line by line with the time each line was said, and tapping a line plays the recording from there. Search finds notes by words that were only spoken. This uses your phone's own speech recognition (Android 13 or newer), so your recordings never leave your phone.
+- **Export as PDF** (new in 2.6.0): turn any note into a print-ready PDF on A4 or US Letter, with the margins you choose, optional dates, tags and task progress, sharp photos and drawings, and page numbers and a contents page for long notes. Malayalam, Hindi and other scripts and emoji come out exactly as on your phone, and you can look through every page before sharing. See [Export as PDF](#export-as-pdf).
+- **Version history, fixed and improved** (2.6.0): restoring an earlier version now really brings it back (before, it could be overwritten when you left the note), and your note as it was is kept first, with **Undo**. Versions now include task lists, you can read a version in full and compare it with your note line by line, and you can delete versions. A version is saved when you come back to edit a note and every 10 minutes while you keep editing, instead of filling up with near-copies. See [Version history](#version-history).
 - **Templates** (new in 2.5.0): start a note from Daily Journal & Gratitude, Meeting Minutes, Project Plan / Sprint Log, Cornell Study Notes or Weekly Review & Habit Tracker, or save any note as your own template. See [Templates](#templates).
 
 ## Features
@@ -32,13 +34,14 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Checklists**: add as many named task lists as you like to a note (for example "Groceries" and "Packing") and tick off tasks right inside it. Each list shows how many tasks are done, and the note's card shows the overall percentage. Press Enter to add the next task; long tasks wrap onto more lines.
 - **Templates**: start a note from a ready-made layout (Daily Journal & Gratitude, Meeting Minutes, Project Plan / Sprint Log, Cornell Study Notes, Weekly Review & Habit Tracker), or save any note as your own template.
 - **Drawings**: sketch with your finger and save the drawing in the note. The drawing board never ends: move around it in any direction and pinch to zoom in for fine detail, like in Figma.
+- **Voice notes**: record with pause and resume, play back with a waveform you can scrub through, and get the English speech written out with times you can tap to jump to, all on your phone.
 - **Photos and files**: take a photo, pick from your gallery, or attach documents (PDF, Word, Excel and more).
 - **Reminders**: one-time or repeating (daily, weekly, monthly), with Snooze and Done buttons on the notification.
 - **Folders, tags and colours** to keep things organised. Long folder names, note titles and tags scroll by themselves so you can read them in full.
 - **Pin and favourite** your most important notes.
 - **Archive** notes you want to keep but don't need to see every day.
 - **Trash** with automatic clean-up after the number of days you choose.
-- **Fast search** across titles, text, checklists, tags and folders.
+- **Fast search** across titles, text, checklists, tags, folders and the words spoken in voice notes.
 - **Version history**: see earlier versions of a note, compare them with the note now, and bring one back (text and task lists).
 - **Note links**: link notes together by typing `[[Note title]]`.
 - **App lock** with a 4-digit PIN and fingerprint/face unlock.
@@ -62,7 +65,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 OffNote isn't on the Play Store, so you install it directly from this page.
 
 1. On your phone, open the **[latest release](https://github.com/ankith5980/offline-notes-releases/releases/latest)**.
-2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.6.0.apk`) to download it.
+2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.7.0.apk`) to download it.
 3. Open the downloaded file (from your notifications or the **Downloads** / **Files** app).
 4. If Android says *"For your security, your phone is not allowed to install unknown apps from this source"*, tap **Settings**, turn on **Allow from this source**, then go back.
 5. Tap **Install**, then **Open**.
@@ -120,6 +123,23 @@ Use the formatting toolbar at the bottom of the note to add headings (**H1**, **
 
 ### Add photos, files and drawings
 In a note, tap **⋮** (top right) and choose **Take Photo**, **Pick Image from Gallery**, **Attach Document** or **Add Hand Drawing**. Tap an attachment to open it.
+
+### Voice notes
+**Record:** in a note, tap the **microphone** in the formatting bar (or **⋮ → Record Voice Note**). The first time, allow OffNote to use the microphone. While recording you see the time and the sound as moving bars.
+- Tap **Pause** to take a break and the **microphone** button to carry on; the pause isn't recorded. Recording also pauses if you leave the app.
+- Tap **✓** to save the recording in the note, or the **bin** to throw it away.
+
+**Play:** the recording appears in the note as a player. Tap **▶** to play, tap or drag along the waveform to jump to any moment, use the **10-second** buttons to go back or forward, and tap **1×** to play at 1.5× or 2× speed.
+
+**Text from speech:** recordings aren't turned into text unless you ask. Tap **⋮** on the player and choose **Transcribe**; it starts straight away, on your phone:
+- The text appears under the player, line by line, with the time each line starts. **Tap a line** to play the recording from there; the line being played is highlighted.
+- Search finds the note by any word in that text.
+- **⋮** on the player: **Transcribe** (or **Transcribe Again**), **Copy Text**, **Add Text to Note** (adds it at the end of the note's text) and **Delete Voice Note**.
+- It understands **English** only (choose your accent under **Settings → Voice Notes**; Automatic works for most people). Names and unusual words may come out wrong or be missed.
+- It needs **Android 13 or newer** with Google's speech services, which most phones have. The first time, your phone needs its offline English speech pack: tap **Get It** on the player, or go to **Settings → Voice Notes → Download**. Choosing **Transcribe** also asks your phone to download it. Your phone downloads the pack (it may wait for Wi-Fi), and recordings waiting for it are turned into text as soon as it arrives. On older phones you can still record and play voice notes.
+- To have every new recording transcribed by itself, switch on **Transcribe new recordings** in **Settings → Voice Notes** (it's off at first).
+
+Voice notes and their text are included in backups and in exports (Markdown, text, JSON, HTML and PDF list each recording with its text).
 
 ### Draw, zoom and move around
 The drawing board is endless in every direction, with faint dots so you can see it move. It opens at **100%**, which is also as far out as it zooms.
@@ -180,7 +200,7 @@ OffNote keeps earlier versions of each note, so you can go back if you change or
 - Versions are included in backups.
 
 ### Search
-Tap the search bar at the top of the home screen. You can narrow results to favourites, pinned notes, checklists, notes with attachments, or a specific folder.
+Tap the search bar at the top of the home screen. Search looks through titles, text, task lists, tags, folders and the text of voice notes. You can narrow results to favourites, pinned notes, checklists, notes with attachments, or a specific folder.
 
 ---
 
@@ -329,6 +349,7 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 | **App Lock / Biometrics / Auto-Lock** | Protect the app with a PIN and fingerprint (folder locks are set on the Folders screen) |
 | **Backup & Restore** | Save or restore all your data |
 | **Import Notes** | Bring in notes from files or Google Keep |
+| **Voice Notes** | The offline English speech pack, whether new recordings are turned into text, and the English accent |
 | **Trash Auto-Purge** | How long deleted notes are kept |
 | **Check for Updates** | Get the newest version |
 
@@ -338,6 +359,7 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 
 - **Your notes never leave your phone.** There are no accounts, no cloud sync, no ads, no analytics and no tracking.
 - The only internet use is checking this page for app updates and downloading them. You can use the app fully offline.
+- **Voice notes are turned into text on your phone.** Recordings and their text never leave it. The speech recognition is your phone's own (Google's on-device speech service); the one-time English speech pack is downloaded by your phone, not by OffNote.
 - Notes are only shared when **you** choose to export, share or back them up.
 
 ---
@@ -354,6 +376,16 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 
 **The update check says it can't connect**
 - Check your internet connection and try again from **Settings → Check for Updates**. Updates are the only feature that needs the internet.
+
+**A voice note isn't turned into text**
+- Recordings are only transcribed when you ask: tap **⋮** on the player → **Transcribe** (or switch on **Transcribe new recordings** in **Settings → Voice Notes**).
+- Look at the line under the player. If it says to get the English speech pack, tap **Get It**, then **Download**. Your phone may wait for Wi-Fi before downloading it; recordings are transcribed once it arrives.
+- "This phone can't transcribe recordings" means the phone has Android 12 or older, or no on-device speech service. Recording and playing still work.
+- Speak clearly and close to the phone. Only English is understood.
+
+**A recording is silent**
+- If you're on a phone or video call (WhatsApp, Instagram and so on), the call uses the microphone and recordings stay silent. Record after the call.
+- Check that OffNote may use the microphone: **Phone Settings → Apps → OffNote → Permissions → Microphone**.
 
 **An attachment won't open**
 - You need an app on your phone that can open that type of file (for example a PDF reader for PDFs).
