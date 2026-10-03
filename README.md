@@ -19,6 +19,12 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 2.6.0
+
+- **Export as PDF:** turn any note into a print-ready PDF on A4 or US Letter, with the margins you choose, optional dates, tags and task progress, sharp photos and drawings, and page numbers and a contents page for long notes. Malayalam, Hindi and other scripts and emoji come out exactly as on your phone, and you can look through every page before sharing. See [Export as PDF](#export-as-pdf).
+- **Version history, fixed and improved:** restoring an earlier version now really brings it back (before, it could be overwritten when you left the note), and your note as it was is kept first, with **Undo**. Versions now include task lists, you can read a version in full and compare it with your note line by line, and you can delete versions. A version is saved when you come back to edit a note and every 10 minutes while you keep editing, instead of filling up with near-copies. See [Version history](#version-history).
+- **Templates** (new in 2.5.0): start a note from Daily Journal & Gratitude, Meeting Minutes, Project Plan / Sprint Log, Cornell Study Notes or Weekly Review & Habit Tracker, or save any note as your own template. See [Templates](#templates).
+
 ## Features
 
 - **Notes with formatting**: headings, bold, italic, strikethrough, highlights, lists, quotes and code, shown right in the note as you write.
@@ -33,11 +39,12 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Archive** notes you want to keep but don't need to see every day.
 - **Trash** with automatic clean-up after the number of days you choose.
 - **Fast search** across titles, text, checklists, tags and folders.
-- **Version history**: go back to an earlier version of a note.
+- **Version history**: see earlier versions of a note, compare them with the note now, and bring one back (text and task lists).
 - **Note links**: link notes together by typing `[[Note title]]`.
 - **App lock** with a 4-digit PIN and fingerprint/face unlock.
 - **Locked folders**: keep private folders behind their own folder PIN or fingerprint, separate from the app lock.
 - **Backup and restore** everything to a single file.
+- **PDF export**: print-ready PDFs on A4 or US Letter with the margins you choose, sharp photos and drawings, and page numbers and a contents page for long notes. Malayalam, Hindi and other scripts and emoji come out exactly as on your phone.
 - **Import and export** notes as Markdown, text, JSON or HTML (and import from Google Keep). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
 - **Light and dark themes** with a one-tap switch on the home screen, and grid, list or compact layouts.
 - **Automatic saving**: there's no save button; your notes save as you type.
@@ -55,7 +62,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 OffNote isn't on the Play Store, so you install it directly from this page.
 
 1. On your phone, open the **[latest release](https://github.com/ankith5980/offline-notes-releases/releases/latest)**.
-2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.5.0.apk`) to download it.
+2. Under **Assets**, tap the file ending in **`.apk`** (for example `offnote-v2.6.0.apk`) to download it.
 3. Open the downloaded file (from your notifications or the **Downloads** / **Files** app).
 4. If Android says *"For your security, your phone is not allowed to install unknown apps from this source"*, tap **Settings**, turn on **Allow from this source**, then go back.
 5. Tap **Install**, then **Open**.
@@ -161,6 +168,16 @@ The drawing board is endless in every direction, with faint dots so you can see 
 - **Reorder or remove tasks:** drag the handle on the left to reorder, and tap **×** to delete a task.
 - **Delete a list:** tap the **bin** icon next to its name. If it still has tasks, you'll be asked first.
 - **Progress:** inside the note, each list shows how many of its tasks are done (for example **2 of 5 done**) with a progress bar. On the home screen and in folders, the note's card shows the **percentage** of all its tasks that are done (for example **40%**).
+
+### Version history
+OffNote keeps earlier versions of each note, so you can go back if you change or delete something by mistake.
+
+- **When a version is saved:** when you come back to change a note after a break (5 minutes or more), OffNote keeps the note as it was before your changes. If you keep editing for a long time, it also keeps one every 10 minutes. A version holds the title, the text and the task lists (with which tasks were ticked). Just ticking tasks off doesn't create a new version. The 50 newest versions of each note are kept.
+- **See the versions:** in a note, tap **⋮ → Version History**. The note as it is now is at the top, and earlier versions are listed underneath by day.
+- **Look at a version:** tap it. **This version** shows it in full. **Changes** compares it with your note now: green **+** lines come back if you restore it, red **−** lines go away.
+- **Bring a version back:** tap **Restore This Version** and confirm. Your note as it was just before is saved as a version first (marked **Before restore**), so nothing is lost. Tap **Undo** straight away, or restore that "Before restore" version later, to go back.
+- **Delete versions:** tap **⋮** on a version and choose **Delete Version**, or use **⋮ → Delete All Versions** at the top. This doesn't change the note itself.
+- Versions are included in backups.
 
 ### Search
 Tap the search bar at the top of the home screen. You can narrow results to favourites, pinned notes, checklists, notes with attachments, or a specific folder.
@@ -268,12 +285,25 @@ Open a note and tap **⋮** → choose a format. To export **several notes at on
 
 | Format | Best for | Formatting |
 |---|---|---|
+| **PDF** | Printing, or sending a note to anyone, on any device | Laid out on pages like a document: see [Export as PDF](#export-as-pdf) |
 | **HTML** | A nicely styled page you can open in any browser, with photos, drawings and attached files included. Tap a photo or drawing to open it in a zoomable viewer (see below); attached files can be saved straight from the page. | Shown as in the note: headings, bold, highlights, lists and so on |
 | **Markdown (.md)** | Other notes apps such as Obsidian, or editing on a computer | Kept as Markdown, which those apps show formatted |
 | **Text (.txt)** | Plain text anywhere | Just the words, without symbols like `#` or `**`; headings are underlined and lists use bullets |
 | **JSON** | Moving data between apps | Includes the note both with its formatting and as plain text |
 
 After exporting one note you can **Open** the file or share it.
+
+#### Export as PDF
+Open a note and tap **⋮ → Export as PDF** (or select several notes and choose **More → Export → PDF Document**). Pick your settings, then tap **Create PDF**:
+- **Paper:** A4 or US Letter.
+- **Margins:** Narrow, Normal or Wide, or set them exactly with the slider (10 to 40 mm). The little page beside them shows how much room the text gets.
+- **Details under the title:** choose whether to show the dates, the tags and folder, and the task progress (for example "Tasks: 3 of 5 done (60%)").
+- **Photos and drawings:** **High (300 dpi)** for the sharpest prints, or **Standard (150 dpi)** for a smaller file. Photos make the biggest difference: one photo can add a few megabytes at High.
+- **Notes longer than one page:** **Page numbers** ("Page 2 of 5" at the bottom) and **Contents**, a list of the note's headings, task lists and attachment sections with their page numbers, on the first page.
+
+For one note you then see a **preview** of every page, with **Share**, **Open** and a button to change the settings. Several notes become one PDF each, shared together. Your settings are remembered for next time.
+
+The text in the PDF is real text: it stays sharp at any zoom, and you can search and copy it. It's drawn by your phone, so Malayalam, Hindi and other scripts, and emoji, look exactly as they do in OffNote, on any device. Links are printed with their web address (they can't be tapped in the PDF), and the contents page lists page numbers rather than tappable links.
 
 #### Zooming photos and drawings in an HTML export
 Tap or click a photo or drawing in the exported page to open the viewer:
