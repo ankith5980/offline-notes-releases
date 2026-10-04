@@ -19,6 +19,10 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 2.9.0
+
+- **Code notes:** keep snippets of code in a note made for them, with line numbers and colours for 35 languages (Dart, Python, JavaScript, TypeScript, Java, Kotlin, Go, Rust, SQL, Bash, C/C++, C#, HTML, CSS, JSON, YAML and more). OffNote can tell the language by itself, **Copy Code** copies it all in one tap, and a bar of symbols ({ } ( ) ; = and more) saves hunting on the keyboard. See [Code notes](#code-notes).
+
 ## What's new in 2.8.0
 
 - **Links between notes that you can follow:** type `[[` in a note and OffNote suggests your notes as you type; tap one to link it, or press **Enter** to link the note with that exact name (or create it if there isn't one yet). See [Links between notes](#links-between-notes).
@@ -142,6 +146,15 @@ Link one note to another by writing its title in double square brackets, like `[
 - **Enter:** if a note has exactly the name you typed, Enter links it; otherwise Enter **creates a new note** with that name (in the same folder) and links it. The row Enter will pick is highlighted. Tap **✕** on the list to close it.
 - **Open a link:** tap the **book icon** at the top of the note to switch to **Read mode**, then tap the link. Tap the back arrow to return. If no note has that name yet, OffNote offers to create it.
 - **Linked References:** at the bottom of a note you see every note that links to it; tap one to open it.
+
+### Code notes
+Tap **+ Note → Code Note** to start one.
+- **Language:** the button at the top left of the code (for example **Python ▾**) chooses how it's coloured; search the list or pick **Auto** to let OffNote tell from the code. New code notes start with the last language you chose.
+- **Line numbers** run down the left. Long lines scroll sideways; tap the **wrap** button to fold them onto the next line instead (OffNote remembers your choice).
+- **Copy Code** copies the whole code, ready to paste.
+- **Typing:** the bar under the code has Undo/Redo, **Indent** and **Outdent**, and the symbols code needs. Press Enter and the new line keeps the indentation (one step more after `{`, `(` or a Python `:`).
+- Code notes work with everything else: tags, folders, search, Read mode, version history, backups, and exports (Markdown as a code block, PDF, HTML, text and JSON).
+- Very long code is edited in parts behind the scenes so typing stays smooth; a selection (and Undo) covers one part, about 60 lines, at a time.
 
 ### Read mode
 Tap the **book icon** at the top of a note to read it: the keyboard stays away, the formatting symbols never appear, and links can be tapped. Tap the **pencil** to edit again. OffNote remembers the mode you used last and opens notes in it (new, empty notes always open ready to type). Ticking tasks, playing voice notes and opening attachments still work in Read mode.
