@@ -19,6 +19,11 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 2.9.1
+
+- **Home screen widgets:** start a note, checklist, voice memo, drawing or code note in one tap with **Quick capture**; tick off tasks straight from the home screen with **Checklist**; keep a favourite note or quote in view with **Sticky note**. See [Home screen widgets](#home-screen-widgets).
+- **Code notes tell the language much better:** Java is no longer mistaken for TypeScript, and C, Kotlin, Dart, C#, Go and the rest are recognised far more reliably. The note's card and the note itself always name the same language.
+
 ## What's new in 2.9.0
 
 - **Code notes:** keep snippets of code in a note made for them, with line numbers and colours for 35 languages (Dart, Python, JavaScript, TypeScript, Java, Kotlin, Go, Rust, SQL, Bash, C/C++, C#, HTML, CSS, JSON, YAML and more). OffNote can tell the language by itself, **Copy Code** copies it all in one tap, and a bar of symbols ({ } ( ) ; = and more) saves hunting on the keyboard. See [Code notes](#code-notes).
@@ -155,6 +160,16 @@ Tap **+ Note → Code Note** to start one.
 - **Typing:** the bar under the code has Undo/Redo, **Indent** and **Outdent**, and the symbols code needs. Press Enter and the new line keeps the indentation (one step more after `{`, `(` or a Python `:`).
 - Code notes work with everything else: tags, folders, search, Read mode, version history, backups, and exports (Markdown as a code block, PDF, HTML, text and JSON).
 - Very long code is edited in parts behind the scenes so typing stays smooth; a selection (and Undo) covers one part, about 60 lines, at a time.
+
+### Home screen widgets
+Touch and hold an empty spot on your home screen, tap **Widgets**, find **OffNote** and drag one onto the screen:
+- **Quick capture:** buttons for a new **Note**, **Checklist**, **Voice** memo (recording starts at once), **Drawing** and **Code** note. Make it wider to see the names under the buttons.
+- **Checklist:** pick a note with tasks when you place it; tap a task on the home screen to tick it off (or back on). Tap the title to open the note.
+- **Sticky note:** pick any note; it shows on the home screen in the note's colour, with its text and tasks. Tap it to open the note.
+
+You can also add a note from inside it: **⋮ → Add to Home Screen**, then choose Sticky note or Checklist and confirm where Android puts it. To show a different note, touch and hold the widget and choose **Reconfigure** (or remove it and add it again).
+
+Privacy: notes in **locked folders** are never shown on the home screen. While **App Lock** is on, Sticky note and Checklist widgets show **Locked** instead of the note, unless you turn on **Settings → Show Notes in Home Screen Widgets**. Quick capture always goes through the lock screen first.
 
 ### Read mode
 Tap the **book icon** at the top of a note to read it: the keyboard stays away, the formatting symbols never appear, and links can be tapped. Tap the **pencil** to edit again. OffNote remembers the mode you used last and opens notes in it (new, empty notes always open ready to type). Ticking tasks, playing voice notes and opening attachments still work in Read mode.
@@ -387,6 +402,7 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 | **Theme Mode** | Auto (follow your phone), Light or Dark (also one tap away on the home screen) |
 | **Note Card Layout** | Grid, List or Compact |
 | **App Lock / Biometrics / Auto-Lock** | Protect the app with a PIN and fingerprint (folder locks are set on the Folders screen) |
+| **Show Notes in Home Screen Widgets** | With App Lock on: let Sticky note and Checklist widgets show their note (off: they show "Locked") |
 | **Backup & Restore** | Save or restore all your data |
 | **Import Notes** | Bring in notes from files or Google Keep |
 | **Voice Notes** | The offline English speech pack, whether new recordings are turned into text, and the English accent |
