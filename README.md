@@ -19,6 +19,13 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 2.8.0
+
+- **Links between notes that you can follow:** type `[[` in a note and OffNote suggests your notes as you type; tap one to link it, or press **Enter** to link the note with that exact name (or create it if there isn't one yet). See [Links between notes](#links-between-notes).
+- **Read mode:** tap the book icon at the top of a note to read it without the keyboard popping up. In Read mode, tap a link to open that note. OffNote remembers which mode you used last.
+- **Linked References** at the bottom of a note now open the notes that link to it.
+- **Move to Folder** has moved into the note's **⋮** menu, to make room for the Read/Edit button.
+
 ## What's new in 2.7.2
 
 - **Several attachments at once:** pick many photos or files in one go, and long-press attachments in a note to select several, then share or delete them together. See [Add photos, files and drawings](#add-photos-files-and-drawings).
@@ -51,7 +58,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Trash** with automatic clean-up after the number of days you choose.
 - **Fast search** across titles, text, checklists, tags, folders and the words spoken in voice notes.
 - **Version history**: see earlier versions of a note, compare them with the note now, and bring one back (text and task lists).
-- **Note links**: link notes together by typing `[[Note title]]`.
+- **Note links**: type `[[` to link to another note (OffNote suggests them as you type), then tap the link in **Read mode** to open it. Each note lists the notes that link to it.
 - **App lock** with a 4-digit PIN and fingerprint/face unlock.
 - **Locked folders**: keep private folders behind their own folder PIN or fingerprint, separate from the app lock.
 - **Backup and restore** everything to a single file.
@@ -129,6 +136,16 @@ Use the formatting toolbar at the bottom of the note to add headings (**H1**, **
 - Made a mistake? Tap **Undo** (↶) at the left of the toolbar, and **Redo** (↷) to bring the change back. They undo typing and formatting alike, a few words at a time.
 - Very long notes are edited in parts behind the scenes so typing stays smooth. You won't see the parts, but in a very long note a text selection (and Undo) covers one part, a few paragraphs, at a time.
 
+### Links between notes
+Link one note to another by writing its title in double square brackets, like `[[Packing list]]`. The link shows in colour.
+- **Suggestions:** as soon as you type `[[`, a list of your notes appears above the formatting bar and narrows down as you type. Tap a note to put in its link. (Notes in locked folders aren't suggested.)
+- **Enter:** if a note has exactly the name you typed, Enter links it; otherwise Enter **creates a new note** with that name (in the same folder) and links it. The row Enter will pick is highlighted. Tap **✕** on the list to close it.
+- **Open a link:** tap the **book icon** at the top of the note to switch to **Read mode**, then tap the link. Tap the back arrow to return. If no note has that name yet, OffNote offers to create it.
+- **Linked References:** at the bottom of a note you see every note that links to it; tap one to open it.
+
+### Read mode
+Tap the **book icon** at the top of a note to read it: the keyboard stays away, the formatting symbols never appear, and links can be tapped. Tap the **pencil** to edit again. OffNote remembers the mode you used last and opens notes in it (new, empty notes always open ready to type). Ticking tasks, playing voice notes and opening attachments still work in Read mode.
+
 ### Add photos, files and drawings
 In a note, tap **⋮** (top right) and choose **Take Photo**, **Pick Image from Gallery**, **Attach Document** or **Add Hand Drawing**. Tap an attachment to open it.
 - **Several at once:** in **Pick Image from Gallery** and **Attach Document** you can choose as many photos or files as you like in one go.
@@ -173,7 +190,7 @@ The drawing board is endless in every direction, with faint dots so you can see 
 - **Pin:** tap the pin icon in a note to keep it at the top of your list.
 - **Favourite:** tap the star.
 - **Colour:** tap the palette icon.
-- **Folder:** tap the folder icon.
+- **Folder:** tap **⋮ → Move to Folder**.
 - **Tags:** tap **⋮ → Manage Tags**.
 - **Long-press** any note in the list to select it and see its actions (see below).
 - The buttons along the top of the home screen (**All Notes, Pinned, Favorites, Tasks, Reminders**) filter your list.
