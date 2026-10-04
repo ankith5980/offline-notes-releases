@@ -19,6 +19,11 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.0.0
+
+- **OffNote for Windows.** A desktop app with three columns: folders, tags and smart folders on the left, your notes in the middle, the note on the right with its linked references beside it. Keyboard shortcuts (Ctrl+N, Ctrl+F, Ctrl+S, and **Ctrl+P** for a command palette), **Quick Capture** from anywhere with **Ctrl+Alt+N**, and it keeps running in the system tray. It updates itself like the phone app. See [OffNote for Windows](#offnote-for-windows).
+- **Smart folders** (Windows): Today, This Week, Checklists, With Reminders, With Attachments, Code Notes and Untagged, plus any search you save.
+
 ## What's new in 2.9.1
 
 - **Home screen widgets:** start a note, checklist, voice memo, drawing or code note in one tap with **Quick capture**; tick off tasks straight from the home screen with **Checklist**; keep a favourite note or quote in view with **Sticky note**. See [Home screen widgets](#home-screen-widgets).
@@ -76,11 +81,12 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Light and dark themes** with a one-tap switch on the home screen, and grid, list or compact layouts.
 - **Automatic saving**: there's no save button; your notes save as you type.
 - **In-app updates**: get new versions without the Play Store.
+- **Windows app**: the same notes app on your PC, in three columns, with shortcuts, a command palette, smart folders and Quick Capture from the tray. (Notes stay on each device; move them with Backup & Restore.)
 
 ## Requirements
 
-- An Android phone or tablet running **Android 7.0 or newer**
-- About 70 MB of free space
+- **Phone:** an Android phone or tablet running **Android 7.0 or newer**, with about 70 MB of free space
+- **PC:** Windows 10 or 11 (64-bit), with about 60 MB of free space
 
 ---
 
@@ -105,6 +111,52 @@ You don't need to come back to this page for updates.
 - Tap **Update**, wait for the download, then tap **Install**. The first time, Android may ask you to allow OffNote to install apps; allow it and go back.
 
 **Your notes, folders, tags and settings are kept when you update.**
+
+---
+
+## OffNote for Windows
+
+### Install
+1. Open the **[latest release](https://github.com/ankith5980/offline-notes-releases/releases/latest)** on your PC and download **`OffNote-Setup-…exe`** under **Assets**.
+2. Run it. Windows may say *"Windows protected your PC"*, because the installer isn't signed by a paid certificate: click **More info → Run anyway**.
+3. Follow the steps (no administrator password needed; it installs just for you). OffNote opens when it's done and is in the Start menu.
+
+OffNote for Windows keeps its own notes, separate from your phone (nothing is synced, there's no cloud). To bring your phone's notes over: on the phone, **Settings → Backup & Restore → make a backup**, copy the file to your PC, then on the PC **Settings → Backup & Restore → restore** it.
+
+### The window
+- **Left:** All Notes, Pinned, Favorites, your **folders** (locked ones ask for the folder PIN), **tags**, **smart folders**, and Archive, Reminders, Templates, Trash and Settings.
+- **Middle:** the notes, with the **search** field and the **sort** button (last modified, date created, title A–Z or Z–A; pinned notes stay on top). Right-click a note to pin, favourite, archive or delete it. Up and Down move between notes.
+- **Right:** the note itself, with the **inspector** beside it: the notes that link to it, the notes it links to, and its details. Hide or show it with the button at the top or **Ctrl+I**.
+- Drag the lines between the columns to make them wider or narrower. In a narrow window OffNote looks like the phone app.
+
+### Keyboard shortcuts
+| Keys | What it does |
+|---|---|
+| **Ctrl+N** | New note (**Ctrl+Shift+N**: new checklist) |
+| **Ctrl+F** | Search |
+| **Ctrl+S** | Save now (OffNote also saves as you type) |
+| **Ctrl+P** | Command palette: type to find any command, folder, tag or note, then Enter |
+| **Ctrl+I** | Show or hide the inspector |
+| **Ctrl+,** | Settings |
+| **Ctrl+Delete** | Move the selected note to Trash |
+| **Ctrl+Alt+N** | **Quick Capture**, from any app |
+
+### Smart folders
+Ready-made lists that fill themselves: **Today**, **This Week**, **Checklists**, **With Reminders**, **With Attachments**, **Code Notes** and **Untagged**. To make your own, search for something and click the **bookmark** button in the search field (**Save as Smart Folder**); right-click it in the sidebar to rename or delete it.
+
+### Quick Capture and the tray
+- Press **Ctrl+Alt+N** anywhere in Windows: a small box opens to jot a title and some text. **Ctrl+Enter** saves it as a new note, **Esc** cancels.
+- Closing the window (**X**) keeps OffNote running next to the clock, so Quick Capture and reminders keep working. Click the OffNote icon there to open it; right-click it for **Quick Capture**, **New Note**, **Settings** or **Quit**. To have **X** quit instead, turn off **Settings → Desktop → Keep Running in the Tray**.
+- Reminders show as Windows notifications while OffNote is running (also in the tray). Reminders that came due while it was closed show as "Missed reminder" when you open it.
+
+### Updates
+OffNote for Windows checks this page for a new version when it starts (or **Settings → Check for Updates**). Click **Update**: it downloads the new version, closes, updates itself and opens again. Your notes are kept.
+
+### Where your notes are, and uninstalling
+Your notes, attachments and backups are in `%APPDATA%\OffNote\OffNote` on your PC. Uninstall from **Windows Settings → Apps → OffNote**; your notes stay in that folder unless you delete it.
+
+### Not on Windows yet
+PDF export (export as HTML and print that to PDF from your browser instead), voice-to-text (voice notes record and play, without the text), taking photos with a camera, and home-screen widgets.
 
 ---
 
