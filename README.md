@@ -19,6 +19,22 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.1.0
+
+**OffNote for Windows, much improved:**
+- **Voice-to-text on your PC.** Record voice notes and have them written out, or click **Dictate** (or press **Ctrl+Shift+D**) and what you say is typed into your note. It all happens on your PC, without internet; the first time, OffNote downloads its speech model (57 MB, or 181 MB for the more accurate one). See [Voice notes and dictation on Windows](#voice-notes-and-dictation-on-windows).
+- **Lists keep up with you.** Favourite, pin or rename a note and it shows in the right place straight away. Before, the lists only caught up when you closed the note.
+- **Counts** next to All Notes, Favorites, every folder and tag, Archive, Trash and Reminders.
+- **New ▾** button for a note, checklist, **code note**, drawing, voice note or a template. Create **folders** and **tags** with the **+** next to their headings, and right-click them to edit, lock or delete.
+- **Archive and Trash** list notes beside a preview, like your other notes: **Unarchive**, **Restore** or **Delete Forever** straight from the list (hover over a note, or right-click it), and **Empty** the Trash in one click.
+- **Cards, List or Compact:** the layout button above the notes now works. **Quick filters** (Pinned, Favorites, Tasks, Reminders, Code, Attachments) sit under the search.
+- **Hover and right-click a note** to pin, favourite, colour, move, tag, duplicate, export, archive or delete it. **Ctrl+click** or **Shift+click** to select several notes, then act on all of them. Drag notes onto a folder, tag, Archive or Trash in the sidebar.
+- **Formatting shortcuts:** Ctrl+B, Ctrl+I, Ctrl+E, Ctrl+K, Ctrl+1/2/3 and more (Ctrl+/ shows them all). The inspector moved to **Ctrl+Shift+I**.
+- **App Lock reads your keyboard:** type your PIN instead of clicking it.
+- **Fixed:** using a template no longer breaks the window (and moving that note to the Trash no longer leaves it blank); **Bold** with nothing selected no longer draws a line across the note; Ctrl+Delete while typing deletes a word instead of the note; "None (Root Notes)" in Move to Folder now really takes a note out of its folder.
+
+**On the phone too:** Bold, italic and the other buttons format the whole word when the cursor is inside it, and a Bold pressed by mistake on an empty line goes away by itself. Pin, favourite and tag buttons inside a note never undo what you just typed.
+
 ## What's new in 3.0.0
 
 - **OffNote for Windows.** A desktop app with three columns: folders, tags and smart folders on the left, your notes in the middle, the note on the right with its linked references beside it. Keyboard shortcuts (Ctrl+N, Ctrl+F, Ctrl+S, and **Ctrl+P** for a command palette), **Quick Capture** from anywhere with **Ctrl+Alt+N**, and it keeps running in the system tray. It updates itself like the phone app. See [OffNote for Windows](#offnote-for-windows).
@@ -78,15 +94,15 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Backup and restore** everything to a single file.
 - **PDF export**: print-ready PDFs on A4 or US Letter with the margins you choose, sharp photos and drawings, and page numbers and a contents page for long notes. Malayalam, Hindi and other scripts and emoji come out exactly as on your phone.
 - **Import and export** notes as Markdown, text, JSON or HTML (and import from Google Keep). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
-- **Light and dark themes** with a one-tap switch on the home screen, and grid, list or compact layouts.
+- **Light and dark themes** with a one-tap switch on the home screen, and card, list or compact layouts.
 - **Automatic saving**: there's no save button; your notes save as you type.
 - **In-app updates**: get new versions without the Play Store.
-- **Windows app**: the same notes app on your PC, in three columns, with shortcuts, a command palette, smart folders and Quick Capture from the tray. (Notes stay on each device; move them with Backup & Restore.)
+- **Windows app**: the same notes app on your PC, in three columns, with shortcuts, a command palette, smart folders, Quick Capture from the tray, and voice-to-text with dictation. (Notes stay on each device; move them with Backup & Restore.)
 
 ## Requirements
 
 - **Phone:** an Android phone or tablet running **Android 7.0 or newer**, with about 70 MB of free space
-- **PC:** Windows 10 or 11 (64-bit), with about 60 MB of free space
+- **PC:** Windows 10 or 11 (64-bit), with about 100 MB of free space (plus 57 or 181 MB for the speech model, if you use voice-to-text)
 
 ---
 
@@ -124,9 +140,13 @@ You don't need to come back to this page for updates.
 OffNote for Windows keeps its own notes, separate from your phone (nothing is synced, there's no cloud). To bring your phone's notes over: on the phone, **Settings → Backup & Restore → make a backup**, copy the file to your PC, then on the PC **Settings → Backup & Restore → restore** it.
 
 ### The window
-- **Left:** All Notes, Pinned, Favorites, your **folders** (locked ones ask for the folder PIN), **tags**, **smart folders**, and Archive, Reminders, Templates, Trash and Settings.
-- **Middle:** the notes, with the **search** field and the **sort** button (last modified, date created, title A–Z or Z–A; pinned notes stay on top). Right-click a note to pin, favourite, archive or delete it. Up and Down move between notes.
-- **Right:** the note itself, with the **inspector** beside it: the notes that link to it, the notes it links to, and its details. Hide or show it with the button at the top or **Ctrl+I**.
+- **Left:** **New ▾** (a note, checklist, code note, drawing, voice note or template), All Notes, Pinned, Favorites, your **folders** (locked ones ask for the folder PIN), **tags**, **smart folders**, then Archive, Trash, Reminders, Templates and Settings. The number beside each one is how many notes it holds. Click **+** next to *Folders* or *Tags* to make a new one; right-click a folder or tag to edit, lock or delete it.
+- **Middle:** the notes, with the **search** field, **quick filters** (Pinned, Favorites, Tasks, Reminders, Code, Attachments), the **layout** button (Cards, List or Compact) and the **sort** button (last modified, date created, title A–Z or Z–A, and whether pinned notes stay on top). Up and Down move between notes.
+  - **Hover** over a note for quick buttons (pin, favourite, archive, delete); **right-click** it for everything else (colour, move to folder, tags, duplicate, export).
+  - **Ctrl+click** notes (or **Shift+click** for a run of them, **Ctrl+A** for all) to select several, then use the bar at the top. **Delete** moves them to the Trash, **Esc** clears the selection.
+  - **Drag** a note (or the selected notes) onto a folder, tag, Pinned, Favorites, Archive or Trash in the left column.
+- **Right:** the note itself, with the **inspector** beside it: the notes that link to it, the notes it links to, and its details. Hide or show it with the button at the top or **Ctrl+Shift+I**.
+- **Archive** and **Trash** work the same way: click a note to see it (archived notes can be edited, with an **Unarchive** button; notes in the Trash show read-only with **Restore** and **Delete Forever**). **Empty** at the top of the Trash deletes everything in it.
 - Drag the lines between the columns to make them wider or narrower. In a narrow window OffNote looks like the phone app.
 
 ### Keyboard shortcuts
@@ -136,10 +156,26 @@ OffNote for Windows keeps its own notes, separate from your phone (nothing is sy
 | **Ctrl+F** | Search |
 | **Ctrl+S** | Save now (OffNote also saves as you type) |
 | **Ctrl+P** | Command palette: type to find any command, folder, tag or note, then Enter |
-| **Ctrl+I** | Show or hide the inspector |
+| **Ctrl+Shift+I** | Show or hide the inspector |
+| **Ctrl+/** | All keyboard shortcuts |
 | **Ctrl+,** | Settings |
-| **Ctrl+Delete** | Move the selected note to Trash |
+| **Ctrl+Delete** | Move the open note to Trash (when you're not typing in it) |
 | **Ctrl+Alt+N** | **Quick Capture**, from any app |
+
+While writing in a note:
+
+| Keys | What it does |
+|---|---|
+| **Ctrl+B** / **Ctrl+I** | Bold / italic (with nothing selected, the word the cursor is in) |
+| **Ctrl+Shift+X** / **Ctrl+Shift+H** | Strikethrough / highlight |
+| **Ctrl+E** | Code |
+| **Ctrl+K** | Link to another note |
+| **Ctrl+1**, **Ctrl+2**, **Ctrl+3** | Heading 1, 2, 3 |
+| **Ctrl+Shift+8** / **Ctrl+Shift+7** / **Ctrl+Shift+9** | Bullet list / numbered list / quote |
+| **Ctrl+Z** / **Ctrl+Y** | Undo / redo |
+| **Ctrl+Shift+D** | Start or stop dictation |
+
+If App Lock is on, type your PIN on the keyboard (or click it); Backspace deletes a digit.
 
 ### Smart folders
 Ready-made lists that fill themselves: **Today**, **This Week**, **Checklists**, **With Reminders**, **With Attachments**, **Code Notes** and **Untagged**. To make your own, search for something and click the **bookmark** button in the search field (**Save as Smart Folder**); right-click it in the sidebar to rename or delete it.
@@ -149,6 +185,14 @@ Ready-made lists that fill themselves: **Today**, **This Week**, **Checklists**,
 - Closing the window (**X**) keeps OffNote running next to the clock, so Quick Capture and reminders keep working. Click the OffNote icon there to open it; right-click it for **Quick Capture**, **New Note**, **Settings** or **Quit**. To have **X** quit instead, turn off **Settings → Desktop → Keep Running in the Tray**.
 - Reminders show as Windows notifications while OffNote is running (also in the tray). Reminders that came due while it was closed show as "Missed reminder" when you open it.
 
+### Voice notes and dictation on Windows
+- **Record a voice note:** the microphone button under the note (or **⋮ → Record Voice Note**). Play it back with the waveform, like on the phone.
+- **Turn it into text:** **⋮ → Transcribe** on the recording. The words are written out line by line, with the time each was said; click a line to play from there. To transcribe every new recording by itself, turn on **Settings → Voice Notes → Transcribe new recordings**.
+- **Dictate:** click the **Dictate** button under the note (next to the microphone) or press **Ctrl+Shift+D**, and speak. Pause briefly between sentences: each one is typed in where the cursor is, a moment after you pause. Click **Stop** (or press Ctrl+Shift+D again) to finish.
+- **The speech model:** the first time, OffNote asks to download its speech model, once: **Standard** (57 MB, quick) or **Accurate** (181 MB, better with accents and noise, about three times slower). Choose and manage it in **Settings → Voice Notes**. It understands English.
+- **Private:** your recordings and what you dictate are turned into text on your PC and never leave it. The model download (from huggingface.co) is the only thing OffNote fetches for this, and only when you ask for it.
+- If Windows asks whether OffNote may use the microphone, allow it (or turn it on in **Windows Settings → Privacy & security → Microphone**).
+
 ### Updates
 OffNote for Windows checks this page for a new version when it starts (or **Settings → Check for Updates**). Click **Update**: it downloads the new version, closes, updates itself and opens again. Your notes are kept.
 
@@ -156,7 +200,7 @@ OffNote for Windows checks this page for a new version when it starts (or **Sett
 Your notes, attachments and backups are in `%APPDATA%\OffNote\OffNote` on your PC. Uninstall from **Windows Settings → Apps → OffNote**; your notes stay in that folder unless you delete it.
 
 ### Not on Windows yet
-PDF export (export as HTML and print that to PDF from your browser instead), voice-to-text (voice notes record and play, without the text), taking photos with a camera, and home-screen widgets.
+PDF export (export as HTML and print that to PDF from your browser instead), taking photos with a camera, and home-screen widgets. Unlocking locked folders with Windows Hello (folders open with their folder PIN on Windows; the app itself can unlock with Windows Hello).
 
 ---
 
