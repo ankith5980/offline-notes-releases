@@ -19,6 +19,18 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.2.0
+
+- **Arrange a note your way.** A note's text, task lists, drawings, photos, voice notes and files are now separate blocks you can put in any order: drag a block by the handle on its left (on the phone, touch and hold the handle first), or tap the handle for **Move Up**, **Move Down**, **Add Text Below** and **Delete**. A note can have **several blocks of text**, so text can sit above a list and more text below it: add one with the **New Text Block** button in the toolbar or **⋮ → Add Text Block**. Exports (Markdown, text, HTML, PDF) follow the same order. See [Arrange a note](#arrange-a-note).
+- **Read mode is truly read-only.** While reading, nothing in the note can be changed by accident: no typing, no ticking tasks, no deleting attachments or tags. Voice notes still play, attachments still open and links still work.
+- **Tap anywhere below the text** to start typing at its end.
+- **Read time counts everything:** task lists, drawings and photos, files, and how long the voice notes are, not just the words.
+- **Turning off App Lock asks for your PIN** (or your fingerprint, if it's on), so someone holding your unlocked phone can't switch it off.
+- **On Windows:** messages such as "Note archived · Undo" appear as a small card at the top of the window, which fades away by itself. Choices and forms that used to slide up from the bottom (tags, colours, folders, the template preview) open as compact dialogs in the middle instead of stretching across the window. A clicked button or menu no longer stays grey. The welcome pages and the update dialog are cleaner (the update now shows its size and a list of what's new), the mouse wheel scrolls smoothly, and the checklist's tick box highlights in the right place.
+- **Smoother everywhere:** switching between light and dark no longer stutters, opening a note slides in without a jump, and the welcome pages are new, with a gentle hand-over to your notes after **Get started**.
+- **On the phone:** pressing a settings option or the search bar now shows a rounded highlight that fits its shape, instead of a square block, and swiping a note to archive shows a small round **Archive** badge beside it instead of a box behind the card.
+- Drag handles only appear when a note has more than one block with something in it, and an extra text block you leave empty tidies itself away.
+
 ## What's new in 3.1.0
 
 **OffNote for Windows, much improved:**
@@ -268,7 +280,9 @@ You can also add a note from inside it: **⋮ → Add to Home Screen**, then cho
 Privacy: notes in **locked folders** are never shown on the home screen. While **App Lock** is on, Sticky note and Checklist widgets show **Locked** instead of the note, unless you turn on **Settings → Show Notes in Home Screen Widgets**. Quick capture always goes through the lock screen first.
 
 ### Read mode
-Tap the **book icon** at the top of a note to read it: the keyboard stays away, the formatting symbols never appear, and links can be tapped. Tap the **pencil** to edit again. OffNote remembers the mode you used last and opens notes in it (new, empty notes always open ready to type). Ticking tasks, playing voice notes and opening attachments still work in Read mode.
+Tap the **book icon** at the top of a note to read it: the keyboard stays away, the formatting symbols never appear, and links can be tapped. Tap the **pencil** to edit again. OffNote remembers the mode you used last and opens notes in it (new, empty notes always open ready to type).
+
+Read mode is only for reading: the text, title, tags, task lists and attachments can't be changed (tasks can't be ticked either). Voice notes still play, attachments and drawings still open to look at, and links still work. Pin, favourite, colour and reminders stay available at the top.
 
 ### Add photos, files and drawings
 In a note, tap **⋮** (top right) and choose **Take Photo**, **Pick Image from Gallery**, **Attach Document** or **Add Hand Drawing**. Tap an attachment to open it.
@@ -340,6 +354,14 @@ The drawing board is endless in every direction, with faint dots so you can see 
 - **Delete a list:** tap the **bin** icon next to its name. If it still has tasks, you'll be asked first.
 - **Progress:** inside the note, each list shows how many of its tasks are done (for example **2 of 5 done**) with a progress bar. On the home screen and in folders, the note's card shows the **percentage** of all its tasks that are done (for example **40%**).
 
+### Arrange a note
+A note is made of **blocks**: its text, each task list, each drawing or photo, each voice note, and its attached files. Put them in whatever order suits the note.
+- **Move a block:** drag the **handle** (⋮⋮) on its left. On the phone, touch and hold the handle until the block lifts, then drag. Handles show once a note has more than one block.
+- **The block menu:** tap the handle (on Windows, click or right-click it) for **Move Up**, **Move Down**, **Add Text Below** and **Delete**.
+- **Several blocks of text:** tap **New Text Block** in the formatting toolbar or choose **⋮ → Add Text Block**; it goes below the text you were writing in. New task lists, drawings, photos and voice notes also go below the text you were writing in.
+- **Tap below the note** to put the cursor at the end of its last text (if the note ends with a list or a drawing, a new text block starts there).
+- Search, previews and links see all of a note's text as usual, and Markdown, text, HTML and PDF exports keep your order.
+
 ### Version history
 OffNote keeps earlier versions of each note, so you can go back if you change or delete something by mistake.
 
@@ -396,6 +418,8 @@ Archiving, unarchiving and moving notes to Trash show an **Undo** button for a f
 4. Choose **Auto-Lock Timeout**: **Immediately** locks every time you leave the app, or pick 1, 5, 15 or 30 minutes.
 
 Use **Lock App Now** to test it.
+
+To **turn App Lock off**, you'll be asked for your PIN (or your fingerprint / Windows Hello, if turned on). This removes the PIN.
 
 > ⚠️ **Don't forget your PIN.** For your privacy there is no way to reset it. If you forget it, the only option is to clear the app's data, which **deletes all your notes**. Keep regular backups (see below).
 
