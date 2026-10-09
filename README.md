@@ -19,6 +19,13 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.2.1
+
+- **Tidier text blocks:** an empty text slot no longer sits under a list or drawing (a checklist note is just the list). Tap below the note, or press **Enter** in the title, to start writing. **Backspace** in an empty text block removes it, and at the start of a text block it joins it to the text above. Drag handles appear only beside blocks with something in them, and only when there are two or more.
+- **Folder PIN** looks like the App Lock screen (on Windows it fills the window).
+- **Checklists:** each task now lines up exactly with its tick box and its ✕.
+- **Phone:** the empty home screen no longer mentions a keyboard shortcut.
+
 ## What's new in 3.2.0
 
 - **Arrange a note your way.** A note's text, task lists, drawings, photos, voice notes and files are now separate blocks you can put in any order: drag a block by the handle on its left (on the phone, touch and hold the handle first), or tap the handle for **Move Up**, **Move Down**, **Add Text Below** and **Delete**. A note can have **several blocks of text**, so text can sit above a list and more text below it: add one with the **New Text Block** button in the toolbar or **⋮ → Add Text Block**. Exports (Markdown, text, HTML, PDF) follow the same order. See [Arrange a note](#arrange-a-note).
@@ -29,7 +36,6 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **On Windows:** messages such as "Note archived · Undo" appear as a small card at the top of the window, which fades away by itself. Choices and forms that used to slide up from the bottom (tags, colours, folders, the template preview) open as compact dialogs in the middle instead of stretching across the window. A clicked button or menu no longer stays grey. The welcome pages and the update dialog are cleaner (the update now shows its size and a list of what's new), the mouse wheel scrolls smoothly, and the checklist's tick box highlights in the right place.
 - **Smoother everywhere:** switching between light and dark no longer stutters, opening a note slides in without a jump, and the welcome pages are new, with a gentle hand-over to your notes after **Get started**.
 - **On the phone:** pressing a settings option or the search bar now shows a rounded highlight that fits its shape, instead of a square block, and swiping a note to archive shows a small round **Archive** badge beside it instead of a box behind the card.
-- Drag handles only appear when a note has more than one block with something in it, and an extra text block you leave empty tidies itself away.
 
 ## What's new in 3.1.0
 
@@ -359,6 +365,7 @@ A note is made of **blocks**: its text, each task list, each drawing or photo, e
 - **Move a block:** drag the **handle** (⋮⋮) on its left. On the phone, touch and hold the handle until the block lifts, then drag. Handles show once a note has more than one block.
 - **The block menu:** tap the handle (on Windows, click or right-click it) for **Move Up**, **Move Down**, **Add Text Below** and **Delete**.
 - **Several blocks of text:** tap **New Text Block** in the formatting toolbar or choose **⋮ → Add Text Block**; it goes below the text you were writing in. New task lists, drawings, photos and voice notes also go below the text you were writing in.
+- **Empty text:** a text block with nothing in it is put away when you leave it, or with **Backspace**; **Backspace** at the start of a text block joins it to the text block above. Handles show only beside blocks that have something in them.
 - **Tap below the note** to put the cursor at the end of its last text (if the note ends with a list or a drawing, a new text block starts there).
 - Search, previews and links see all of a note's text as usual, and Markdown, text, HTML and PDF exports keep your order.
 
