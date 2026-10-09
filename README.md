@@ -19,6 +19,10 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.2.2
+
+- **Windows: backups are saved again.** "Save to device" after creating a backup now really writes the ZIP file where you choose (before, nothing was written, so Windows reported "access denied" when you tried to open it). If you saved a backup on Windows before 3.2.2, please create and save a new one.
+
 ## What's new in 3.2.1
 
 - **Tidier text blocks:** an empty text slot no longer sits under a list or drawing (a checklist note is just the list). Tap below the note, or press **Enter** in the title, to start writing. **Backspace** in an empty text block removes it, and at the start of a text block it joins it to the text above. Drag handles appear only beside blocks with something in them, and only when there are two or more.
