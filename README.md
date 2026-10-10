@@ -19,6 +19,13 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.3.0
+
+- **Find in a note.** Look for a word inside the note you have open: tap **⋮ → Find in Note** (on Windows, or with a keyboard, press **Ctrl+F** while you're in the note). Every match is highlighted in the title, the text, task lists and code, the note scrolls to each one, and **↑ / ↓** (or **Enter**) step through them. **Aa** matches upper and lower case exactly. It works in Read mode too. See [Find in a note](#find-in-a-note).
+- **The keyboard stays open when a second block appears.** Typing the first letters of a new text block or list name next to existing content used to close the keyboard (on Windows, the note stopped taking typing) the moment the drag handles appeared. Now you just keep typing.
+- **Windows: Home and End work.** **Home**, **End**, **Shift+Home** and **Shift+End** (and **Ctrl+Home** / **Ctrl+End**) now move to and select to the start or end of the line, including on keyboards where these keys share the number pad (with Num Lock off).
+- **Windows: Ctrl+Shift+F** searches all your notes from anywhere, since **Ctrl+F** inside a note now finds in that note.
+
 ## What's new in 3.2.2
 
 - **Windows: backups are saved again.** "Save to device" after creating a backup now really writes the ZIP file where you choose (before, nothing was written, so Windows reported "access denied" when you tried to open it). If you saved a backup on Windows before 3.2.2, please create and save a new one.
@@ -108,7 +115,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Pin and favourite** your most important notes.
 - **Archive** notes you want to keep but don't need to see every day.
 - **Trash** with automatic clean-up after the number of days you choose.
-- **Fast search** across titles, text, checklists, tags, folders and the words spoken in voice notes.
+- **Fast search** across titles, text, checklists, tags, folders and the words spoken in voice notes, and **Find in a note** to highlight a word inside the note you're reading.
 - **Version history**: see earlier versions of a note, compare them with the note now, and bring one back (text and task lists).
 - **Note links**: type `[[` to link to another note (OffNote suggests them as you type), then tap the link in **Read mode** to open it. Each note lists the notes that link to it.
 - **App lock** with a 4-digit PIN and fingerprint/face unlock.
@@ -175,7 +182,8 @@ OffNote for Windows keeps its own notes, separate from your phone (nothing is sy
 | Keys | What it does |
 |---|---|
 | **Ctrl+N** | New note (**Ctrl+Shift+N**: new checklist) |
-| **Ctrl+F** | Search |
+| **Ctrl+F** | Search your notes (inside a note: find in that note) |
+| **Ctrl+Shift+F** | Search your notes, wherever you are |
 | **Ctrl+S** | Save now (OffNote also saves as you type) |
 | **Ctrl+P** | Command palette: type to find any command, folder, tag or note, then Enter |
 | **Ctrl+Shift+I** | Show or hide the inspector |
@@ -196,6 +204,8 @@ While writing in a note:
 | **Ctrl+Shift+8** / **Ctrl+Shift+7** / **Ctrl+Shift+9** | Bullet list / numbered list / quote |
 | **Ctrl+Z** / **Ctrl+Y** | Undo / redo |
 | **Ctrl+Shift+D** | Start or stop dictation |
+| **Ctrl+F** | Find in the note (**Enter** / **F3**: next match, **Shift+Enter** / **Shift+F3**: previous, **Esc**: close) |
+| **Home** / **End** | Start / end of the line (**Shift**: select to it; **Ctrl**: start / end of the text) |
 
 If App Lock is on, type your PIN on the keyboard (or click it); Backspace deletes a digit.
 
@@ -385,6 +395,14 @@ OffNote keeps earlier versions of each note, so you can go back if you change or
 
 ### Search
 Tap the search bar at the top of the home screen. Search looks through titles, text, task lists, tags, folders and the text of voice notes. You can narrow results to favourites, pinned notes, checklists, notes with attachments, or a specific folder.
+
+### Find in a note
+To find a word inside the note you have open, tap **⋮ → Find in Note** (on Windows or with a keyboard: **Ctrl+F**). A search bar appears at the top of the note.
+- Type what you're looking for. Every match is highlighted, and the one you're on is outlined in orange, with **"2 of 5"** beside the box.
+- Tap **↓** (or press **Enter**) for the next match and **↑** for the previous one; the note scrolls to each. After the last match it starts again from the top.
+- **Aa** finds only matches with the same upper and lower case.
+- It looks through the title, the text, task list names and tasks, and code. It works in Read mode too, and the matches update as you type in the note.
+- Close it with **✕**, the **Back** button or **Esc**. With a keyboard, select a word in the note and press **Ctrl+F** to find that word straight away.
 
 ---
 
