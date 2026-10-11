@@ -17,7 +17,13 @@
 
 ## What is OffNote?
 
-OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
+OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
+
+## What's new in 3.4.0
+
+- **Sync between your phone and computer, with no cloud.** Pair your devices once (scan a QR code, or type a short code), and from then on your notes, task lists, photos, drawings, voice notes, folders, tags, reminders and templates stay the same on both, updating within a second or two as you write. Everything goes straight from one device to the other over your own Wi-Fi, encrypted; nothing goes through the internet, and only devices you've paired can connect. See [Sync between your devices](#sync-between-your-devices).
+- **Stays connected until you say so.** Once connected, your devices reconnect by themselves (after closing the app, restarting, or the Wi-Fi dropping) until you press **Disconnect** on either one. On the phone a small notification keeps the connection open in the background.
+- **Nothing gets lost.** If the same note was changed on both devices while they were apart, the later change is kept and the other one is saved in the note's **Version history** (marked "Before sync").
 
 ## What's new in 3.3.0
 
@@ -126,7 +132,8 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Light and dark themes** with a one-tap switch on the home screen, and card, list or compact layouts.
 - **Automatic saving**: there's no save button; your notes save as you type.
 - **In-app updates**: get new versions without the Play Store.
-- **Windows app**: the same notes app on your PC, in three columns, with shortcuts, a command palette, smart folders, Quick Capture from the tray, and voice-to-text with dictation. (Notes stay on each device; move them with Backup & Restore.)
+- **Windows app**: the same notes app on your PC, in three columns, with shortcuts, a command palette, smart folders, Quick Capture from the tray, and voice-to-text with dictation.
+- **Sync between your devices**: pair your phone and computer once and your notes stay in step over your Wi-Fi, encrypted, with no cloud and no account.
 
 ## Requirements
 
@@ -230,6 +237,9 @@ OffNote for Windows checks this page for a new version when it starts (or **Sett
 
 ### Where your notes are, and uninstalling
 Your notes, attachments and backups are in `%APPDATA%\OffNote\OffNote` on your PC. Uninstall from **Windows Settings → Apps → OffNote**; your notes stay in that folder unless you delete it.
+
+### Sync with your phone
+Open **Sync Devices** in the sidebar (or **Settings → Sync Devices**), click **Pair a new device → Show a QR code**, and scan it with the phone. See [Sync between your devices](#sync-between-your-devices). The PC connects to your phone by itself, so Windows doesn't need to let anything in; closing the window keeps OffNote (and the connection) running in the tray.
 
 ### Not on Windows yet
 PDF export (export as HTML and print that to PDF from your browser instead), taking photos with a camera, and home-screen widgets. Unlocking locked folders with Windows Hello (folders open with their folder PIN on Windows; the app itself can unlock with Windows Hello).
@@ -406,6 +416,46 @@ To find a word inside the note you have open, tap **⋮ → Find in Note** (on W
 
 ---
 
+## Sync between your devices
+
+Keep the same notes on your phone and your computer (or two phones), without any cloud. Your devices talk to each other directly over your Wi-Fi.
+
+### Pair two devices (once)
+1. On both devices, open **Sync Devices**: on the phone from the menu (☰) or **Settings → Sync Devices**, on Windows in the sidebar.
+2. On the computer, choose **Pair a new device → Show a QR code**.
+3. On the phone, choose **Pair a new device → Scan a QR code** and point the camera at the code.
+4. The computer asks **Pair with (your phone)?**: choose **Pair**. Done.
+
+No camera, or pairing two computers? Choose **Show a code** on one device and **Enter a code** on the other, type the 8-character code, then check that **both screens show the same 6-digit number** and choose **They match** on both.
+
+If App Lock is on, pairing asks for your PIN first, so nobody can add their own device while holding your unlocked phone.
+
+### Staying connected
+- After pairing, the devices connect whenever both are on the **same Wi-Fi** (a phone's hotspot works too) and OffNote is running. They reconnect by themselves after the Wi-Fi drops, after you close OffNote, or after a restart.
+- Changes show up on the other device within a second or two. If a note is open there, it updates in place (you'll see "Updated from ..."); if you're typing in it at that moment, the update waits until you pause.
+- **On the phone**, a notification "Connected to ..." keeps the connection open while OffNote is in the background; it has a **Disconnect** button. Some phones (OPPO, Realme, Xiaomi, Vivo, OnePlus, Samsung) still close apps in the background: if syncing stops while OffNote isn't open, tap **Battery settings** on the Sync Devices screen and allow OffNote to run without restrictions.
+- **On Windows**, closing the window keeps OffNote in the tray, still connected. Choosing **Quit** disconnects until you start OffNote again.
+
+### Disconnect, connect again, unpair
+- **Disconnect** (on either device) stops syncing on both until you press **Connect** on either one. Changes made meanwhile sync when you reconnect.
+- **⋮ → Unpair** removes the device from this one and from your other paired devices. Notes already on it stay there.
+- **⋮ → Safety number** shows a number that is the same on both devices: if it matches, they're talking to each other and nobody else.
+
+### What syncs
+Notes (text, task lists and ticks, photos, drawings, files, voice notes and their transcripts), folders (and which are locked), tags, colours, pins, favourites, archive and Trash, reminders, your own templates, and the **Folder PIN** (so locked folders open with the same PIN everywhere).
+
+Each device keeps its own: theme and layout, App Lock PIN and fingerprint settings, version history, saved searches, window sizes and recent searches. The Trash empties itself on each device by its own setting; **Delete Forever** and **Empty Trash** do apply everywhere.
+
+**Reminders** ring on every device that has them. To get them only on your phone, turn off **Reminders on this device** on the computer's Sync Devices screen.
+
+### When both devices changed the same note
+If a note was edited on both devices while they weren't connected, the change made later is kept on both, and the other version is saved in that note's **⋮ → Version History**, marked **Before sync**, so you can copy anything back. A note deleted forever on one device but edited on the other comes back with the edit.
+
+### Is it private?
+Yes. Devices find each other on your Wi-Fi without showing their names to other devices there, and only devices you paired (with the code on your screen) can connect: they check each other's keys every time. Everything they send is encrypted end to end. Nothing goes through the internet or any server.
+
+---
+
 ## Reminders
 
 1. Open a note and tap the **alarm** icon.
@@ -496,6 +546,8 @@ The backup is a single `.zip` file containing all your notes, folders, tags, che
 2. Pick your backup `.zip` file and confirm.
 
 > Restoring **replaces all notes currently in the app** with the ones in the backup. To be safe, OffNote first saves a copy of your current notes automatically.
+>
+> **If you sync with other devices**, restoring doesn't delete anything on them: the notes from the backup are sent to them (replacing older copies, which are kept in Version history), and notes the backup doesn't have come back from your other devices.
 
 ### Moving to a new phone
 Make a backup on the old phone, copy the `.zip` file to the new phone (or save it to Drive), install OffNote on the new phone, then restore.
@@ -552,6 +604,7 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 | **Note Card Layout** | Grid, List or Compact |
 | **App Lock / Biometrics / Auto-Lock** | Protect the app with a PIN and fingerprint (folder locks are set on the Folders screen) |
 | **Show Notes in Home Screen Widgets** | With App Lock on: let Sticky note and Checklist widgets show their note (off: they show "Locked") |
+| **Sync Devices** | Pair your phone and computer and keep your notes in sync over Wi-Fi; connect, disconnect or unpair devices |
 | **Backup & Restore** | Save or restore all your data |
 | **Import Notes** | Bring in notes from files or Google Keep |
 | **Voice Notes** | The offline English speech pack, whether new recordings are turned into text, and the English accent |
@@ -562,9 +615,10 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 
 ## Privacy
 
-- **Your notes never leave your phone.** There are no accounts, no cloud sync, no ads, no analytics and no tracking.
+- **Your notes never go to any server.** There are no accounts, no cloud, no ads, no analytics and no tracking.
+- **Sync stays on your own network.** If you pair your devices, notes go directly from one of your devices to another over your local Wi-Fi, encrypted end to end, and only to devices you paired. Nothing goes through the internet.
 - The only internet use is checking this page for app updates and downloading them. You can use the app fully offline.
-- **Voice notes are turned into text on your phone.** Recordings and their text never leave it. The speech recognition is your phone's own (Google's on-device speech service); the one-time English speech pack is downloaded by your phone, not by OffNote.
+- **Voice notes are turned into text on your phone.** Recordings and their text never go to any server (only to your own paired devices, if you sync). The speech recognition is your phone's own (Google's on-device speech service); the one-time English speech pack is downloaded by your phone, not by OffNote.
 - Notes are only shared when **you** choose to export, share or back them up.
 
 ---
@@ -576,7 +630,7 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 - Some phones (OPPO, Realme, Xiaomi, Vivo, OnePlus, Samsung and others) stop apps running in the background to save battery, which can block reminders. Go to **Phone Settings → Battery → OffNote** and choose **Allow background activity** / **Unrestricted** / **Don't optimise**. On some phones also turn on **Auto-launch** or **Autostart** for OffNote so reminders work after a restart.
 
 **"App not installed" when installing or updating**
-- Make sure you downloaded the full `.apk` file (about 60 MB) and that you have enough free space.
+- Make sure you downloaded the full `.apk` file (about 90 MB) and that you have enough free space.
 - If the message continues, you may have an OffNote copy from a different source. **Back up your notes first**, uninstall the old app, install the new one, then restore your backup.
 
 **The update check says it can't connect**
@@ -591,6 +645,13 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 **A recording is silent**
 - If you're on a phone or video call (WhatsApp, Instagram and so on), the call uses the microphone and recordings stay silent. Record after the call.
 - Check that OffNote may use the microphone: **Phone Settings → Apps → OffNote → Permissions → Microphone**.
+
+**My devices don't connect (sync)**
+- Both must be on the **same Wi-Fi** (or one on the other's hotspot), with OffNote open or running (on Windows, in the tray). Guest and some office Wi-Fi networks keep devices apart; use your home Wi-Fi or a hotspot.
+- On the phone, check the device shows **Connected** on the Sync Devices screen, not **Disconnected** (press **Connect**).
+- On Windows, if the phone isn't found, open the device's **⋮ → Connect by address** and type the address shown on the phone while pairing (Sync Devices → Pair a new device → Show a code). If that doesn't work either, turn on **Let other devices connect to this PC** and allow OffNote when Windows asks (choose private networks).
+- If syncing stops while the phone's screen is off, allow OffNote to run in the background: **Sync Devices → Battery settings**.
+- "Update OffNote" means the two devices have different versions: update both to the newest version.
 
 **An attachment won't open**
 - You need an app on your phone that can open that type of file (for example a PDF reader for PDFs).
