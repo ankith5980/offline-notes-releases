@@ -19,6 +19,13 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.4.2
+
+- **In-app updates work on the phone again.** If you sync your phone with your computer, the phone's update could stop with "Download failed. Check your connection" after downloading, because the phone could no longer open Android's installer. That's fixed, and opening attachments and exported files works again in the same situation.
+  - *Updating to 3.4.2 from 3.4.0 or 3.4.1 on a phone that syncs:* if the update fails, open **Sync** and tap **Disconnect**, close OffNote with the back button, open it again and tap **Update now**. (Or: phone **Settings → Apps → OffNote → Force stop**, then open OffNote.) Afterwards connect again.
+- **Clearer update messages.** If an update can't be downloaded, OffNote now says why (for example, that the file isn't on the server yet) instead of always blaming your connection.
+- **A friendlier graph page for notes without links.** Instead of an empty canvas it explains how linking works, and **Add a link** takes you back to the note with `[[` already typed.
+
 ## What's new in 3.4.1
 
 - **See how your notes connect.** A note with links now shows a small **graph** at the bottom: the note in the middle, the notes it links to and the notes that link to it, each in its note's colour. Tap a dot to open that note, drag dots around, and pinch to zoom. A dashed ring is a link to a note you haven't written yet; tap it to create the note. See [Links between notes](#links-between-notes).
@@ -300,6 +307,7 @@ Link one note to another by writing its title in double square brackets, like `[
   - **1 / 2 / 3** choose how far the graph reaches: the note's own links, the links of those notes too, or one step further. OffNote remembers your choice.
   - **Fit** brings every dot back into view; **Full screen** (or **⋮ → Local Graph**, or **Ctrl+G** on a computer) opens the graph on its own page, where you can also drag to move around and use the mouse wheel to zoom.
   - On Windows the graph is also in the panel beside the note (the inspector). Notes in locked folders don't appear while the folder is locked.
+  - A note without links has no graph at the bottom. Its full-screen graph page explains how linking works and has an **Add a link** button, which takes you back to the note with `[[` already typed so you can pick a note.
 
 ### Code notes
 Tap **+ Note → Code Note** to start one.
