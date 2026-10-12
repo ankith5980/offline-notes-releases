@@ -19,6 +19,11 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.4.1
+
+- **See how your notes connect.** A note with links now shows a small **graph** at the bottom: the note in the middle, the notes it links to and the notes that link to it, each in its note's colour. Tap a dot to open that note, drag dots around, and pinch to zoom. A dashed ring is a link to a note you haven't written yet; tap it to create the note. See [Links between notes](#links-between-notes).
+- **Look further out.** The **1 / 2 / 3** buttons show the links of linked notes too. Open the graph full screen with the expand button, **⋮ → Local Graph**, or **Ctrl+G** on a computer. On Windows the graph is also in the panel beside the note.
+
 ## What's new in 3.4.0
 
 - **Sync between your phone and computer, with no cloud.** Pair your devices once (scan a QR code, or type a short code), and from then on your notes, task lists, photos, drawings, voice notes, folders, tags, reminders and templates stay the same on both, updating within a second or two as you write. Everything goes straight from one device to the other over your own Wi-Fi, encrypted; nothing goes through the internet, and only devices you've paired can connect. See [Sync between your devices](#sync-between-your-devices).
