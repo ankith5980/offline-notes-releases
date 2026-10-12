@@ -123,7 +123,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Trash** with automatic clean-up after the number of days you choose.
 - **Fast search** across titles, text, checklists, tags, folders and the words spoken in voice notes, and **Find in a note** to highlight a word inside the note you're reading.
 - **Version history**: see earlier versions of a note, compare them with the note now, and bring one back (text and task lists).
-- **Note links**: type `[[` to link to another note (OffNote suggests them as you type), then tap the link in **Read mode** to open it. Each note lists the notes that link to it.
+- **Note links**: type `[[` to link to another note (OffNote suggests them as you type), then tap the link in **Read mode** to open it. Each note lists the notes that link to it, and shows them in a **graph** you can tap, drag and zoom.
 - **App lock** with a 4-digit PIN and fingerprint/face unlock.
 - **Locked folders**: keep private folders behind their own folder PIN or fingerprint, separate from the app lock.
 - **Backup and restore** everything to a single file.
@@ -289,6 +289,12 @@ Link one note to another by writing its title in double square brackets, like `[
 - **Enter:** if a note has exactly the name you typed, Enter links it; otherwise Enter **creates a new note** with that name (in the same folder) and links it. The row Enter will pick is highlighted. Tap **✕** on the list to close it.
 - **Open a link:** tap the **book icon** at the top of the note to switch to **Read mode**, then tap the link. Tap the back arrow to return. If no note has that name yet, OffNote offers to create it.
 - **Linked References:** at the bottom of a note you see every note that links to it; tap one to open it.
+- **Graph:** under that, a note with links shows a small map: the note in the middle (with a ring), the notes it links to and the notes that link to it, joined by lines (a small arrow shows which way a link goes). Dots have the note's colour; archived notes are faded, and a dashed ring is a link to a note that doesn't exist yet.
+  - **Tap a dot** to open that note (or, for a dashed ring, to create it).
+  - **Drag a dot** to move it; the others make room. **Pinch** to zoom (on a computer, **Ctrl + mouse wheel**). Swiping up and down over the graph still scrolls the note.
+  - **1 / 2 / 3** choose how far the graph reaches: the note's own links, the links of those notes too, or one step further. OffNote remembers your choice.
+  - **Fit** brings every dot back into view; **Full screen** (or **⋮ → Local Graph**, or **Ctrl+G** on a computer) opens the graph on its own page, where you can also drag to move around and use the mouse wheel to zoom.
+  - On Windows the graph is also in the panel beside the note (the inspector). Notes in locked folders don't appear while the folder is locked.
 
 ### Code notes
 Tap **+ Note → Code Note** to start one.
