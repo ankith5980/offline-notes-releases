@@ -19,6 +19,15 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.5.0
+
+- **Tables.** Tap the **table** button in the formatting toolbar (or **⋮ → Add Table**) to put a table where your cursor is. Type in the cells, add rows and columns, and line columns up left, centre or right. Tables are saved as ordinary Markdown tables, so they show up in other Markdown apps too. See [Tables](#tables).
+- **Callouts.** Coloured boxes that stand out: **Note**, **Tip**, **Important**, **Warning** and **Caution**. Tap the **ⓘ** button in the toolbar and pick one. See [Callouts](#callouts).
+- **Fold headings away.** Every heading with something under it has a small arrow after it: tap it to hide everything under that heading, tap again to show it. Folded headings stay folded the next time you open the note.
+- **Toggles.** A title with text under it that you can fold and unfold: tap the **▸** button in the toolbar or **⋮ → Add Toggle**. See [Fold headings and toggles](#fold-headings-and-toggles).
+- **Task Hub.** Every task from every note in one place: open **Tasks** in the menu (on Windows, in the sidebar). Tick tasks off right there, see each note's progress, narrow to a folder or tag, and add new tasks without opening a note. See [Task Hub](#task-hub).
+- **Smart folders on the phone.** The ready-made smart folders (Today, This Week, Checklists and more) and your saved searches are now in the phone's menu too. In Search, tap the **bookmark** to save what you searched for, filters included. Saved searches now sync between your phone and computer.
+
 ## What's new in 3.4.2
 
 - **In-app updates work on the phone again.** If you sync your phone with your computer, the phone's update could stop with "Download failed. Check your connection" after downloading, because the phone could no longer open Android's installer. That's fixed, and opening attachments and exported files works again in the same situation.
@@ -135,6 +144,9 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Trash** with automatic clean-up after the number of days you choose.
 - **Fast search** across titles, text, checklists, tags, folders and the words spoken in voice notes, and **Find in a note** to highlight a word inside the note you're reading.
 - **Version history**: see earlier versions of a note, compare them with the note now, and bring one back (text and task lists).
+- **Tables, callouts and toggles**: real tables you can type into, coloured callout boxes, and headings and toggles that fold away.
+- **Task Hub**: every task from every note in one list, with progress, filters and quick add.
+- **Smart folders and saved searches**: ready-made lists (Today, Checklists...) and your own saved searches, on the phone and on Windows.
 - **Note links**: type `[[` to link to another note (OffNote suggests them as you type), then tap the link in **Read mode** to open it. Each note lists the notes that link to it, and shows them in a **graph** you can tap, drag and zoom.
 - **App lock** with a 4-digit PIN and fingerprint/face unlock.
 - **Locked folders**: keep private folders behind their own folder PIN or fingerprint, separate from the app lock.
@@ -229,7 +241,7 @@ While writing in a note:
 If App Lock is on, type your PIN on the keyboard (or click it); Backspace deletes a digit.
 
 ### Smart folders
-Ready-made lists that fill themselves: **Today**, **This Week**, **Checklists**, **With Reminders**, **With Attachments**, **Code Notes** and **Untagged**. To make your own, search for something and click the **bookmark** button in the search field (**Save as Smart Folder**); right-click it in the sidebar to rename or delete it.
+Ready-made lists that fill themselves: **Today**, **This Week**, **Checklists**, **With Reminders**, **With Attachments**, **Code Notes** and **Untagged**. To make your own, search for something and click the **bookmark** button in the search field (**Save as Smart Folder**); right-click it in the sidebar to rename or delete it. Saved searches made on your phone (with their filters) show up here too, and the other way round.
 
 ### Quick Capture and the tray
 - Press **Ctrl+Alt+N** anywhere in Windows: a small box opens to jot a title and some text. **Ctrl+Enter** saves it as a new note, **Esc** cancels.
@@ -395,6 +407,32 @@ The drawing board is endless in every direction, with faint dots so you can see 
 - Archiving or moving notes to Trash shows an **Undo** button for a few seconds.
 - Selecting works the same way inside a folder (with **Remove from Folder**), a tag (with **Remove** that tag), the **Archive** (with **Unarchive**) and the **Trash** (with **Restore** and **Delete Forever**).
 
+### Tables
+- **Add a table:** put the cursor where the table should go and tap the **table** button in the formatting toolbar (or **⋮ → Add Table**). A table with three columns starts there, with the cursor in its first cell. If the cursor was in the middle of your text, the text is split around the table.
+- **Type in the cells:** tap a cell. **Enter** goes to the cell below (from the last row it adds a new row); on a keyboard, **Tab** goes to the next cell. Cells can be **bold**, *italic*, have [[links]] and so on, like the rest of your text. The first row is the table's heading.
+- **Rows and columns:** tap **+ Row** or **+ Column** under the table. The **⋯** button has Insert Row Above/Below, Delete Row, Insert Column Left/Right, Delete Column, and Align Left / Centre / Right for the column you're in.
+- **Move or delete the table:** use its handle (⋮⋮) on the left, like any block.
+- Wide tables scroll sideways. A Markdown table you type or import into ordinary text is shown in a fixed-width font so its columns line up, and comes out as a real table in HTML and PDF exports.
+
+### Callouts
+- **Make a callout:** put the cursor on a line (or select some lines) and tap the **ⓘ** button in the formatting toolbar, then choose **Note**, **Tip**, **Important**, **Warning** or **Caution**. The first line becomes the callout's title.
+- **Keep writing in it:** press **Enter** at the end of a callout line and the next line stays inside the callout. Press **Enter** on an empty callout line to leave it.
+- **Change or remove it:** with the cursor in a callout, tap **ⓘ** and pick another kind, or **Remove callout**.
+- Callouts use the same `> [!NOTE] Title` form as GitHub and Obsidian, so they look right there too. They come out as coloured boxes in HTML and PDF exports.
+
+### Fold headings and toggles
+- **Fold a heading:** every heading with something under it has a small arrow just after it. Tap it to hide everything under that heading, up to the next heading of the same size or bigger. Tap the arrow (now **› ⋯**) to show it again. What's folded is remembered with the note.
+- **Toggles:** tap the **▸** button in the toolbar (or **⋮ → Add Toggle**) for a title with text under it that folds away. Type the title, press **Enter** to write inside it, and tap the arrow to fold or unfold it. In Read mode, tapping the title folds or unfolds it.
+- Folding only hides things on screen: search, exports and other devices still see everything.
+
+### Task Hub
+- **Open it:** **Tasks** in the menu (on Windows, **Tasks** in the sidebar).
+- **Every task in one place:** the tasks from all your notes' task lists, grouped by note, with each note's progress (**2/5**) and list names. Tap a note's name to open it.
+- **Tick tasks off** right there; the note is updated (also if it's open on screen). Ticked tasks stay in view until you switch the filter.
+- **Open / Done / All**, and narrow to one **folder** or **tag** with the buttons at the top.
+- **Add a task:** type it in the box at the top and press Enter. It goes into a note called **Tasks** (made the first time you need it). With a folder chosen, the task goes into a "Tasks" note in that folder.
+- Tasks in archived notes, notes in the Trash and locked folders aren't listed.
+
 ### Checklists (task lists)
 - **Add a task list:** in a note, tap the **checkbox** button in the formatting toolbar, or **⋮ → Add Task List**. Every tap adds a **new, separate list**, so one note can hold several, like "Groceries", "Packing" and "Calls to make".
 - **Name a list:** the cursor starts in the new list's name field; type a name and press **Enter** to jump to its first task. Tap the name any time to change it. A list without a name is shown as "Tasks".
@@ -424,6 +462,7 @@ OffNote keeps earlier versions of each note, so you can go back if you change or
 
 ### Search
 Tap the search bar at the top of the home screen. Search looks through titles, text, task lists, tags, folders and the text of voice notes. You can narrow results to favourites, pinned notes, checklists, notes with attachments, or a specific folder.
+- **Save a search:** tap the **bookmark** at the top of Search to keep what you searched for (the words and the filters) as a smart folder. It appears in the menu under **Smart Folders**, next to the ready-made ones (Today, This Week, Checklists, With Reminders, With Attachments, Code Notes, Untagged). Open it to see the notes it finds now; **⋮** renames or removes it.
 
 ### Find in a note
 To find a word inside the note you have open, tap **⋮ → Find in Note** (on Windows or with a keyboard: **Ctrl+F**). A search bar appears at the top of the note.
@@ -461,9 +500,9 @@ If App Lock is on, pairing asks for your PIN first, so nobody can add their own 
 - **⋮ → Safety number** shows a number that is the same on both devices: if it matches, they're talking to each other and nobody else.
 
 ### What syncs
-Notes (text, task lists and ticks, photos, drawings, files, voice notes and their transcripts), folders (and which are locked), tags, colours, pins, favourites, archive and Trash, reminders, your own templates, and the **Folder PIN** (so locked folders open with the same PIN everywhere).
+Notes (text, task lists and ticks, tables, toggles, which headings are folded, photos, drawings, files, voice notes and their transcripts), folders (and which are locked), tags, colours, pins, favourites, archive and Trash, reminders, your own templates, your **saved searches** (smart folders), and the **Folder PIN** (so locked folders open with the same PIN everywhere).
 
-Each device keeps its own: theme and layout, App Lock PIN and fingerprint settings, version history, saved searches, window sizes and recent searches. The Trash empties itself on each device by its own setting; **Delete Forever** and **Empty Trash** do apply everywhere.
+Each device keeps its own: theme and layout, App Lock PIN and fingerprint settings, version history, window sizes and recent searches. The Trash empties itself on each device by its own setting; **Delete Forever** and **Empty Trash** do apply everywhere.
 
 **Reminders** ring on every device that has them. To get them only on your phone, turn off **Reminders on this device** on the computer's Sync Devices screen.
 
