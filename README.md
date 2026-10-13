@@ -19,6 +19,14 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.8.0
+
+- **6-digit PINs.** App Lock and folder PINs now have 6 digits, which are far harder to guess. If yours has 4 digits, it works one more time: after you unlock, OffNote asks you to choose a new 6-digit PIN.
+- **Recovery codes for forgotten PINs.** When you set a PIN (or after choosing your new 6-digit one), OffNote shows a one-time **recovery code**. Copy it or save it to a file and keep it somewhere safe, away from your phone. If you ever forget the PIN, tap **Forgot PIN?** and enter the code to choose a new PIN. A code works once: after using it you get a new one. See [Forgotten PIN](#forgotten-pin).
+- **Windows: open a note in its own window.** Right-click a note (or press **Ctrl+Shift+O**, or **⋮ → Open in New Window**) to open it in a separate window, so you can see two notes side by side.
+- **Windows: paste and drop pictures and files.** Press **Ctrl+V** in a note to add a picture you copied (a screenshot, an image from a web page) or files copied in File Explorer. Or drag pictures and files from File Explorer onto a note. Dropped with no note open, they make a new note.
+- **Synced devices:** update OffNote on **all** your devices. Older versions can't enter a 6-digit folder PIN.
+
 ## What's new in 3.7.3
 
 - **Showing deleted notes from locked folders no longer opens the folders.** In 3.7.2, tapping **Show** in the Trash briefly unlocked your locked folders for the whole app, so their notes could appear in All Notes and in the note counts. Now only the Trash shows them; your folders stay locked everywhere else, and they're hidden again when you leave the Trash.
@@ -179,7 +187,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Task Hub**: every task from every note in one list, with progress, filters and quick add.
 - **Smart folders and saved searches**: ready-made lists (Today, Checklists...) and your own saved searches, on the phone and on Windows.
 - **Note links**: type `[[` to link to another note (OffNote suggests them as you type), then tap the link in **Read mode** to open it. Each note lists the notes that link to it, and shows them in a **graph** you can tap, drag and zoom.
-- **App lock** with a 4-digit PIN and fingerprint/face unlock.
+- **App lock** with a 6-digit PIN and fingerprint/face unlock, plus a one-time recovery code if you forget the PIN.
 - **Locked folders**: keep private folders behind their own folder PIN or fingerprint, separate from the app lock.
 - **Private in the app switcher**: Recent apps (and the Windows taskbar preview) never show your notes.
 - **Backup and restore** everything to a single file.
@@ -238,6 +246,8 @@ OffNote for Windows keeps its own notes, separate from your phone (nothing is sy
   - **Ctrl+click** notes (or **Shift+click** for a run of them, **Ctrl+A** for all) to select several, then use the bar at the top. **Delete** moves them to the Trash, **Esc** clears the selection.
   - **Drag** a note (or the selected notes) onto a folder, tag, Pinned, Favorites, Archive or Trash in the left column.
 - **Right:** the note itself, with the **inspector** beside it: the notes that link to it, the notes it links to, and its details. Hide or show it with the button at the top or **Ctrl+Shift+I**.
+- **A note in its own window:** right-click a note → **Open in New Window**, **⋮ → Open in New Window** in the note, or **Ctrl+Shift+O**. It opens in a separate window you can put beside the main one; the main window shows "open in its own window" for it until you close that window (**Ctrl+W** or its **X**). A note window locks like the main one when you minimise it, and closes when you quit OffNote.
+- **Pictures and files:** **Ctrl+V** in a note adds a copied picture or files copied in File Explorer (text pastes as usual). Drag pictures and files from File Explorer onto a note to add them; drop them with no note open to make a new note with them.
 - **Archive** and **Trash** work the same way: click a note to see it (archived notes can be edited, with an **Unarchive** button; notes in the Trash show read-only with **Restore** and **Delete Forever**). **Empty** at the top of the Trash deletes everything in it.
 - Drag the lines between the columns to make them wider or narrower. In a narrow window OffNote looks like the phone app.
 
@@ -250,6 +260,8 @@ OffNote for Windows keeps its own notes, separate from your phone (nothing is sy
 | **Ctrl+S** | Save now (OffNote also saves as you type) |
 | **Ctrl+P** | Command palette: type to find any command, folder, tag or note, then Enter |
 | **Ctrl+Shift+I** | Show or hide the inspector |
+| **Ctrl+Shift+O** | Open the note in its own window |
+| **Ctrl+V** | In a note: paste text, or a copied picture or files |
 | **Ctrl+/** | All keyboard shortcuts |
 | **Ctrl+,** | Settings |
 | **Ctrl+Delete** | Move the open note to Trash (when you're not typing in it) |
@@ -619,18 +631,24 @@ Archiving, unarchiving and moving notes to Trash show an **Undo** button for a f
 ## App Lock (PIN and fingerprint)
 
 1. Go to **Settings → App Lock Master PIN** and turn it on.
-2. Enter a 4-digit PIN twice.
-3. Optionally turn on **Biometric Authentication** to unlock with your fingerprint or face.
-4. Choose **Auto-Lock Timeout**: **Immediately** locks every time you leave the app, or pick 1, 5, 15 or 30 minutes.
+2. Enter a 6-digit PIN twice.
+3. Save the **recovery code** OffNote shows you (Copy, or Share / Save to File), somewhere safe away from this device. Tick **I've saved my recovery code** to continue.
+4. Optionally turn on **Biometric Authentication** to unlock with your fingerprint or face.
+5. Choose **Auto-Lock Timeout**: **Immediately** locks every time you leave the app, or pick 1, 5, 15 or 30 minutes.
 
 Use **Lock App Now** to test it.
 
 To **turn App Lock off**, you'll be asked for your PIN (or your fingerprint / Windows Hello, if turned on). This removes the PIN.
 
+**Change App Lock PIN** and **App Lock Recovery Code** (make a new code; the old one stops working) are in Settings while App Lock is on. A 4-digit PIN from an older version works once more; then OffNote asks for a new 6-digit PIN and shows a recovery code.
+
+### Forgotten PIN
+On the lock screen (or the folder PIN screen), tap **Forgot PIN?**, enter your recovery code (capitals, spaces and dashes don't matter) and choose a new PIN. The code is then used up: OffNote shows you a new one to save. The App Lock and folder PINs have separate codes. Without the code a forgotten PIN can't be reset.
+
 ### Hide in Recent apps
 **Settings → Hide in Recent Apps** (on by default) keeps your notes out of the Recent apps screen: OffNote shows there as a blank card, and the app blurs whenever it isn't in front. Screenshots inside OffNote still work. On Windows, **Hide in Taskbar Previews** makes the preview over the taskbar button show the OffNote icon instead of the window.
 
-> ⚠️ **Don't forget your PIN.** For your privacy there is no way to reset it. If you forget it, the only option is to clear the app's data, which **deletes all your notes**. Keep regular backups (see below).
+> ⚠️ **Keep your recovery code safe.** Without it there is no way to reset a forgotten PIN: the only option would be to clear the app's data, which **deletes all your notes**. Keep regular backups too (see below).
 
 ---
 
@@ -641,10 +659,10 @@ You can lock any folder so its notes stay private, even from someone who can ope
 ### Set your folder PIN
 1. Open the menu (☰) → **Folders**.
 2. Tap the **lock icon** at the top (next to the new-folder icon) to open **Folder Lock**.
-3. Tap **Set Folder PIN** and enter a 4-digit PIN twice.
+3. Tap **Set Folder PIN** and enter a 6-digit PIN twice, then save the recovery code it shows you.
 4. Optionally turn on **Unlock with Biometrics** to open locked folders with your fingerprint or face.
 
-To change it later, open **Folder Lock → Change Folder PIN**, enter your current PIN, then the new PIN twice.
+To change it later, open **Folder Lock → Change Folder PIN**, enter your current PIN, then the new PIN twice. **Folder Lock → Recovery Code** makes a new code (the old one stops working). Forgot the folder PIN? Tap **Forgot PIN?** under the keypad and enter the code.
 
 ### Lock a folder
 On the Folders screen, tap **⋯** on a folder and choose **Lock** (or **Lock Folder** from the menu inside the folder). If you haven't set a folder PIN yet, you'll be asked to create one first. Locked folders show a small lock badge.
@@ -658,7 +676,7 @@ On the Folders screen, tap **⋯** on a folder and choose **Lock** (or **Lock Fo
 - Making or restoring a backup asks for your folder PIN while any folder is locked.
 - After 5 wrong PINs you have to wait 30 seconds before trying again.
 
-> ⚠️ **Don't forget your folder PIN.** It can't be reset. If you turned on biometrics you can still use your fingerprint or face.
+> ⚠️ **Keep your folder recovery code safe.** It's the only way to reset a forgotten folder PIN (if you turned on biometrics you can still use your fingerprint or face). The folder PIN and its code are the same on all your synced devices.
 
 ---
 
