@@ -19,6 +19,11 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.7.0
+
+- **Locked folders stay private everywhere.** A reminder for a note in a locked folder now just says **"Note Reminder – From a locked folder"**, so its title and text don't show on your notifications (on Windows too). Tag counts and **Linked References** no longer count or list notes in locked folders while they're locked, and a locked folder's card says **Locked** instead of how many notes it holds.
+- **Hidden from Recent apps.** When you switch apps, the Recent apps screen shows a blank card for OffNote instead of a picture of your notes, and OffNote blurs while you're away from it (for example when you pull down the notification shade). On Windows, the taskbar preview shows the OffNote icon instead of the window. It's on by default; turn it off in **Settings → Hide in Recent Apps** (on Windows: **Hide in Taskbar Previews**).
+
 ## What's new in 3.6.0
 
 - **Scan documents.** Tap **+ → Scan Document** on the home screen (or **⋮ → Scan Document** in a note) and photograph a page. OffNote finds the page's edges by itself, straightens it, and cleans it up: **Enhanced** makes the paper white and evens out shadows, or choose **Grayscale**, **B&W** or **Original**. Drag the corners if needed (a magnifier shows exactly where they are), turn the page, and add more pages. Everything happens on your phone, with no account and no Google services. On Windows: **New ▾ → Scan from Image**. See [Scan documents](#scan-documents).
@@ -162,6 +167,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Note links**: type `[[` to link to another note (OffNote suggests them as you type), then tap the link in **Read mode** to open it. Each note lists the notes that link to it, and shows them in a **graph** you can tap, drag and zoom.
 - **App lock** with a 4-digit PIN and fingerprint/face unlock.
 - **Locked folders**: keep private folders behind their own folder PIN or fingerprint, separate from the app lock.
+- **Private in the app switcher**: Recent apps (and the Windows taskbar preview) never show your notes.
 - **Backup and restore** everything to a single file.
 - **PDF export**: print-ready PDFs on A4 or US Letter with the margins you choose, sharp photos and drawings, and page numbers and a contents page for long notes. Malayalam, Hindi and other scripts and emoji come out exactly as on your phone.
 - **Import and export** notes as Markdown, text, JSON or HTML (and import from Google Keep). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
@@ -606,6 +612,9 @@ Use **Lock App Now** to test it.
 
 To **turn App Lock off**, you'll be asked for your PIN (or your fingerprint / Windows Hello, if turned on). This removes the PIN.
 
+### Hide in Recent apps
+**Settings → Hide in Recent Apps** (on by default) keeps your notes out of the Recent apps screen: OffNote shows there as a blank card, and the app blurs whenever it isn't in front. Screenshots inside OffNote still work. On Windows, **Hide in Taskbar Previews** makes the preview over the taskbar button show the OffNote icon instead of the window.
+
 > ⚠️ **Don't forget your PIN.** For your privacy there is no way to reset it. If you forget it, the only option is to clear the app's data, which **deletes all your notes**. Keep regular backups (see below).
 
 ---
@@ -628,7 +637,8 @@ On the Folders screen, tap **⋯** on a folder and choose **Lock** (or **Lock Fo
 ### How locked folders behave
 - Opening, editing or removing the lock from a locked folder asks for your folder PIN or fingerprint.
 - A folder **locks again as soon as you leave it**, and every folder locks when you leave the app.
-- While a folder is locked, its notes are hidden from the home screen, search, tags, Archive, Trash and the Reminders list.
+- While a folder is locked, its notes are hidden from the home screen, search, tags (and their counts), Linked References, Archive, Trash and the Reminders list. The folder's card says **Locked** instead of how many notes it holds.
+- Reminders for notes in a locked folder still ring, but the notification only says **Note Reminder – From a locked folder**. Tap it and unlock the folder to see the note.
 - **Deleting** a locked folder always asks for your folder PIN. Its notes are kept and moved out of the folder, where they are no longer locked.
 - Making or restoring a backup asks for your folder PIN while any folder is locked.
 - After 5 wrong PINs you have to wait 30 seconds before trying again.
