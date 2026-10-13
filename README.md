@@ -19,6 +19,16 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.6.0
+
+- **Scan documents.** Tap **+ → Scan Document** on the home screen (or **⋮ → Scan Document** in a note) and photograph a page. OffNote finds the page's edges by itself, straightens it, and cleans it up: **Enhanced** makes the paper white and evens out shadows, or choose **Grayscale**, **B&W** or **Original**. Drag the corners if needed (a magnifier shows exactly where they are), turn the page, and add more pages. Everything happens on your phone, with no account and no Google services. On Windows: **New ▾ → Scan from Image**. See [Scan documents](#scan-documents).
+- **Shapes that snap.** On the drawing board, draw a line, rectangle, circle, ellipse, triangle or arrow and **keep your finger still at the end** for a moment: it turns into a perfect one. Keep your finger down and move it to resize or turn the shape before you let go.
+- **Select and move drawings.** The new **Select** tool on the drawing board: draw a loop around strokes to select them, then drag to move them, drag the round handle to resize, tap a colour to recolour, or **Duplicate** / **Delete** them.
+- **Drawings stay editable.** Saved drawings now open again as strokes, so you can erase, move or undo parts of them later. Lines are smoother, long drawings stay fluid, a stylus draws thinner or thicker with pressure, and the eraser removes any part of a line. Drawings made with earlier versions open as before, with your new strokes on top.
+- **Bookmarks in voice notes.** Tap the **bookmark** button while recording (or while playing) to mark an important moment. Bookmarks show as flags on the waveform and as chips under it: tap one to play from there, long-press to name or delete it.
+- **Action items.** OffNote spots things to do in your notes and in what was said in voice notes ("I need to call the bank", "Remember to book the hall", "Can you send the slides?"). Tap **⋮ → Find Action Items** in a note, or the **"3 action items"** chip under a recording, tick the ones you want, and they're added to an **Action items** task list. It works on your device; nothing is sent anywhere.
+- **Photos open to view.** Tapping a photo or scanned page in a note now shows it full screen; tap **Mark up** on it to draw on it.
+
 ## What's new in 3.5.0
 
 - **Tables.** Tap the **table** button in the formatting toolbar (or **⋮ → Add Table**) to put a table where your cursor is. Type in the cells, add rows and columns, and line columns up left, centre or right. Tables are saved as ordinary Markdown tables, so they show up in other Markdown apps too. See [Tables](#tables).
@@ -134,8 +144,10 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Select several notes at once**: long-press a note, tap others, then pin, favourite, archive, move, tag, colour, duplicate, export or delete them all together.
 - **Checklists**: add as many named task lists as you like to a note (for example "Groceries" and "Packing") and tick off tasks right inside it. Each list shows how many tasks are done, and the note's card shows the overall percentage. Press Enter to add the next task; long tasks wrap onto more lines.
 - **Templates**: start a note from a ready-made layout (Daily Journal & Gratitude, Meeting Minutes, Project Plan / Sprint Log, Cornell Study Notes, Weekly Review & Habit Tracker), or save any note as your own template.
-- **Drawings**: sketch with your finger and save the drawing in the note. The drawing board never ends: move around it in any direction and pinch to zoom in for fine detail, like in Figma.
-- **Voice notes**: record with pause and resume, play back with a waveform you can scrub through, and get the English speech written out with times you can tap to jump to, all on your phone.
+- **Drawings**: sketch with your finger or a stylus and save the drawing in the note. The drawing board never ends: move around it in any direction and pinch to zoom in for fine detail, like in Figma. Hold still at the end of a line to snap it into a perfect shape, select strokes to move or recolour them, and open saved drawings again to keep editing.
+- **Voice notes**: record with pause and resume, bookmark important moments, play back with a waveform you can scrub through, and get the English speech written out with times you can tap to jump to, all on your phone.
+- **Document scanner**: photograph pages and get clean, straight scans: edges found for you, shadows evened out, black-and-white or colour, several pages at once. All on your device.
+- **Action items**: OffNote finds the things to do in your notes and voice recordings and adds the ones you pick to a task list.
 - **Photos and files**: take a photo, pick from your gallery, or attach documents (PDF, Word, Excel and more).
 - **Reminders**: one-time or repeating (daily, weekly, monthly), with Snooze and Done buttons on the notification.
 - **Folders, tags and colours** to keep things organised. Long folder names, note titles and tags scroll by themselves so you can read them in full.
@@ -238,6 +250,16 @@ While writing in a note:
 | **Ctrl+F** | Find in the note (**Enter** / **F3**: next match, **Shift+Enter** / **Shift+F3**: previous, **Esc**: close) |
 | **Home** / **End** | Start / end of the line (**Shift**: select to it; **Ctrl**: start / end of the text) |
 
+On the drawing board:
+
+| Keys | What it does |
+|---|---|
+| **P** / **M** / **E** / **S** | Pen / marker / eraser / select |
+| **Ctrl+Z** / **Ctrl+Y** | Undo / redo |
+| **Delete** | Delete the selected strokes (**Esc**: unselect) |
+| **Ctrl+S** | Save the drawing |
+| Hold the mouse button still | Snap the line you're drawing into a shape |
+
 If App Lock is on, type your PIN on the keyboard (or click it); Backspace deletes a digit.
 
 ### Smart folders
@@ -256,6 +278,9 @@ Ready-made lists that fill themselves: **Today**, **This Week**, **Checklists**,
 - **Private:** your recordings and what you dictate are turned into text on your PC and never leave it. The model download (from huggingface.co) is the only thing OffNote fetches for this, and only when you ask for it.
 - If Windows asks whether OffNote may use the microphone, allow it (or turn it on in **Windows Settings → Privacy & security → Microphone**).
 
+### Scanning on Windows
+A PC has no camera for this, so scan from pictures instead: **New ▾ → Scan from Image** (or **⋮ → Scan from Image** in a note), and choose photos of pages, for example ones you took with your phone. Everything else works as on the phone: edges found for you, corners you can drag, filters, several pages.
+
 ### Updates
 OffNote for Windows checks this page for a new version when it starts (or **Settings → Check for Updates**). Click **Update**: it downloads the new version, closes, updates itself and opens again. Your notes are kept.
 
@@ -266,7 +291,7 @@ Your notes, attachments and backups are in `%APPDATA%\OffNote\OffNote` on your P
 Open **Sync Devices** in the sidebar (or **Settings → Sync Devices**), click **Pair a new device → Show a QR code**, and scan it with the phone. See [Sync between your devices](#sync-between-your-devices). The PC connects to your phone by itself, so Windows doesn't need to let anything in; closing the window keeps OffNote (and the connection) running in the tray.
 
 ### Not on Windows yet
-PDF export (export as HTML and print that to PDF from your browser instead), taking photos with a camera, and home-screen widgets. Unlocking locked folders with Windows Hello (folders open with their folder PIN on Windows; the app itself can unlock with Windows Hello).
+PDF export (export as HTML and print that to PDF from your browser instead), taking photos or scanning with a camera (scan from pictures instead), and home-screen widgets. Unlocking locked folders with Windows Hello (folders open with their folder PIN on Windows; the app itself can unlock with Windows Hello).
 
 ---
 
@@ -346,16 +371,30 @@ Tap the **book icon** at the top of a note to read it: the keyboard stays away, 
 Read mode is only for reading: the text, title, tags, task lists and attachments can't be changed (tasks can't be ticked either). Voice notes still play, attachments and drawings still open to look at, and links still work. Pin, favourite, colour and reminders stay available at the top.
 
 ### Add photos, files and drawings
-In a note, tap **⋮** (top right) and choose **Take Photo**, **Pick Image from Gallery**, **Attach Document** or **Add Hand Drawing**. Tap an attachment to open it.
+In a note, tap **⋮** (top right) and choose **Scan Document**, **Take Photo**, **Pick Image from Gallery**, **Attach Document** or **Add Hand Drawing**. Tap an attachment to open it: photos and scanned pages open full screen, drawings open on the drawing board.
+- **Draw on a photo:** tap **Mark up** on a photo or scanned page; it opens on the drawing board with your strokes on top. After saving it's a drawing in the note.
 - **Several at once:** in **Pick Image from Gallery** and **Attach Document** you can choose as many photos or files as you like in one go.
 - **Select several in a note:** long-press a photo, drawing or file, then tap others to add them (tap again to leave one out). The bar at the bottom shows how many are selected, with **Select All**, **Share** (sends them together) and **Delete** (asks first). Tap **✕** or Back to stop selecting.
+
+### Scan documents
+Tap **+ → Scan Document** on the home screen (a new note is made for the scan), or **⋮ → Scan Document** in a note. Take a photo of the page; no Google services or internet are needed, everything happens on your phone.
+- **Edges:** OffNote finds the page by itself and shows its outline with four round corners. If it's not quite right, drag a corner: a magnifier shows exactly where it is. The **frame** button switches between the found edges and the whole photo. If no page was found, drag the corners to it yourself.
+- **Result:** tap **Result** to see the straightened page. Choose a look: **Enhanced** (white paper, shadows and yellow light evened out, ink kept in its colour), **Grayscale**, **B&W** (crisp black and white, good for text) or **Original**. With more than one page, **Apply to all** gives every page the same look.
+- **More pages:** tap **+** at the bottom to take another photo or choose pictures from the gallery. Tap a page to work on it, long-press and drag to reorder, **turn** it with the rotate button, or delete it.
+- **Save:** tap **Save**. Each page is added to the note as a picture ("Scanned page"); tap it to view it full screen. To make a PDF of the pages, use **⋮ → Export as PDF**.
+- **Tip:** lay the page on a darker surface and fill most of the photo with it; good light helps.
 
 ### Voice notes
 **Record:** in a note, tap the **microphone** in the formatting bar (or **⋮ → Record Voice Note**). The first time, allow OffNote to use the microphone. While recording you see the time and the sound as moving bars.
 - Tap **Pause** to take a break and the **microphone** button to carry on; the pause isn't recorded. Recording also pauses if you leave the app.
+- Tap the **bookmark** button to mark an important moment (a little number shows how many you've made).
 - Tap **✓** to save the recording in the note, or the **bin** to throw it away.
 
 **Play:** the recording appears in the note as a player. Tap **▶** to play, tap or drag along the waveform to jump to any moment, use the **10-second** buttons to go back or forward, and tap **1×** to play at 1.5× or 2× speed.
+
+**Bookmarks:** bookmarks show as small flags on the waveform and as chips under it ("0:42 Budget"). Tap a chip to play from there. To add one while listening, tap the **bookmark** button next to the 10-second buttons (or **⋮ → Add Bookmark**). Long-press a chip to give it a name or delete it. Bookmarks are in backups, sync to your other devices and appear in exports.
+
+**Action items:** when a recording has been turned into text, OffNote looks for things to do in it ("I need to…", "Let's…", "Can you…", "Remember to…") and shows a chip like **"2 action items"** under the text. Tap it (or **⋮ → Find Action Items** on the player) to see them: each shows the moment it was said (tap to hear it) and any deadline it mentions. Tick the ones you want, change the wording if you like, and tap **Add**: they go into an **Action items** task list in the note. **⋮ → Find Action Items** at the top of a note looks through its text too. Tasks the note already has aren't suggested again.
 
 **Text from speech:** recordings aren't turned into text unless you ask. Tap **⋮** on the player and choose **Transcribe**; it starts straight away, on your phone:
 - The text appears under the player, line by line, with the time each line starts. **Tap a line** to play the recording from there; the line being played is highlighted.
@@ -384,6 +423,15 @@ The drawing board is endless in every direction, with faint dots so you can see 
 - If a second finger touches down while you're drawing a line, that line is cancelled and the board zooms instead, so you won't get stray marks.
 - With a mouse: scroll to move, **Ctrl + scroll** to zoom, and drag with the right or middle button to move.
 - Drawings are saved in high resolution, so they stay sharp when you zoom in on them later.
+
+**Snap to a shape:** draw a line, rectangle (or square), circle (or ellipse), triangle or arrow and **hold your finger still at the end** for half a second. It becomes a perfect shape (a nearly level line becomes level, a nearly round circle becomes round). Keep your finger down and move it to make the shape bigger or smaller, or to turn it; let go when it's right. Undo takes it away. Scribbles stay as you drew them.
+
+**Select, move and change strokes:** tap **Select**, then draw a loop around what you want. A dashed box shows what's selected:
+- drag inside the box to move it, or the round handle at its corner to resize it;
+- tap a colour to recolour it, or tap **Duplicate** or the **bin** at the bottom;
+- tap outside to unselect.
+
+**Edit later:** saved drawings open again as strokes, so you can erase, select or undo any part of them. (Drawings made before 3.6 open as a picture you can draw on.) The eraser removes just the part of a line it touches. With a stylus, lines get thinner or thicker with how hard you press.
 
 ### Organise your notes
 - **Pin:** tap the pin icon in a note to keep it at the top of your list.
