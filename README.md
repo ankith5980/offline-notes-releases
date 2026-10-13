@@ -19,6 +19,10 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.7.2
+
+- **Notes deleted from a locked folder are in the Trash.** They used to seem gone for good: the Trash hid them because their folder was locked. They're still hidden at first (so the Trash doesn't give away what's in your locked folders), but the Trash now has a **Show** button: enter your folder PIN to see them, then restore them or delete them for good. They're hidden again when you leave the Trash. Notes deleted earlier are still there too, unless the Trash's auto-purge time has passed.
+
 ## What's new in 3.7.1
 
 - **Closing OffNote really starts it fresh.** While OffNote stays connected to your other devices (Sync), closing it with Back or swiping it away from Recent apps used to bring you back to the same page next time, and it didn't look for updates again. Now it opens on the home screen like a fresh start and checks for updates; your devices stay connected. To stop OffNote completely, press **Disconnect** first.
@@ -602,6 +606,7 @@ To see or change all your reminders, open the menu (☰) → **Reminders**. Swip
 - **Delete forever** removes it right away; **Empty Trash** removes everything.
 - Long-press a note in Trash to select several, then tap **Restore** or **Delete Forever**.
 - Change how long notes stay in Trash in **Settings → Trash Auto-Purge** (7, 14, 30 or 60 days).
+- Notes deleted from a **locked folder** are hidden in Trash until you tap **Show** and enter your folder PIN. **Empty Trash** leaves hidden notes alone.
 
 Archiving, unarchiving and moving notes to Trash show an **Undo** button for a few seconds, in case you change your mind. Deleted notes can always be restored from Trash until they are purged.
 
@@ -643,7 +648,7 @@ On the Folders screen, tap **⋯** on a folder and choose **Lock** (or **Lock Fo
 ### How locked folders behave
 - Opening, editing or removing the lock from a locked folder asks for your folder PIN or fingerprint.
 - A folder **locks again as soon as you leave it**, and every folder locks when you leave the app.
-- While a folder is locked, its notes are hidden from the home screen, search, tags (and their counts), Linked References, Archive, Trash and the Reminders list. The folder's card says **Locked** instead of how many notes it holds.
+- While a folder is locked, its notes are hidden from the home screen, search, tags (and their counts), Linked References, Archive, Trash and the Reminders list. To find a note you deleted from a locked folder, open **Trash → Show** and enter your folder PIN. The folder's card says **Locked** instead of how many notes it holds.
 - Reminders for notes in a locked folder still ring, but the notification only says **Note Reminder – From a locked folder**. Tap it and unlock the folder to see the note.
 - **Deleting** a locked folder always asks for your folder PIN. Its notes are kept and moved out of the folder, where they are no longer locked.
 - Making or restoring a backup asks for your folder PIN while any folder is locked.
