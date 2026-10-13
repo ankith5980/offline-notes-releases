@@ -19,6 +19,12 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.7.1
+
+- **Closing OffNote really starts it fresh.** While OffNote stays connected to your other devices (Sync), closing it with Back or swiping it away from Recent apps used to bring you back to the same page next time, and it didn't look for updates again. Now it opens on the home screen like a fresh start and checks for updates; your devices stay connected. To stop OffNote completely, press **Disconnect** first.
+- **Updates are found sooner.** OffNote also checks quietly when you come back to it after a few hours (on Windows too, where it keeps running in the tray).
+- *Getting this update on a phone that syncs:* OffNote 3.7.0 may not notice it by itself. Open **Settings → Check for Updates** and tap **Update now**.
+
 ## What's new in 3.7.0
 
 - **Locked folders stay private everywhere.** A reminder for a note in a locked folder now just says **"Note Reminder – From a locked folder"**, so its title and text don't show on your notifications (on Windows too). Tag counts and **Linked References** no longer count or list notes in locked folders while they're locked, and a locked folder's card says **Locked** instead of how many notes it holds.
