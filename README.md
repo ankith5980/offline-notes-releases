@@ -19,6 +19,10 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.7.3
+
+- **Showing deleted notes from locked folders no longer opens the folders.** In 3.7.2, tapping **Show** in the Trash briefly unlocked your locked folders for the whole app, so their notes could appear in All Notes and in the note counts. Now only the Trash shows them; your folders stay locked everywhere else, and they're hidden again when you leave the Trash.
+
 ## What's new in 3.7.2
 
 - **Notes deleted from a locked folder are in the Trash.** They used to seem gone for good: the Trash hid them because their folder was locked. They're still hidden at first (so the Trash doesn't give away what's in your locked folders), but the Trash now has a **Show** button: enter your folder PIN to see them, then restore them or delete them for good. They're hidden again when you leave the Trash. Notes deleted earlier are still there too, unless the Trash's auto-purge time has passed.
