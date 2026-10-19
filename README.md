@@ -19,6 +19,14 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.10.0
+
+- **Search the words in your pictures.** OffNote now reads the text in your photos, whiteboard shots and scanned pages, so searching for "invoice" or "warranty" finds the note with that picture in it. The result shows the picture with the words **boxed**; tap it to see them full size and jump from one to the next. Pictures are read in the background on your phone or PC, without internet. Pictures you already have are read once after the update (this can take a few minutes if you have many). See [Text in pictures](#text-in-pictures).
+- **Copy the text out of a picture.** Open a photo or scanned page and tap the **Text** button: the text it holds appears under the picture (beside it on Windows). Copy it, or add it to the note's text.
+- **Find in a note looks inside pictures too:** the words it finds are boxed on the pictures.
+- **Hindi in search:** searching for Hindi (Devanagari) words now works everywhere, also in the text of your notes.
+- Reading pictures works for English and other languages written in Latin letters, and Hindi on the phone. Handwriting is read poorly; printed and typed text works best. Malayalam isn't read yet.
+
 ## What's new in 3.9.0
 
 - **Time capsules.** Seal a note until a day you choose ("Do not open until 1 January 2027"): open the note, tap **⋮ → Seal as Time Capsule…** and pick a date. Until then its text, task lists, pictures, files and voice notes are locked away (encrypted), and nobody can open it early, not even you. When the day comes, open it with **Open Time Capsule**. See [Time capsules](#time-capsules).
@@ -187,7 +195,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Pin and favourite** your most important notes.
 - **Archive** notes you want to keep but don't need to see every day.
 - **Trash** with automatic clean-up after the number of days you choose.
-- **Fast search** across titles, text, checklists, tags, folders and the words spoken in voice notes, and **Find in a note** to highlight a word inside the note you're reading.
+- **Fast search** across titles, text, checklists, tags, folders, the words spoken in voice notes and the **text in your photos and scans** (shown boxed on the picture), and **Find in a note** to highlight a word inside the note you're reading.
 - **Version history**: see earlier versions of a note, compare them with the note now, and bring one back (text and task lists).
 - **Tables, callouts and toggles**: real tables you can type into, coloured callout boxes, and headings and toggles that fold away.
 - **Task Hub**: every task from every note in one list, with progress, filters and quick add.
@@ -207,7 +215,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 
 ## Requirements
 
-- **Phone:** an Android phone or tablet running **Android 7.0 or newer**, with about 70 MB of free space
+- **Phone:** an Android phone or tablet running **Android 7.0 or newer**, with about 250 MB of free space to install or update (the app itself takes about 120 MB, plus your notes)
 - **PC:** Windows 10 or 11 (64-bit), with about 100 MB of free space (plus 57 or 181 MB for the speech model, if you use voice-to-text)
 
 ---
@@ -318,6 +326,9 @@ Ready-made lists that fill themselves: **Today**, **This Week**, **Checklists**,
 
 ### Scanning on Windows
 A PC has no camera for this, so scan from pictures instead: **New ▾ → Scan from Image** (or **⋮ → Scan from Image** in a note), and choose photos of pages, for example ones you took with your phone. Everything else works as on the phone: edges found for you, corners you can drag, filters, several pages.
+
+### Text in pictures on Windows
+Windows reads the pictures itself (its own text recognition, no download), in the languages your Windows has text recognition for: usually English. To read another language, add it in **Windows Settings → Time & language → Language & region** (with "Optical character recognition"), then pick it in **Settings → Text in Pictures**. Hindi pictures can't be read on Windows. Each device reads its own pictures, so a picture synced from your phone is read again on the PC.
 
 ### Updates
 OffNote for Windows checks this page for a new version when it starts (or **Settings → Check for Updates**). Click **Update**: it downloads the new version, closes, updates itself and opens again. Your notes are kept.
@@ -547,7 +558,7 @@ OffNote keeps earlier versions of each note, so you can go back if you change or
 - Versions are included in backups.
 
 ### Search
-Tap the search bar at the top of the home screen. Search looks through titles, text, task lists, tags, folders and the text of voice notes. You can narrow results to favourites, pinned notes, checklists, notes with attachments, or a specific folder.
+Tap the search bar at the top of the home screen. Search looks through titles, text, task lists, tags, folders, the text of voice notes and the [text in your pictures](#text-in-pictures). You can narrow results to favourites, pinned notes, checklists, notes with attachments, or a specific folder.
 - **Save a search:** tap the **bookmark** at the top of Search to keep what you searched for (the words and the filters) as a smart folder. It appears in the menu under **Smart Folders**, next to the ready-made ones (Today, This Week, Checklists, With Reminders, With Attachments, Code Notes, Untagged). Open it to see the notes it finds now; **⋮** renames or removes it.
 
 ### Find in a note
@@ -555,8 +566,17 @@ To find a word inside the note you have open, tap **⋮ → Find in Note** (on W
 - Type what you're looking for. Every match is highlighted, and the one you're on is outlined in orange, with **"2 of 5"** beside the box.
 - Tap **↓** (or press **Enter**) for the next match and **↑** for the previous one; the note scrolls to each. After the last match it starts again from the top.
 - **Aa** finds only matches with the same upper and lower case.
-- It looks through the title, the text, task list names and tasks, and code. It works in Read mode too, and the matches update as you type in the note.
+- It looks through the title, the text, task list names and tasks, code, and the text read from the note's photos and scans (boxed on the picture). It works in Read mode too, and the matches update as you type in the note.
 - Close it with **✕**, the **Back** button or **Esc**. With a keyboard, select a word in the note and press **Ctrl+F** to find that word straight away.
+
+### Text in pictures
+OffNote reads the text in your photos, whiteboard shots, scanned pages and pasted pictures, so you can search for it. It happens by itself in the background, on your phone or PC, without internet: new pictures are read a moment after you add them, and the pictures you already had are read once after updating. On the phone it only reads while OffNote is open.
+- **Search:** results found in a picture show that picture with the words **boxed** and "In picture: …" with the words around them. Tap the picture to see it full screen: the arrows at the top go from one match to the next and zoom in on it.
+- **The text of a picture:** open a photo or scanned page and tap the **Text** button at the top. The text appears under the picture (beside it on Windows) and every line is outlined. **Copy** it, or tap **Add to Note** to put it at the end of the note's text. If the picture hasn't been read yet, tap **Read Now**. A photo or scan whose text has been read also has a **Text** button on its card in the note.
+- **Find in a note** finds words in the note's pictures too.
+- **Settings → Text in Pictures:** see how many pictures have been read, turn reading off, read Hindi too (phone; each picture takes a little longer), pick the language (Windows), read all pictures again, or remove the text read from them.
+- Drawings aren't read. Handwriting is read poorly; printed and typed text works best. The phone reads English and other languages in Latin letters, and Hindi; Malayalam isn't read yet.
+- **Private:** the text never leaves your device. It isn't synced either: each of your devices reads its own copy of the pictures. It's in your backups, and it's sealed away with a [time capsule](#time-capsules) until it opens.
 
 ---
 
@@ -588,7 +608,7 @@ If App Lock is on, pairing asks for your PIN first, so nobody can add their own 
 ### What syncs
 Notes (text, task lists and ticks, tables, toggles, which headings are folded, photos, drawings, files, voice notes and their transcripts), folders (and which are locked), tags, colours, pins, favourites, archive and Trash, reminders, your own templates, your **saved searches** (smart folders), and the **Folder PIN** (so locked folders open with the same PIN everywhere).
 
-Each device keeps its own: theme and layout, App Lock PIN and fingerprint settings, version history, window sizes and recent searches. The Trash empties itself on each device by its own setting; **Delete Forever** and **Empty Trash** do apply everywhere.
+Each device keeps its own: theme and layout, App Lock PIN and fingerprint settings, version history, window sizes, recent searches, and the text read from pictures (each device reads the pictures itself). The Trash empties itself on each device by its own setting; **Delete Forever** and **Empty Trash** do apply everywhere.
 
 **Reminders** ring on every device that has them. To get them only on your phone, turn off **Reminders on this device** on the computer's Sync Devices screen.
 
@@ -796,6 +816,7 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 | **Backup & Restore** | Save or restore all your data |
 | **Import Notes** | Bring in notes from files or Google Keep |
 | **Voice Notes** | The offline English speech pack, whether new recordings are turned into text, and the English accent |
+| **Text in Pictures** | Whether the text in photos and scans is read so you can search it, Hindi too (phone) or the language (Windows), read everything again or remove it |
 | **Trash Auto-Purge** | How long deleted notes are kept |
 | **Check for Updates** | Get the newest version |
 
@@ -807,6 +828,7 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 - **Sync stays on your own network.** If you pair your devices, notes go directly from one of your devices to another over your local Wi-Fi, encrypted end to end, and only to devices you paired. Nothing goes through the internet.
 - The only internet use is checking this page for app updates and downloading them. You can use the app fully offline.
 - **Voice notes are turned into text on your phone.** Recordings and their text never go to any server (only to your own paired devices, if you sync). The speech recognition is your phone's own (Google's on-device speech service); the one-time English speech pack is downloaded by your phone, not by OffNote.
+- **The text in your pictures is read on your device**, by text recognition built into OffNote on the phone and by Windows itself on a PC. Pictures and their text never go to any server.
 - Notes are only shared when **you** choose to export, share or back them up.
 
 ---
