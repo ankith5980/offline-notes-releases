@@ -19,6 +19,12 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.9.0
+
+- **Time capsules.** Seal a note until a day you choose ("Do not open until 1 January 2027"): open the note, tap **⋮ → Seal as Time Capsule…** and pick a date. Until then its text, task lists, pictures, files and voice notes are locked away (encrypted), and nobody can open it early, not even you. When the day comes, open it with **Open Time Capsule**. See [Time capsules](#time-capsules).
+- **Duress PIN.** A second App Lock PIN for when someone makes you unlock OffNote. Typed on the lock screen, it opens a separate **decoy notebook** of everyday notes (groceries, books, errands) instead of your real notes. Your real notes, locked folders and time capsules are not in it. See [Duress PIN](#duress-pin-decoy-notebook).
+- **Synced devices:** update OffNote on **all** your devices. Devices still on 3.8 stop syncing with ones on 3.9 until they're updated too.
+
 ## What's new in 3.8.0
 
 - **6-digit PINs.** App Lock and folder PINs now have 6 digits, which are far harder to guess. If yours has 4 digits, it works one more time: after you unlock, OffNote asks you to choose a new 6-digit PIN.
@@ -594,6 +600,24 @@ Yes. Devices find each other on your Wi-Fi without showing their names to other 
 
 ---
 
+## Time capsules
+
+A time capsule is a note sealed until a day you choose: a letter to your future self, a prediction, a surprise.
+
+1. Open the note and tap **⋮ → Seal as Time Capsule…**
+2. Pick when it opens: in 1 month, 6 months, 1 year, on New Year's Day, or **Pick a date…** (and a time).
+3. Leave **Remind me when it opens** on to get a reminder that day.
+4. Tap **Seal** and confirm.
+
+Until then the note shows only its **title, colour, folder and tags**, and when it opens ("Opens on 1 Jan 2027 · in 75 days"). Its text, task lists, pictures, files, drawings and voice notes are encrypted, and its version history is deleted. **It can't be opened early.** You can still move it to another folder, change its tags, archive it or delete it.
+
+When the day comes, open the note and tap **Open Time Capsule**: everything comes back and it's an ordinary note again.
+
+**Good to know:**
+- OffNote goes by your device's clock, and notices if the date is moved forward in Settings: the capsule stays sealed. (Restarting the device after changing the date gets around this; time capsules are meant to stop peeking, not to stand up to someone determined.)
+- Time capsules sync to your other devices sealed, and open there too on the day.
+- A **backup** contains what's needed to open your capsules on the day after you restore it, so keep backups somewhere private. A backup made *before* you sealed a note still has its text.
+
 ## Reminders
 
 1. Open a note and tap the **alarm** icon.
@@ -651,6 +675,21 @@ On the lock screen (or the folder PIN screen), tap **Forgot PIN?**, enter your r
 > ⚠️ **Keep your recovery code safe.** Without it there is no way to reset a forgotten PIN: the only option would be to clear the app's data, which **deletes all your notes**. Keep regular backups too (see below).
 
 ---
+
+## Duress PIN (decoy notebook)
+
+If someone ever makes you unlock OffNote, you can type a **duress PIN** instead of your real PIN. OffNote then opens normally, but on a separate **decoy notebook**: a small set of everyday notes (groceries, books to read, a recipe, errands). Your real notes, folders, locked folders, tags and time capsules are not in it at all, and nothing in the decoy points to them.
+
+**Set it up:** turn on App Lock first, then go to **Settings → Duress PIN**. Confirm your App Lock PIN and choose a different 6-digit duress PIN. OffNote makes the decoy notebook at once.
+
+**Make the decoy believable:** **Settings → Duress PIN → Open the Decoy Notebook** shows it. Change, add or delete notes there as you like: it's a real notebook, only separate. To go back, lock OffNote (**Settings → Lock App Now**) and type your **real** PIN.
+
+**Good to know:**
+- On the lock screen, your real PIN always opens your real notes and the duress PIN always opens the decoy. Nothing on screen shows which one was typed.
+- **Fingerprint and face unlock are turned off** while a duress PIN is set, because someone could force your finger. Unlocking always needs a PIN.
+- While the decoy is open (and after OffNote restarts, until you type your real PIN again), your **real reminders still ring but show only "Note Reminder"**, home screen widgets show **Locked**, and sync with your other devices is paused.
+- Settings in the decoy looks like the real one; changing the PIN there changes only the duress PIN, and turning App Lock off there only turns it off for the decoy.
+- **Settings → Duress PIN → Remove Duress PIN** deletes the decoy notebook. Turning App Lock off also removes the duress PIN.
 
 ## Locked Folders
 
