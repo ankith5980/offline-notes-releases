@@ -19,6 +19,15 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.11.0
+
+- **Import PDFs.** Turn a PDF into a note with its text: headings, paragraphs, lists, bold and italic come across, words split at line ends are put back together, and page numbers and repeated page headers are left out. Pages that are only pictures (scans) are read with text recognition. The PDF itself can stay attached to the note. Tap **+ → Import PDF** on the home screen, use **Settings → Import Notes**, or on Windows drop PDFs onto the window or use **Import PDF** in the command palette. See [Import a PDF](#import-a-pdf).
+- **Text colours, like Notion.** Colour words or whole lines in nine colours, or give them a coloured background: select the text and tap the **A** button in the formatting bar. Colours suit both light and dark themes and come out in HTML and PDF exports. See [Colours](#colours).
+- **Better copy and paste.** Copying from a note now gives other apps clean text without `**` and `#` symbols, and apps that take formatting (mail, documents) get it formatted. Pasting from web pages, Google Docs, Word and other apps keeps headings, bold, italic, links, lists, tables and colours. Paste a web address over selected words to turn them into a link. New in the text menu: **Copy as Markdown** and **Paste as Plain Text** (Ctrl+Shift+V on Windows).
+- **Sharper text from pictures.** Small pictures are enlarged before they're read, pictures taken sideways or upside down are read the right way round, specks are no longer read as letters, and text copied or added from a picture comes out in proper paragraphs instead of one line per printed line.
+- **Smoother motion.** Dialogs and sheets open and close with the same soft movement everywhere, and lists, recordings and version history slide in more smoothly.
+- On Windows, copying from Word or Excel and pasting into a note now pastes the text, not a picture of it.
+
 ## What's new in 3.10.0
 
 - **Search the words in your pictures.** OffNote now reads the text in your photos, whiteboard shots and scanned pages, so searching for "invoice" or "warranty" finds the note with that picture in it. The result shows the picture with the words **boxed**; tap it to see them full size and jump from one to the next. Pictures are read in the background on your phone or PC, without internet. Pictures you already have are read once after the update (this can take a few minutes if you have many). See [Text in pictures](#text-in-pictures).
@@ -181,7 +190,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 
 ## Features
 
-- **Notes with formatting**: headings, bold, italic, strikethrough, highlights, lists, quotes and code, shown right in the note as you write.
+- **Notes with formatting**: headings, bold, italic, strikethrough, highlights, **text colours**, lists, quotes and code, shown right in the note as you write. Copy and paste keep the formatting.
 - **Select several notes at once**: long-press a note, tap others, then pin, favourite, archive, move, tag, colour, duplicate, export or delete them all together.
 - **Checklists**: add as many named task lists as you like to a note (for example "Groceries" and "Packing") and tick off tasks right inside it. Each list shows how many tasks are done, and the note's card shows the overall percentage. Press Enter to add the next task; long tasks wrap onto more lines.
 - **Templates**: start a note from a ready-made layout (Daily Journal & Gratitude, Meeting Minutes, Project Plan / Sprint Log, Cornell Study Notes, Weekly Review & Habit Tracker), or save any note as your own template.
@@ -206,7 +215,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Private in the app switcher**: Recent apps (and the Windows taskbar preview) never show your notes.
 - **Backup and restore** everything to a single file.
 - **PDF export**: print-ready PDFs on A4 or US Letter with the margins you choose, sharp photos and drawings, and page numbers and a contents page for long notes. Malayalam, Hindi and other scripts and emoji come out exactly as on your phone.
-- **Import and export** notes as Markdown, text, JSON or HTML (and import from Google Keep). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
+- **Import and export** notes as Markdown, text, JSON or HTML (and import **PDFs** and Google Keep notes). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
 - **Light and dark themes** with a one-tap switch on the home screen, and card, list or compact layouts.
 - **Automatic saving**: there's no save button; your notes save as you type.
 - **In-app updates**: get new versions without the Play Store.
@@ -261,7 +270,7 @@ OffNote for Windows keeps its own notes, separate from your phone (nothing is sy
   - **Drag** a note (or the selected notes) onto a folder, tag, Pinned, Favorites, Archive or Trash in the left column.
 - **Right:** the note itself, with the **inspector** beside it: the notes that link to it, the notes it links to, and its details. Hide or show it with the button at the top or **Ctrl+Shift+I**.
 - **A note in its own window:** right-click a note → **Open in New Window**, **⋮ → Open in New Window** in the note, or **Ctrl+Shift+O**. It opens in a separate window you can put beside the main one; the main window shows "open in its own window" for it until you close that window (**Ctrl+W** or its **X**). A note window locks like the main one when you minimise it, and closes when you quit OffNote.
-- **Pictures and files:** **Ctrl+V** in a note adds a copied picture or files copied in File Explorer (text pastes as usual). Drag pictures and files from File Explorer onto a note to add them; drop them with no note open to make a new note with them.
+- **Pictures and files:** **Ctrl+V** in a note adds a copied picture or files copied in File Explorer (text pastes as usual). Drag pictures and files from File Explorer onto a note to add them; drop them with no note open to make a new note with them (PDFs dropped there are imported as notes with their text).
 - **Archive** and **Trash** work the same way: click a note to see it (archived notes can be edited, with an **Unarchive** button; notes in the Trash show read-only with **Restore** and **Delete Forever**). **Empty** at the top of the Trash deletes everything in it.
 - Drag the lines between the columns to make them wider or narrower. In a narrow window OffNote looks like the phone app.
 
@@ -276,6 +285,7 @@ OffNote for Windows keeps its own notes, separate from your phone (nothing is sy
 | **Ctrl+Shift+I** | Show or hide the inspector |
 | **Ctrl+Shift+O** | Open the note in its own window |
 | **Ctrl+V** | In a note: paste text, or a copied picture or files |
+| **Ctrl+Shift+V** | In a note: paste text without its formatting |
 | **Ctrl+/** | All keyboard shortcuts |
 | **Ctrl+,** | Settings |
 | **Ctrl+Delete** | Move the open note to Trash (when you're not typing in it) |
@@ -379,7 +389,16 @@ Use the formatting toolbar at the bottom of the note to add headings (**H1**, **
 - The buttons light up to show the formatting where your cursor is.
 - On the line you're editing, small faded symbols (like `#` or `**`) appear so you can change the formatting by hand; they disappear when you move to another line. While your cursor is inside a code block, its ``` marks show in colour at the top and bottom of the box, and the ` marks around inline code show while you edit that line.
 - Made a mistake? Tap **Undo** (↶) at the left of the toolbar, and **Redo** (↷) to bring the change back. They undo typing and formatting alike, a few words at a time.
+- **Copy and paste:** copying gives other apps clean text (and formatted text to apps like mail and documents); pasting it back into a note keeps every format. Pasting from a web page, Google Docs or Word keeps its headings, bold, italic, links, lists, tables and colours. Paste a web address over selected words to link them. Long-press (or right-click) the text for **Copy as Markdown** (the text with its symbols) and **Paste as Plain Text** (no formatting; Ctrl+Shift+V on Windows). In a code block, text is always pasted as it is.
 - Very long notes are edited in parts behind the scenes so typing stays smooth. You won't see the parts, but in a very long note a text selection (and Undo) covers one part, a few paragraphs, at a time.
+
+### Colours
+Select some words (or put the cursor in a word, or on a line) and tap the **A** button in the formatting bar. Pick a **Text colour** (gray, brown, orange, yellow, green, blue, purple, pink, red) or a **Background**, or both. **Default** takes the colour away again.
+- With just the cursor in a word, that word is coloured; elsewhere on a line, the whole line.
+- The **A** shows the colours where the cursor is.
+- Each colour has a lighter shade for the dark theme, so coloured text stays easy to read.
+- Colours are kept in exports to HTML and PDF, and in Markdown files as `<span style="color:red">…</span>`, which most Markdown apps show in colour. In plain-text exports and on home screen widgets the text appears without its colour.
+- Devices with OffNote 3.10 or older show these marks as text, so update all your synced devices.
 
 ### Links between notes
 Link one note to another by writing its title in double square brackets, like `[[Packing list]]`. The link shows in colour.
@@ -575,6 +594,7 @@ OffNote reads the text in your photos, whiteboard shots, scanned pages and paste
 - **The text of a picture:** open a photo or scanned page and tap the **Text** button at the top. The text appears under the picture (beside it on Windows) and every line is outlined. **Copy** it, or tap **Add to Note** to put it at the end of the note's text. If the picture hasn't been read yet, tap **Read Now**. A photo or scan whose text has been read also has a **Text** button on its card in the note.
 - **Find in a note** finds words in the note's pictures too.
 - **Settings → Text in Pictures:** see how many pictures have been read, turn reading off, read Hindi too (phone; each picture takes a little longer), pick the language (Windows), read all pictures again, or remove the text read from them.
+- Small pictures are enlarged before they're read, and pictures taken sideways or upside down are read the right way round. **Copy** and **Add to Note** give the text in paragraphs, the way it was printed (lines that were wrapped are joined, split words put back together, bullets turned into a list).
 - Drawings aren't read. Handwriting is read poorly; printed and typed text works best. The phone reads English and other languages in Latin letters, and Hindi; Malayalam isn't read yet.
 - **Private:** the text never leaves your device. It isn't synced either: each of your devices reads its own copy of the pictures. It's in your backups, and it's sealed away with a [time capsule](#time-capsules) until it opens.
 
@@ -799,8 +819,18 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 
 ### Import notes
 **Settings → Import Notes**, then pick one or more files:
+- **PDF** files (see below).
 - **.md**, **.txt** and **.json** files, including notes previously exported from OffNote (their title, tags, folder and task lists, with their names, come back too).
 - **Google Keep** notes: download them from [Google Takeout](https://takeout.google.com) (choose *Keep*), unzip the download, and import the `.json` files.
+
+### Import a PDF
+Tap **+ → Import PDF** on the home screen (or **Settings → Import Notes**; on Windows drop PDFs onto the window or press Ctrl+P and choose **Import PDF**). Each PDF becomes a note:
+- Its **text** with headings, paragraphs, bullet and numbered lists, bold and italic. Lines that were wrapped are joined into paragraphs and words split with a hyphen are put back together. Page numbers and the same header or footer on every page are left out. The PDF's title (or its first big heading) becomes the note's title.
+- **Keep the PDF in the note** (on by default) attaches the PDF itself, so you can still open it as it was.
+- **Read scanned pages** (on by default): pages that are pictures of text are read with text recognition, as in [Text in pictures](#text-in-pictures). This takes a few seconds per page. You'll be told if a page couldn't be read.
+- Everything happens on your device, without internet.
+- PDFs with a password to open them can't be imported: open them in another app, remove the password, and import them again. (PDFs that open without a password but limit printing or copying import fine.)
+- Tables come across as lines of text, and pictures inside a PDF aren't added to the note (they're in the attached PDF). Some PDFs made with unusual fonts have no readable text; their pages are then read like scans.
 
 ---
 
