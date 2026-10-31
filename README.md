@@ -19,6 +19,15 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.12.0
+
+- **A new + New button.** Tap **+ New** on the home screen (or in a folder or tag) and it opens into a panel with every kind of note as a big tile: Text, Checklist, Code, Drawing, Scan and Voice, plus From template, Import PDF and Picture to note. Tap outside it, press Back or tap ✕ to close it. On Windows the arrow next to **New Note** opens the same panel (Esc closes it).
+- **Picture to note.** Take a photo of a page, a whiteboard, a receipt or a printed form (or pick one) and get a ready-made note: headings, paragraphs, lists, **tables as real tables**, boxed or coloured text as **callouts**, checkboxes as **tasks**, and the photos or diagrams on the page cut out as pictures in the note. The photo itself is kept at the end of the note (you can turn that off). Find it in the **+ New** panel.
+- **Text from pictures keeps its layout.** Open a photo or scan in a note, tap **Text**, then **Add to Note**: what's on the picture goes right under it, with its tables, boxes, tasks and pictures (Undo takes it out again). **Copy** keeps the layout too, so pasting into a note or another app gets the table as a table.
+- **Reads more of the text.** Pictures are cleaned up before they're read (shadows and coloured light evened out, table lines taken away from the letters), pictures taken at a slight angle are straightened, small print on big photos is read up close, words one reading missed are taken from another, and bits that weren't read the first time get a second, closer look. Numbers in a column of prices keep their decimal points.
+- **PDF import keeps tables, boxes and pictures.** Tables in PDFs come in as tables, boxed and shaded text as callouts, two-column pages are read one column after the other, and the PDF's photos and charts are added to the note where they were (logos repeated on every page are left out). Scanned pages get the same clean-up and layout as photos. The import shows how far it has got for every page and can be **cancelled**, and you can choose **Keep pictures** before it starts. Importing from inside a folder or tag puts the notes there.
+- The phone's + New now has **Voice** too (it starts recording straight away), and a voice note made inside a folder stays in that folder.
+
 ## What's new in 3.11.0
 
 - **Import PDFs.** Turn a PDF into a note with its text: headings, paragraphs, lists, bold and italic come across, words split at line ends are put back together, and page numbers and repeated page headers are left out. Pages that are only pictures (scans) are read with text recognition. The PDF itself can stay attached to the note. Tap **+ → Import PDF** on the home screen, use **Settings → Import Notes**, or on Windows drop PDFs onto the window or use **Import PDF** in the command palette. See [Import a PDF](#import-a-pdf).
@@ -141,7 +150,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Voice-to-text on your PC.** Record voice notes and have them written out, or click **Dictate** (or press **Ctrl+Shift+D**) and what you say is typed into your note. It all happens on your PC, without internet; the first time, OffNote downloads its speech model (57 MB, or 181 MB for the more accurate one). See [Voice notes and dictation on Windows](#voice-notes-and-dictation-on-windows).
 - **Lists keep up with you.** Favourite, pin or rename a note and it shows in the right place straight away. Before, the lists only caught up when you closed the note.
 - **Counts** next to All Notes, Favorites, every folder and tag, Archive, Trash and Reminders.
-- **New ▾** button for a note, checklist, **code note**, drawing, voice note or a template. Create **folders** and **tags** with the **+** next to their headings, and right-click them to edit, lock or delete.
+- **New ▾** button for a note, checklist, **code note**, drawing, voice note or a template (3.12: a panel of tiles, with Import PDF and Picture to note too). Create **folders** and **tags** with the **+** next to their headings, and right-click them to edit, lock or delete.
 - **Archive and Trash** list notes beside a preview, like your other notes: **Unarchive**, **Restore** or **Delete Forever** straight from the list (hover over a note, or right-click it), and **Empty** the Trash in one click.
 - **Cards, List or Compact:** the layout button above the notes now works. **Quick filters** (Pinned, Favorites, Tasks, Reminders, Code, Attachments) sit under the search.
 - **Hover and right-click a note** to pin, favourite, colour, move, tag, duplicate, export, archive or delete it. **Ctrl+click** or **Shift+click** to select several notes, then act on all of them. Drag notes onto a folder, tag, Archive or Trash in the sidebar.
@@ -190,6 +199,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 
 ## Features
 
+- **Picture to note**: a photo of a page becomes a note with its text, tables, boxes, tasks and pictures.
 - **Notes with formatting**: headings, bold, italic, strikethrough, highlights, **text colours**, lists, quotes and code, shown right in the note as you write. Copy and paste keep the formatting.
 - **Select several notes at once**: long-press a note, tap others, then pin, favourite, archive, move, tag, colour, duplicate, export or delete them all together.
 - **Checklists**: add as many named task lists as you like to a note (for example "Groceries" and "Packing") and tick off tasks right inside it. Each list shows how many tasks are done, and the note's card shows the overall percentage. Press Enter to add the next task; long tasks wrap onto more lines.
@@ -215,7 +225,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Private in the app switcher**: Recent apps (and the Windows taskbar preview) never show your notes.
 - **Backup and restore** everything to a single file.
 - **PDF export**: print-ready PDFs on A4 or US Letter with the margins you choose, sharp photos and drawings, and page numbers and a contents page for long notes. Malayalam, Hindi and other scripts and emoji come out exactly as on your phone.
-- **Import and export** notes as Markdown, text, JSON or HTML (and import **PDFs** and Google Keep notes). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
+- **Import and export** notes as Markdown, text, JSON or HTML (and import **PDFs**, with their tables and pictures, and Google Keep notes). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
 - **Light and dark themes** with a one-tap switch on the home screen, and card, list or compact layouts.
 - **Automatic saving**: there's no save button; your notes save as you type.
 - **In-app updates**: get new versions without the Play Store.
@@ -263,7 +273,7 @@ You don't need to come back to this page for updates.
 OffNote for Windows keeps its own notes, separate from your phone (nothing is synced, there's no cloud). To bring your phone's notes over: on the phone, **Settings → Backup & Restore → make a backup**, copy the file to your PC, then on the PC **Settings → Backup & Restore → restore** it.
 
 ### The window
-- **Left:** **New ▾** (a note, checklist, code note, drawing, voice note or template), All Notes, Pinned, Favorites, your **folders** (locked ones ask for the folder PIN), **tags**, **smart folders**, then Archive, Trash, Reminders, Templates and Settings. The number beside each one is how many notes it holds. Click **+** next to *Folders* or *Tags* to make a new one; right-click a folder or tag to edit, lock or delete it.
+- **Left:** **New Note**, and its arrow for every other kind (checklist, code note, drawing, scan, voice note, template, Import PDF, Picture to note; Esc closes the panel), All Notes, Pinned, Favorites, your **folders** (locked ones ask for the folder PIN), **tags**, **smart folders**, then Archive, Trash, Reminders, Templates and Settings. The number beside each one is how many notes it holds. Click **+** next to *Folders* or *Tags* to make a new one; right-click a folder or tag to edit, lock or delete it.
 - **Middle:** the notes, with the **search** field, **quick filters** (Pinned, Favorites, Tasks, Reminders, Code, Attachments), the **layout** button (Cards, List or Compact) and the **sort** button (last modified, date created, title A–Z or Z–A, and whether pinned notes stay on top). Up and Down move between notes.
   - **Hover** over a note for quick buttons (pin, favourite, archive, delete); **right-click** it for everything else (colour, move to folder, tags, duplicate, export).
   - **Ctrl+click** notes (or **Shift+click** for a run of them, **Ctrl+A** for all) to select several, then use the bar at the top. **Delete** moves them to the Trash, **Esc** clears the selection.
@@ -335,7 +345,7 @@ Ready-made lists that fill themselves: **Today**, **This Week**, **Checklists**,
 - If Windows asks whether OffNote may use the microphone, allow it (or turn it on in **Windows Settings → Privacy & security → Microphone**).
 
 ### Scanning on Windows
-A PC has no camera for this, so scan from pictures instead: **New ▾ → Scan from Image** (or **⋮ → Scan from Image** in a note), and choose photos of pages, for example ones you took with your phone. Everything else works as on the phone: edges found for you, corners you can drag, filters, several pages.
+A PC has no camera for this, so scan from pictures instead: the arrow next to **New Note → Scan** (or **⋮ → Scan from Image** in a note), and choose photos of pages, for example ones you took with your phone. Everything else works as on the phone: edges found for you, corners you can drag, filters, several pages.
 
 ### Text in pictures on Windows
 Windows reads the pictures itself (its own text recognition, no download), in the languages your Windows has text recognition for: usually English. To read another language, add it in **Windows Settings → Time & language → Language & region** (with "Optical character recognition"), then pick it in **Settings → Text in Pictures**. Hindi pictures can't be read on Windows. Each device reads its own pictures, so a picture synced from your phone is read again on the PC.
@@ -591,10 +601,12 @@ To find a word inside the note you have open, tap **⋮ → Find in Note** (on W
 ### Text in pictures
 OffNote reads the text in your photos, whiteboard shots, scanned pages and pasted pictures, so you can search for it. It happens by itself in the background, on your phone or PC, without internet: new pictures are read a moment after you add them, and the pictures you already had are read once after updating. On the phone it only reads while OffNote is open.
 - **Search:** results found in a picture show that picture with the words **boxed** and "In picture: …" with the words around them. Tap the picture to see it full screen: the arrows at the top go from one match to the next and zoom in on it.
-- **The text of a picture:** open a photo or scanned page and tap the **Text** button at the top. The text appears under the picture (beside it on Windows) and every line is outlined. **Copy** it, or tap **Add to Note** to put it at the end of the note's text. If the picture hasn't been read yet, tap **Read Now**. A photo or scan whose text has been read also has a **Text** button on its card in the note.
+- **The text of a picture:** open a photo or scanned page and tap the **Text** button at the top. The text appears under the picture (beside it on Windows) and every line is outlined. **Copy** it, or tap **Add to Note** to put it in the note right under the picture. Both take a moment ("Finding tables and pictures…") and keep the layout: headings, lists, tables as tables, boxed or coloured text as callouts, checkboxes as tasks, and photos or diagrams on the page as pictures. After Add to Note, **Undo** takes it all out again. If the picture hasn't been read yet, tap **Read Now**. A photo or scan whose text has been read also has a **Text** button on its card in the note.
+- **Picture to note:** **+ New → Picture to note** (on Windows: the arrow next to New Note) turns a photo into a new note laid out the same way, with the photo itself at the end (turn **Keep the picture in the note** off to leave it out). Pick several photos for one note.
 - **Find in a note** finds words in the note's pictures too.
 - **Settings → Text in Pictures:** see how many pictures have been read, turn reading off, read Hindi too (phone; each picture takes a little longer), pick the language (Windows), read all pictures again, or remove the text read from them.
-- Small pictures are enlarged before they're read, and pictures taken sideways or upside down are read the right way round. **Copy** and **Add to Note** give the text in paragraphs, the way it was printed (lines that were wrapped are joined, split words put back together, bullets turned into a list).
+- Small pictures are enlarged before they're read, and pictures taken sideways or upside down are read the right way round. For Copy, Add to Note and Picture to note the picture is also cleaned up (shadows and coloured light evened out, table lines kept away from the letters), straightened if it was taken at a slight angle, small print on big photos read up close, and bits missed the first time read again enlarged. Lines that were wrapped are joined, split words put back together and bullets turned into a list.
+- Tables are found from their lines, or from columns that line up. Very unusual layouts (text on a slant, handwriting, several overlapping columns) may still come out as plain text.
 - Drawings aren't read. Handwriting is read poorly; printed and typed text works best. The phone reads English and other languages in Latin letters, and Hindi; Malayalam isn't read yet.
 - **Private:** the text never leaves your device. It isn't synced either: each of your devices reads its own copy of the pictures. It's in your backups, and it's sealed away with a [time capsule](#time-capsules) until it opens.
 
@@ -824,13 +836,16 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 - **Google Keep** notes: download them from [Google Takeout](https://takeout.google.com) (choose *Keep*), unzip the download, and import the `.json` files.
 
 ### Import a PDF
-Tap **+ → Import PDF** on the home screen (or **Settings → Import Notes**; on Windows drop PDFs onto the window or press Ctrl+P and choose **Import PDF**). Each PDF becomes a note:
+Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **Settings → Import Notes**; on Windows the arrow next to **New Note**, drop PDFs onto the window, or press Ctrl+P and choose **Import PDF**). Each PDF becomes a note:
 - Its **text** with headings, paragraphs, bullet and numbered lists, bold and italic. Lines that were wrapped are joined into paragraphs and words split with a hyphen are put back together. Page numbers and the same header or footer on every page are left out. The PDF's title (or its first big heading) becomes the note's title.
+- **Tables** come in as tables, **boxed or shaded text** as callouts (a yellow box is a warning, a green one a tip…), checkboxes as tasks, and pages with **two columns** are read one column after the other.
+- **Keep pictures** (on by default): the PDF's photos and charts are added to the note where they were, with their captions. Logos repeated on every page are left out.
 - **Keep the PDF in the note** (on by default) attaches the PDF itself, so you can still open it as it was.
-- **Read scanned pages** (on by default): pages that are pictures of text are read with text recognition, as in [Text in pictures](#text-in-pictures). This takes a few seconds per page. You'll be told if a page couldn't be read.
+- **Read scanned pages** (on by default): pages that are pictures of text are cleaned up and read with text recognition, with their tables, boxes and pictures, as in [Text in pictures](#text-in-pictures). This takes a second or two per page. You'll be told if a page couldn't be read.
+- A bar shows how far the import has got, page by page; **Cancel** stops it.
 - Everything happens on your device, without internet.
 - PDFs with a password to open them can't be imported: open them in another app, remove the password, and import them again. (PDFs that open without a password but limit printing or copying import fine.)
-- Tables come across as lines of text, and pictures inside a PDF aren't added to the note (they're in the attached PDF). Some PDFs made with unusual fonts have no readable text; their pages are then read like scans.
+- Some PDFs made with unusual fonts have no readable text; their pages are then read like scans.
 
 ---
 
