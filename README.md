@@ -19,6 +19,21 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.14.0
+
+- **Birthdays, meetings and important dates on the calendar.** Add events to the Calendar (**Add event**, **Important**, **Birthday**, or hold a day), or from **+ New → Event**. Choose what it is (birthday, anniversary, meeting, appointment, event, important date, holiday or other), the day, all day or a time, where, and whether it repeats (every day, week, month or **year**). Each event is a note too, so you can write in it: the meeting's agenda, gift ideas. See [Birthdays, events and important dates](#birthdays-events-and-important-dates).
+- **Reminders for your dates.** Pick when OffNote reminds you: on the day, a day, two days or a week before (at a time you choose), or 5, 15 or 30 minutes, an hour, a day or a week before a meeting. They ring like any reminder (with Snooze and Done) and appear in **Reminders**. A birthday reminder says "Birthday · tomorrow"; a meeting's says "Meeting · in 15 minutes · 14:30 · Room 4".
+- **Ages and anniversaries.** If you know the year, the calendar says "turns 30" or "10th anniversary".
+- **Upcoming.** In the Calendar, **Upcoming** lists the next two months of events, soonest first.
+- **Every year.** Reminders can now also repeat **every year**.
+- **Import from other calendars.** **Settings → Import Notes → Other calendars** brings in events from Google Calendar, Outlook or Apple Calendar (an `.ics` file), with their reminders. Importing the same file again updates them instead of making copies.
+- **Events smart folder**, and a small mark on event notes in your list showing when they're next.
+- **Sync:** events and their reminders sync between your devices. Both devices need OffNote 3.14.0 to keep syncing with each other, so update both.
+
+## What's new in 3.13.1
+
+- **Locked folders on Windows stay open while you're in them.** Deleting, archiving or closing a note in a locked folder used to lock the folder again straight away, so its other notes vanished from the list until you left the folder and typed the PIN again. Now the folder stays open until you leave it. If it locks while you're inside (for example after you minimise OffNote, or with **Lock OffNote Now**), the list shows an **Unlock** button instead of looking empty.
+
 ## What's new in 3.13.0
 
 - **Share to OffNote.** In any app (Chrome, WhatsApp, Gallery, Files…) tap **Share → OffNote**: a small sheet opens where you can give it a title and save it as a **new note** (in a folder of your choice), add it to **today's note**, or add it to **a note** you pick. A shared web link becomes a tidy link with the page's title; pictures and files are attached. **Save** takes you straight back to the app you were in; **Save & open** opens the note. On Windows, right-click files in File Explorer → **Send to → OffNote**.
@@ -583,6 +598,18 @@ The drawing board is endless in every direction, with faint dots so you can see 
 - If you sync your devices, a day's note is the same note on all of them (if two devices both made it before they synced, one note is kept and the other's text is in its Version history).
 - Notes in locked folders aren't shown on the calendar.
 
+### Birthdays, events and important dates
+- **Add one:** in the Calendar, tap a day and then **Add event**, **Important** or **Birthday** (or just **hold a day**). Elsewhere: **+ New → Event**, or on Windows Ctrl+P → **New Event…**. To put a note you already have on the calendar, open it and tap **⋮ → Add to Calendar…**.
+- **What it is:** Birthday, Anniversary, Meeting, Appointment, Event, Important, Holiday or Other. Birthdays, anniversaries, important dates and holidays start as **all day**; birthdays and anniversaries repeat **every year**.
+- **When:** the day, **All day** or a start and end time; an all-day event can last several days (**Add end**). **Repeats:** never, every day, week, month or year.
+- **Birthdays:** leave **The year is the birth year** on and OffNote counts the years ("turns 30"). Turn it off if you don't know the year.
+- **Remind me:** tick as many as you like. All-day events: **On the day**, **1 day**, **2 days** or **1 week before**, at the time shown (9:00 unless you change it). Events at a time: **At start**, 5, 15 or 30 minutes, 1 hour, 1 day or 1 week before. They are ordinary reminders: Snooze and Done work, and they're listed in **Reminders** (tap ✎ there to change the event).
+- **On the calendar:** days with events get a dot in the event's colour (an important date's number turns red). Tap a day to see its **Events** (with the time, place and years, and a bell if it reminds you); tap one to open its note, or **⋮** to **Edit** it or **Remove from Calendar** (the note stays).
+- **Upcoming:** tap **Upcoming** above the day to see the next two months of events.
+- **In the note:** an event note has a card at the top with its date, place and reminders; tap it (or ✎) to change them. Write anything you like below: an agenda, gift ideas, directions.
+- Event notes have a small mark in your notes list showing when they're next, and the **Events** smart folder lists them all.
+- An event in a locked folder stays hidden until you unlock the folder; its reminder says only "Note Reminder".
+
 ### Share to OffNote
 Save something from another app without opening OffNote first:
 1. In the other app (Chrome, WhatsApp, Gallery, Files, YouTube…) tap **Share** and choose **OffNote**. If App Lock is on, unlock.
@@ -676,7 +703,7 @@ If App Lock is on, pairing asks for your PIN first, so nobody can add their own 
 - **⋮ → Safety number** shows a number that is the same on both devices: if it matches, they're talking to each other and nobody else.
 
 ### What syncs
-Notes (text, task lists and ticks, tables, toggles, which headings are folded, photos, drawings, files, voice notes and their transcripts), folders (and which are locked), tags, colours, pins, favourites, archive and Trash, reminders, your own templates, your **saved searches** (smart folders), and the **Folder PIN** (so locked folders open with the same PIN everywhere).
+Notes (text, task lists and ticks, tables, toggles, which headings are folded, photos, drawings, files, voice notes and their transcripts), folders (and which are locked), tags, colours, pins, favourites, archive and Trash, reminders, calendar events (birthdays, meetings, important dates) and their reminders, your own templates, your **saved searches** (smart folders), and the **Folder PIN** (so locked folders open with the same PIN everywhere).
 
 Each device keeps its own: theme and layout, App Lock PIN and fingerprint settings, version history, window sizes, recent searches, and the text read from pictures (each device reads the pictures itself). The Trash empties itself on each device by its own setting; **Delete Forever** and **Empty Trash** do apply everywhere.
 
@@ -712,7 +739,9 @@ When the day comes, open the note and tap **Open Time Capsule**: everything come
 
 1. Open a note and tap the **alarm** icon.
 2. Pick a quick option (**Later today**, **This evening**, **Tomorrow morning**, **Next week**) or choose your own date and time.
-3. Choose whether it **repeats** (every day, week or month), then tap **Save**.
+3. Choose whether it **repeats** (every day, week, month or year), then tap **Save**.
+
+Reminders for birthdays, meetings and other dates are set on the event itself: see [Birthdays, events and important dates](#birthdays-events-and-important-dates).
 
 When the reminder goes off you can tap **Snooze 10 min**, **Snooze 1 hour** or **Done**, or tap the notification to open the note.
 
@@ -888,6 +917,17 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 - **Files:** **PDF** files (see below), and **.md**, **.txt** and **.json** files, including notes previously exported from OffNote (their title, tags, folder and task lists, with their names, come back too).
 - **Evernote**, **Obsidian** and **Notion**: see [Import from other apps](#import-from-other-apps).
 - **Google Keep** notes: download them from [Google Takeout](https://takeout.google.com) (choose *Keep*), unzip the download, and import the `.json` files.
+- **Other calendars:** events from Google Calendar, Outlook or Apple Calendar: see [Import from other calendars](#import-from-other-calendars).
+
+### Import from other calendars
+Bring birthdays, meetings and other events onto OffNote's calendar, with their reminders. Nothing goes through the internet: you export a file from the other calendar and pick it in OffNote.
+1. Export the calendar as an `.ics` file:
+   - **Google Calendar** (on a computer): **Settings → Import & export → Export**. It downloads a `.zip`; unzip it to get one `.ics` file per calendar (birthdays are in their own).
+   - **Outlook:** **File → Save Calendar**.
+   - **Apple Calendar:** select the calendar, then **File → Export → Export…**
+2. In OffNote: **Settings → Import Notes → Other calendars**, and pick the `.ics` file (on Windows you can also drop it onto the window).
+
+Each event becomes an event note in a folder named after its calendar. Birthdays repeat every year; reminders set in the other calendar are kept (as the nearest one OffNote has). **Importing the same file again updates those events** (your own writing in their notes is kept) instead of making copies. Events that repeat in ways OffNote doesn't (every 2 weeks, the first Monday of the month…) are added once, with how they repeat written in the note.
 
 ### Import from other apps
 Notes keep their **dates** (when they were written and last changed), **tags**, **folders** (inside folders too), **pictures** in their places and **links** between them. Importing the same notes twice makes copies.
