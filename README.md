@@ -19,6 +19,12 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.12.1
+
+- **Export to Word.** Save any note as a Word document (**.docx**): ⋮ → **Export as Word (.docx)** in a note, or select notes and choose **Export → Word Document**. Headings, bold, italic, colours, highlights, links, lists, tasks, quotes, callouts, code and tables come across, and the note's photos and drawings are inside the document. It opens in Word, Google Docs, LibreOffice and WPS, on your phone or PC.
+- **A new + New panel.** It's now a little composer: type straight into **Start writing…** and press Enter (or the arrow) to save a note without leaving the list, or pick a kind from the colourful dock (List, Code, Draw, Scan, Voice) or the chips (Template, PDF, From photo = Picture to note). The arrow beside the writing line opens a blank note. On Windows the arrow next to **New Note** opens the same panel, ready to type.
+- **Smoother.** Opening and closing the + New panel no longer jumps or flickers on phones: the button stays put under the panel and the panel grows from exactly where it is.
+
 ## What's new in 3.12.0
 
 - **A new + New button.** Tap **+ New** on the home screen (or in a folder or tag) and it opens into a panel with every kind of note as a big tile: Text, Checklist, Code, Drawing, Scan and Voice, plus From template, Import PDF and Picture to note. Tap outside it, press Back or tap ✕ to close it. On Windows the arrow next to **New Note** opens the same panel (Esc closes it).
@@ -225,7 +231,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Private in the app switcher**: Recent apps (and the Windows taskbar preview) never show your notes.
 - **Backup and restore** everything to a single file.
 - **PDF export**: print-ready PDFs on A4 or US Letter with the margins you choose, sharp photos and drawings, and page numbers and a contents page for long notes. Malayalam, Hindi and other scripts and emoji come out exactly as on your phone.
-- **Import and export** notes as Markdown, text, JSON or HTML (and import **PDFs**, with their tables and pictures, and Google Keep notes). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
+- **Import and export** notes as Word (.docx), Markdown, text, JSON or HTML (and import **PDFs**, with their tables and pictures, and Google Keep notes). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
 - **Light and dark themes** with a one-tap switch on the home screen, and card, list or compact layouts.
 - **Automatic saving**: there's no save button; your notes save as you type.
 - **In-app updates**: get new versions without the Play Store.
@@ -802,6 +808,7 @@ Open a note and tap **⋮** → choose a format. To export **several notes at on
 | Format | Best for | Formatting |
 |---|---|---|
 | **PDF** | Printing, or sending a note to anyone, on any device | Laid out on pages like a document: see [Export as PDF](#export-as-pdf) |
+| **Word (.docx)** | Editing further in Word, Google Docs, LibreOffice or WPS; sending to someone who works in Word | Headings, bold, italic, colours, highlights, links, lists, tasks, quotes, callouts, code and tables; photos and drawings inside the document; voice notes' transcripts and the names of attached files |
 | **HTML** | A nicely styled page you can open in any browser, with photos, drawings and attached files included. Tap a photo or drawing to open it in a zoomable viewer (see below); attached files can be saved straight from the page. | Shown as in the note: headings, bold, highlights, lists and so on |
 | **Markdown (.md)** | Other notes apps such as Obsidian, or editing on a computer | Kept as Markdown, which those apps show formatted |
 | **Text (.txt)** | Plain text anywhere | Just the words, without symbols like `#` or `**`; headings are underlined and lists use bullets |
