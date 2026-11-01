@@ -19,6 +19,14 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 3.13.0
+
+- **Share to OffNote.** In any app (Chrome, WhatsApp, Gallery, Files…) tap **Share → OffNote**: a small sheet opens where you can give it a title and save it as a **new note** (in a folder of your choice), add it to **today's note**, or add it to **a note** you pick. A shared web link becomes a tidy link with the page's title; pictures and files are attached. **Save** takes you straight back to the app you were in; **Save & open** opens the note. On Windows, right-click files in File Explorer → **Send to → OffNote**.
+- **Automatic backups, with a password.** **Settings → Backup & Restore → Automatic backups**: choose **Daily** or **Weekly**, a folder (for example Documents, an SD card, or a folder that OneDrive or Syncthing copies elsewhere) and a password. OffNote then backs up by itself while you use it (only when something changed), keeps the last few backups and deletes older ones. Backups are locked with your password: nobody can read them without it, and **it can't be recovered if you forget it**. Manual backups can be password-protected too. See [Automatic backups](#automatic-backups).
+- **Daily notes.** One note for each day, opened with one tap: **+ New → Today** on the phone, **Ctrl+T** on Windows. It's titled with the date and starts blank, or from a template you choose in **Settings → Notes → Daily Note Template**.
+- **Calendar.** A month view (menu → **Calendar**, or **Calendar** in the Windows sidebar): days with a day's note get an orange mark, days you made or edited notes a blue dot, days with reminders a pink one. Tap a day to see its note, its reminders and what you wrote or changed that day; swipe between months.
+- **Import from Evernote, Obsidian and Notion.** **Settings → Import Notes** now asks where your notes come from. Notes keep their **dates, tags, folders, pictures and links**: Evernote notebooks (`.enex`, tick boxes become tasks), Obsidian vaults (a folder on Windows, or a `.zip`), and Notion exports (`.zip`, databases become tables). See [Import from other apps](#import-from-other-apps).
+
 ## What's new in 3.12.1
 
 - **Export to Word.** Save any note as a Word document (**.docx**): ⋮ → **Export as Word (.docx)** in a note, or select notes and choose **Export → Word Document**. Headings, bold, italic, colours, highlights, links, lists, tasks, quotes, callouts, code and tables come across, and the note's photos and drawings are inside the document. It opens in Word, Google Docs, LibreOffice and WPS, on your phone or PC.
@@ -229,9 +237,10 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **App lock** with a 6-digit PIN and fingerprint/face unlock, plus a one-time recovery code if you forget the PIN.
 - **Locked folders**: keep private folders behind their own folder PIN or fingerprint, separate from the app lock.
 - **Private in the app switcher**: Recent apps (and the Windows taskbar preview) never show your notes.
-- **Backup and restore** everything to a single file.
+- **Backup and restore** everything to a single file, **automatically** every day or week, locked with your password.
+- **Share to OffNote** from any app; **daily notes** and a **calendar** of your notes and reminders.
 - **PDF export**: print-ready PDFs on A4 or US Letter with the margins you choose, sharp photos and drawings, and page numbers and a contents page for long notes. Malayalam, Hindi and other scripts and emoji come out exactly as on your phone.
-- **Import and export** notes as Word (.docx), Markdown, text, JSON or HTML (and import **PDFs**, with their tables and pictures, and Google Keep notes). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
+- **Import and export** notes as Word (.docx), Markdown, text, JSON or HTML (and import **PDFs**, with their tables and pictures, and notes from **Evernote, Obsidian, Notion** and Google Keep). In HTML exports, photos and drawings open in a viewer you can zoom and move around.
 - **Light and dark themes** with a one-tap switch on the home screen, and card, list or compact layouts.
 - **Automatic saving**: there's no save button; your notes save as you type.
 - **In-app updates**: get new versions without the Play Store.
@@ -276,17 +285,17 @@ You don't need to come back to this page for updates.
 2. Run it. Windows may say *"Windows protected your PC"*, because the installer isn't signed by a paid certificate: click **More info → Run anyway**.
 3. Follow the steps (no administrator password needed; it installs just for you). OffNote opens when it's done and is in the Start menu.
 
-OffNote for Windows keeps its own notes, separate from your phone (nothing is synced, there's no cloud). To bring your phone's notes over: on the phone, **Settings → Backup & Restore → make a backup**, copy the file to your PC, then on the PC **Settings → Backup & Restore → restore** it.
+OffNote for Windows keeps its own notes on your PC (there's no cloud). To have the same notes on your phone and PC, [pair them to sync](#sync-with-your-phone) over your Wi-Fi. Or bring your phone's notes over once: on the phone, **Settings → Backup & Restore → Create Full ZIP Backup**, copy the file to your PC, then on the PC **Settings → Backup & Restore → Restore from Backup**.
 
 ### The window
-- **Left:** **New Note**, and its arrow for every other kind (checklist, code note, drawing, scan, voice note, template, Import PDF, Picture to note; Esc closes the panel), All Notes, Pinned, Favorites, your **folders** (locked ones ask for the folder PIN), **tags**, **smart folders**, then Archive, Trash, Reminders, Templates and Settings. The number beside each one is how many notes it holds. Click **+** next to *Folders* or *Tags* to make a new one; right-click a folder or tag to edit, lock or delete it.
+- **Left:** **New Note**, and its arrow for every other kind (checklist, code note, drawing, scan, voice note, template, Import PDF, Picture to note, Today's note; Esc closes the panel), All Notes, Pinned, Favorites, your **folders** (locked ones ask for the folder PIN), **tags**, **smart folders**, then Archive, Trash, **Calendar**, Tasks, Reminders, Templates, Sync Devices and Settings. The number beside each one is how many notes it holds. Click **+** next to *Folders* or *Tags* to make a new one; right-click a folder or tag to edit, lock or delete it.
 - **Middle:** the notes, with the **search** field, **quick filters** (Pinned, Favorites, Tasks, Reminders, Code, Attachments), the **layout** button (Cards, List or Compact) and the **sort** button (last modified, date created, title A–Z or Z–A, and whether pinned notes stay on top). Up and Down move between notes.
   - **Hover** over a note for quick buttons (pin, favourite, archive, delete); **right-click** it for everything else (colour, move to folder, tags, duplicate, export).
   - **Ctrl+click** notes (or **Shift+click** for a run of them, **Ctrl+A** for all) to select several, then use the bar at the top. **Delete** moves them to the Trash, **Esc** clears the selection.
   - **Drag** a note (or the selected notes) onto a folder, tag, Pinned, Favorites, Archive or Trash in the left column.
 - **Right:** the note itself, with the **inspector** beside it: the notes that link to it, the notes it links to, and its details. Hide or show it with the button at the top or **Ctrl+Shift+I**.
 - **A note in its own window:** right-click a note → **Open in New Window**, **⋮ → Open in New Window** in the note, or **Ctrl+Shift+O**. It opens in a separate window you can put beside the main one; the main window shows "open in its own window" for it until you close that window (**Ctrl+W** or its **X**). A note window locks like the main one when you minimise it, and closes when you quit OffNote.
-- **Pictures and files:** **Ctrl+V** in a note adds a copied picture or files copied in File Explorer (text pastes as usual). Drag pictures and files from File Explorer onto a note to add them; drop them with no note open to make a new note with them (PDFs dropped there are imported as notes with their text).
+- **Pictures and files:** **Ctrl+V** in a note adds a copied picture or files copied in File Explorer (text pastes as usual). Drag pictures and files from File Explorer onto a note to add them; drop them with no note open to make a new note with them (PDFs dropped there are imported as notes with their text; an Evernote `.enex`, a Notion or Markdown `.zip`, or an Obsidian vault folder dropped there is [imported](#import-from-other-apps)). Files can also be sent from File Explorer with **Send to → OffNote** (see [Share to OffNote](#share-to-offnote)).
 - **Archive** and **Trash** work the same way: click a note to see it (archived notes can be edited, with an **Unarchive** button; notes in the Trash show read-only with **Restore** and **Delete Forever**). **Empty** at the top of the Trash deletes everything in it.
 - Drag the lines between the columns to make them wider or narrower. In a narrow window OffNote looks like the phone app.
 
@@ -294,6 +303,7 @@ OffNote for Windows keeps its own notes, separate from your phone (nothing is sy
 | Keys | What it does |
 |---|---|
 | **Ctrl+N** | New note (**Ctrl+Shift+N**: new checklist) |
+| **Ctrl+T** | Today's note (made the first time each day) |
 | **Ctrl+F** | Search your notes (inside a note: find in that note) |
 | **Ctrl+Shift+F** | Search your notes, wherever you are |
 | **Ctrl+S** | Save now (OffNote also saves as you type) |
@@ -366,20 +376,19 @@ Your notes, attachments and backups are in `%APPDATA%\OffNote\OffNote` on your P
 Open **Sync Devices** in the sidebar (or **Settings → Sync Devices**), click **Pair a new device → Show a QR code**, and scan it with the phone. See [Sync between your devices](#sync-between-your-devices). The PC connects to your phone by itself, so Windows doesn't need to let anything in; closing the window keeps OffNote (and the connection) running in the tray.
 
 ### Not on Windows yet
-PDF export (export as HTML and print that to PDF from your browser instead), taking photos or scanning with a camera (scan from pictures instead), and home-screen widgets. Unlocking locked folders with Windows Hello (folders open with their folder PIN on Windows; the app itself can unlock with Windows Hello).
+PDF export (export as HTML and print that to PDF from your browser instead), taking photos or scanning with a camera (scan from pictures instead), home-screen widgets, and the Windows **Share** panel (use **Send to → OffNote** in File Explorer instead). Unlocking locked folders with Windows Hello (folders open with their folder PIN on Windows; the app itself can unlock with Windows Hello).
 
 ---
 
 ## Getting started
 
 ### Create a note
-Tap **+ Note** at the bottom right and choose:
-- **Text Note** for normal notes
-- **Checklist Task** for a to-do list
-- **Drawing Note** to start with a sketch
-- **From Template** to start from a ready-made layout (see [Templates](#templates))
+Tap **+ New** at the bottom right (also inside a folder or a tag, where the note goes into that folder or tag). A panel opens:
+- **Start writing…** Type a line and press Enter (or the arrow) to save it as a note straight away, without leaving the list. The **⤢** button next to it opens a blank note instead.
+- **The round buttons:** **List** (a checklist), **Code**, **Draw** (start with a sketch), **Scan** (a document with the camera) and **Voice** (starts recording).
+- **The chips under them:** **Template** (a ready-made layout, see [Templates](#templates)), **PDF** (import a PDF), **From photo** (a photo of a page becomes a note) and **Today** (today's note, see [Daily notes and the calendar](#daily-notes-and-the-calendar)).
 
-Give it a title and start typing. Everything saves automatically. Tap the back arrow when you're done.
+Tap outside the panel, press Back or tap ✕ to close it. Give the note a title and start typing. Everything saves automatically. Tap the back arrow when you're done.
 
 ### Templates
 Templates give a new note its headings, prompts and task lists, so you only fill in the blanks.
@@ -564,6 +573,29 @@ The drawing board is endless in every direction, with faint dots so you can see 
 - **Open / Done / All**, and narrow to one **folder** or **tag** with the buttons at the top.
 - **Add a task:** type it in the box at the top and press Enter. It goes into a note called **Tasks** (made the first time you need it). With a folder chosen, the task goes into a "Tasks" note in that folder.
 - Tasks in archived notes, notes in the Trash and locked folders aren't listed.
+
+### Daily notes and the calendar
+- **Today's note:** **+ New → Today** (on Windows **Ctrl+T**, or the 📅 button at the top of the Calendar). The first time each day the note is made, titled with the date (for example *Sunday, 1 November 2026*); after that the same note opens. It's an ordinary note: write in it, add task lists, move it to a folder or delete it.
+- **Start from a template:** to have each day's note start from a template (such as Daily Journal & Gratitude, or one of your own), choose it in **Settings → Notes → Daily Note Template**. *Blank* (the date as the title, nothing else) is the default.
+- **Calendar:** menu → **Calendar** (on Windows, **Calendar** in the sidebar). Swipe or use **‹ ›** to change month, **Today** to come back to this month.
+- **What the marks mean:** an **orange** mark for a day that has its day's note, **blue** dots for days you made or edited notes, a **pink** dot for days with reminders (repeating reminders show on every day they go off).
+- **Tap a day** to see its day's note (with how many tasks are still open), its reminders, and the notes made and edited that day; tap any of them to open it. **Write in this day's note** makes a day's note for any day, past or future.
+- If you sync your devices, a day's note is the same note on all of them (if two devices both made it before they synced, one note is kept and the other's text is in its Version history).
+- Notes in locked folders aren't shown on the calendar.
+
+### Share to OffNote
+Save something from another app without opening OffNote first:
+1. In the other app (Chrome, WhatsApp, Gallery, Files, YouTube…) tap **Share** and choose **OffNote**. If App Lock is on, unlock.
+2. A sheet shows what was shared: the text or link, pictures, files. Change the **title** if you like (a web link gets the page's title, or the site's name).
+3. Choose where it goes:
+   - **New note**, and a **folder** for it (locked folders aren't offered).
+   - **Today**: added at the end of today's note (made if there isn't one yet).
+   - **A note**: type part of its name and tap it; it's added at the end of that note.
+4. Tap **Save** to keep it and go straight back to the app you were in, or **Save & open** to open the note.
+
+A web link becomes a tidy link with its title; pictures go into the note, other files are attached. A single **PDF** can instead be **read into the note** (its text, tables and pictures, as with [Import a PDF](#import-a-pdf)). On the phone up to 50 files (250 MB) can be shared at once.
+
+**On Windows:** select files in File Explorer, right-click → **Send to → OffNote** (on Windows 11, **Show more options** first). OffNote comes to the front with the same choices.
 
 ### Checklists (task lists)
 - **Add a task list:** in a note, tap the **checkbox** button in the formatting toolbar, or **⋮ → Add Task List**. Every tap adds a **new, separate list**, so one note can hold several, like "Groceries", "Packing" and "Calls to make".
@@ -788,15 +820,30 @@ Because your notes live only on your phone, **back them up regularly**, especial
 The backup is a single `.zip` file containing all your notes, folders, tags, checklists, reminders, photos, drawings, files and your own templates.
 
 ### Restore a backup
-1. **Settings → Backup & Restore → Restore from Backup ZIP**.
-2. Pick your backup `.zip` file and confirm.
+1. **Settings → Backup & Restore → Restore from Backup**.
+2. Pick your backup (a `.zip`, or a password-protected `.offnote` file: type its password) and confirm.
 
 > Restoring **replaces all notes currently in the app** with the ones in the backup. To be safe, OffNote first saves a copy of your current notes automatically.
 >
 > **If you sync with other devices**, restoring doesn't delete anything on them: the notes from the backup are sent to them (replacing older copies, which are kept in Version history), and notes the backup doesn't have come back from your other devices.
 
+### Automatic backups
+**Settings → Backup & Restore → Automatic backups**:
+1. Choose **Daily** or **Weekly**.
+2. Set a **password** (type it twice, at least 8 characters). Write it down somewhere safe: **if you forget it, your backups can't be opened, by anyone** (not even OffNote).
+3. Choose a **folder** for the backups. On the phone this opens Android's folder picker: pick or make a folder such as *Documents/OffNote Backups*, or one on an SD card, then tap **Use this folder** and **Allow**. A folder that another app copies to the cloud or your PC (OneDrive, Syncthing...) keeps your backups safe even if you lose the phone.
+4. The first backup is made at once. After that OffNote makes one by itself when it's due (once a day or once a week), while you're using it or as you leave it, and only if something changed. **Keep** sets how many backups stay in the folder (3, 5 or 10); older ones are deleted. **Back up now** makes one straight away.
+
+Backups are files named like `OffNote-backup-2026-11-01-0930.offnote`, locked with your password. If OffNote can't save to the folder (it was deleted, or the SD card was taken out), it tells you once and the card shows what went wrong: choose the folder again.
+
+Changing the password or turning automatic backups off asks for your App Lock PIN if App Lock is on. A new password applies to new backups; older ones still need the old password. Automatic backups are never made while the duress PIN's notebook is open.
+
+**Manual backups** (Create Full ZIP Backup) are locked with the same password when one is set (you can switch that off for one backup).
+
+**To restore a locked backup**, use **Restore from Backup** as usual and type its password when asked.
+
 ### Moving to a new phone
-Make a backup on the old phone, copy the `.zip` file to the new phone (or save it to Drive), install OffNote on the new phone, then restore.
+Make a backup on the old phone, copy the file to the new phone (or save it to Drive), install OffNote on the new phone, then restore (with the backup's password if it has one).
 
 ---
 
@@ -837,10 +884,17 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 - The bar at the bottom has **− / % / +**, **Fit** and **1:1** for photos (**Reset** for drawings), **Open**, **Save** and **Close**.
 
 ### Import notes
-**Settings → Import Notes**, then pick one or more files:
-- **PDF** files (see below).
-- **.md**, **.txt** and **.json** files, including notes previously exported from OffNote (their title, tags, folder and task lists, with their names, come back too).
+**Settings → Import Notes** (on Windows also Ctrl+P → **Import Notes…**), then choose where they come from:
+- **Files:** **PDF** files (see below), and **.md**, **.txt** and **.json** files, including notes previously exported from OffNote (their title, tags, folder and task lists, with their names, come back too).
+- **Evernote**, **Obsidian** and **Notion**: see [Import from other apps](#import-from-other-apps).
 - **Google Keep** notes: download them from [Google Takeout](https://takeout.google.com) (choose *Keep*), unzip the download, and import the `.json` files.
+
+### Import from other apps
+Notes keep their **dates** (when they were written and last changed), **tags**, **folders** (inside folders too), **pictures** in their places and **links** between them. Importing the same notes twice makes copies.
+- **Evernote:** in Evernote, right-click a notebook → **Export notebook** → **ENEX**, then pick the `.enex` file. The notebook becomes a folder; tick boxes become tasks; pictures stay where they were and other attachments (PDFs, recordings) are attached. Text you encrypted in Evernote can't be brought over (decrypt it in Evernote first); OffNote tells you if any was left out.
+- **Obsidian:** on Windows pick the vault's folder (or drop it onto the window); on the phone, pick a `.zip` of the vault. Folders become folders inside one named after the vault; `#tags` and the tags at the top of a note become tags; `[[links]]` link to the notes; pictures (`![[photo.png]]`) appear in place; other embedded files are attached. Obsidian's own settings folder is left out.
+- **Notion:** in Notion, **Settings → Export all workspace content → Markdown & CSV**, with *Include subpages*, then pick the `.zip` (big workspaces come as ZIPs inside a ZIP: that's fine). Pages go into a **Notion** folder, sub-pages into a folder named after their page; links between pages work; a page's *Created* date and *Tags* are kept; databases become a note with a table, with their pages in a folder of their own.
+- On Windows you can also drop an `.enex` file, a Notion or Markdown `.zip`, or a vault folder onto the window.
 
 ### Import a PDF
 Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **Settings → Import Notes**; on Windows the arrow next to **New Note**, drop PDFs onto the window, or press Ctrl+P and choose **Import PDF**). Each PDF becomes a note:
@@ -865,8 +919,9 @@ Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **S
 | **App Lock / Biometrics / Auto-Lock** | Protect the app with a PIN and fingerprint (folder locks are set on the Folders screen) |
 | **Show Notes in Home Screen Widgets** | With App Lock on: let Sticky note and Checklist widgets show their note (off: they show "Locked") |
 | **Sync Devices** | Pair your phone and computer and keep your notes in sync over Wi-Fi; connect, disconnect or unpair devices |
-| **Backup & Restore** | Save or restore all your data |
-| **Import Notes** | Bring in notes from files or Google Keep |
+| **Backup & Restore** | Automatic backups (daily or weekly, to a folder you choose, locked with a password), or save or restore all your data yourself |
+| **Import Notes** | Bring in notes from Evernote, Obsidian, Notion, Google Keep or files |
+| **Daily Note Template** | What each day's new note starts from (blank, or a template) |
 | **Voice Notes** | The offline English speech pack, whether new recordings are turned into text, and the English accent |
 | **Text in Pictures** | Whether the text in photos and scans is read so you can search it, Hindi too (phone) or the language (Windows), read everything again or remove it |
 | **Trash Auto-Purge** | How long deleted notes are kept |
@@ -882,6 +937,8 @@ Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **S
 - **Voice notes are turned into text on your phone.** Recordings and their text never go to any server (only to your own paired devices, if you sync). The speech recognition is your phone's own (Google's on-device speech service); the one-time English speech pack is downloaded by your phone, not by OffNote.
 - **The text in your pictures is read on your device**, by text recognition built into OffNote on the phone and by Windows itself on a PC. Pictures and their text never go to any server.
 - Notes are only shared when **you** choose to export, share or back them up.
+- **Backups with a password are encrypted.** Without the password nobody can read them, wherever the file ends up (an SD card, a synced folder, an email). OffNote keeps only a key made from the password, in your phone's secure storage, never the password itself.
+- **Things shared to OffNote** from other apps are copied into OffNote only when you share them, and the copies are deleted once they're saved (or you close the sheet).
 
 ---
 
@@ -914,6 +971,17 @@ Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **S
 - On Windows, if the phone isn't found, open the device's **⋮ → Connect by address** and type the address shown on the phone while pairing (Sync Devices → Pair a new device → Show a code). If that doesn't work either, turn on **Let other devices connect to this PC** and allow OffNote when Windows asks (choose private networks).
 - If syncing stops while the phone's screen is off, allow OffNote to run in the background: **Sync Devices → Battery settings**.
 - "Update OffNote" means the two devices have different versions: update both to the newest version.
+
+**Automatic backups stopped ("OffNote may no longer save to the backup folder")**
+- The folder was deleted, renamed or moved, or the SD card it was on was taken out. Open **Settings → Backup & Restore**, tap **Folder** and choose the folder again (or a new one), then **Back up now**.
+- Backups are made while you use OffNote (or as you leave it), once a day or week, and only if something changed. If you didn't open OffNote, there was nothing new to back up.
+
+**I forgot my backup password**
+- It can't be recovered, by anyone: backups made with it can't be opened. Set a new password (**Settings → Backup & Restore → Password**) so new backups use it, and make a new backup straight away.
+
+**OffNote isn't in the Share list**
+- Scroll the share sheet, or tap **More** / **Edit**: some phones only show the apps used most. After you've shared to OffNote once, it usually moves up.
+- Make sure OffNote is updated to 3.13 or newer.
 
 **An attachment won't open**
 - You need an app on your phone that can open that type of file (for example a PDF reader for PDFs).
