@@ -19,6 +19,27 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 4.0.0
+
+> ⚠️ **Before you update, please read:**
+> - **Make a backup first** (Settings → Backup & Restore). This update changes how your notes are stored, and installing an older version afterwards won't bring the old format back.
+> - **If you sync, update all your devices.** Devices only sync with others on OffNote 4.0.
+> - **Backups made with 4.0 that include an encrypted locked folder can't be restored by older versions**, so restore them with 4.0.
+
+- **Locked folders are now encrypted.** Until now a locked folder hid its notes; now they are encrypted, so even someone who copies the phone's storage can't read them. The first time you enter your folder PIN after updating, OffNote explains what happens, shows you a **new recovery code** (save it: from now on it's the only way back in if you forget the folder PIN, and your old code stops working), then encrypts the notes with a progress bar. **Not now** leaves them as they were and asks again next time. ⚠️ If you forget **both** the folder PIN and the recovery code, nobody can open those notes, not even OffNote. See [Locked Folders](#locked-folders).
+- **Reminders and events without a note.** The **+** button in **Reminders** adds a reminder, birthday or event that is just that: a title and a date. They show in Reminders and the Calendar, not in your notes. Birthdays and events you made before that have only a title and a date move there too (nothing is deleted).
+- **Birthdays with a name and age.** Type the person's **Name** and **Current age**; OffNote shows "Turns 36 on 24 Jun 2027" so you can check it, and the reminder says "Asha turns 36 today".
+- **Writing without symbols.** Bold, headings, lists and links show as they look, without `**`, `#` or `-` around them, even on the line you're writing. Tap **Bold** (or another style) and just type. The **Link** button adds or changes a web link. The formatting bar now works in **tasks, table cells and toggles** too. Prefer the symbols? **Settings → Show Markdown while editing**.
+- **On-device AI (optional).** Search your notes **by meaning** ("holiday plans" finds your Goa trip note), **Ask My Notes** a question and get the answer with the passages it came from, and **Summarise** a note from its **⋮** menu. Everything runs on your phone or PC: your notes and questions never leave it. You choose what to download in **Settings → On-device AI** (25 MB for search; 1.0 GB more for written answers, on phones with 6 GB of memory or more). See [On-device AI](#on-device-ai).
+- **Export Data.** **Settings → Export Data** saves all your notes (or chosen folders) in one ZIP: Markdown, text, HTML, Word, JSON or PDF, with or without photos and files, optionally locked with a password. See [Export all your notes](#export-all-your-notes).
+- **More imports.** **Word (.docx)** documents become notes with their headings, lists, tables and pictures. **CSV** files (and Notion databases) open as a **spreadsheet** you can scroll, with its text searchable. From **Notion**, to-dos become real task lists, and toggles and callouts come in as toggles and callouts.
+- **All Notes shows the notes that aren't in a folder.** Notes in folders are in their folders; **Pinned**, **Favorites**, search, tags and the calendar still show everything.
+- **+ New works where you are.** In a folder or a tag, every kind of new note (Today's note, imported PDFs, events) goes there. A new **Import** chip imports files right where you are.
+- **Asks before deleting.** Deleting notes, tasks with text, table rows, attachments, reminders and pages asks first (and Undo still works).
+- **Cleaner look:** flat colours throughout, no glows or blurs.
+- **Clearer progress** for imports, restoring a backup and encrypting: one dialog with a progress bar, Cancel, and what happened at the end.
+- **Fixed:** a note card's date badge no longer runs off the edge on narrow phones or with large text.
+
 ## What's new in 3.14.0
 
 - **Birthdays, meetings and important dates on the calendar.** Add events to the Calendar (**Add event**, **Important**, **Birthday**, or hold a day), or from **+ New → Event**. Choose what it is (birthday, anniversary, meeting, appointment, event, important date, holiday or other), the day, all day or a time, where, and whether it repeats (every day, week, month or **year**). Each event is a note too, so you can write in it: the meeting's agenda, gift ideas. See [Birthdays, events and important dates](#birthdays-events-and-important-dates).
@@ -250,7 +271,11 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Smart folders and saved searches**: ready-made lists (Today, Checklists...) and your own saved searches, on the phone and on Windows.
 - **Note links**: type `[[` to link to another note (OffNote suggests them as you type), then tap the link in **Read mode** to open it. Each note lists the notes that link to it, and shows them in a **graph** you can tap, drag and zoom.
 - **App lock** with a 6-digit PIN and fingerprint/face unlock, plus a one-time recovery code if you forget the PIN.
-- **Locked folders**: keep private folders behind their own folder PIN or fingerprint, separate from the app lock.
+- **Locked folders**: keep private folders behind their own folder PIN or fingerprint, separate from the app lock. Their notes are **encrypted**.
+- **On-device AI** (optional): search by meaning, ask your notes questions, and summarise a note, without anything leaving your device.
+- **Reminders, birthdays and events** on their own (no note needed), with names and ages for birthdays.
+- **Spreadsheets**: CSV files open as a scrollable grid, and their words are searchable.
+- **Export Data**: all your notes in one ZIP, in the format you choose, optionally with a password.
 - **Private in the app switcher**: Recent apps (and the Windows taskbar preview) never show your notes.
 - **Backup and restore** everything to a single file, **automatically** every day or week, locked with your password.
 - **Share to OffNote** from any app; **daily notes** and a **calendar** of your notes and reminders.
@@ -266,6 +291,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 
 - **Phone:** an Android phone or tablet running **Android 7.0 or newer**, with about 250 MB of free space to install or update (the app itself takes about 120 MB, plus your notes)
 - **PC:** Windows 10 or 11 (64-bit), with about 100 MB of free space (plus 57 or 181 MB for the speech model, if you use voice-to-text)
+- **On-device AI (optional):** 25 MB for search by meaning, 1.0 GB more for written answers (on phones with 6 GB of memory or more); a 64-bit (arm64) phone
 
 ---
 
@@ -401,7 +427,9 @@ PDF export (export as HTML and print that to PDF from your browser instead), tak
 Tap **+ New** at the bottom right (also inside a folder or a tag, where the note goes into that folder or tag). A panel opens:
 - **Start writing…** Type a line and press Enter (or the arrow) to save it as a note straight away, without leaving the list. The **⤢** button next to it opens a blank note instead.
 - **The round buttons:** **List** (a checklist), **Code**, **Draw** (start with a sketch), **Scan** (a document with the camera) and **Voice** (starts recording).
-- **The chips under them:** **Template** (a ready-made layout, see [Templates](#templates)), **PDF** (import a PDF), **From photo** (a photo of a page becomes a note) and **Today** (today's note, see [Daily notes and the calendar](#daily-notes-and-the-calendar)).
+- **The chips under them:** **Template** (a ready-made layout, see [Templates](#templates)), **PDF** (import a PDF), **From photo** (a photo of a page becomes a note), **Today** (today's note, see [Daily notes and the calendar](#daily-notes-and-the-calendar)) and **Import** (files and notes from other apps, see [Import notes](#import-notes)). Opened inside a folder or a tag, everything you make or import goes into that folder or gets that tag (the panel shows "In <folder>").
+
+**All Notes** lists the notes that aren't in a folder; open a folder to see its notes. Pinned, Favorites, search, tags and the calendar include notes from every folder.
 
 Tap outside the panel, press Back or tap ✕ to close it. Give the note a title and start typing. Everything saves automatically. Tap the back arrow when you're done.
 
@@ -427,7 +455,10 @@ Use the formatting toolbar at the bottom of the note to add headings (**H1**, **
 - Tap a button again to **remove** that formatting. Choosing another heading size replaces the old one.
 - Lists, quotes and headings apply to every line you've selected.
 - The buttons light up to show the formatting where your cursor is.
-- On the line you're editing, small faded symbols (like `#` or `**`) appear so you can change the formatting by hand; they disappear when you move to another line. While your cursor is inside a code block, its ``` marks show in colour at the top and bottom of the box, and the ` marks around inline code show while you edit that line.
+- **No symbols:** you never see `#`, `**` or `-`, not even on the line you're writing. Bullets and checkboxes are drawn (tap a checkbox to tick it). With nothing selected, tap **Bold** (or Italic…) and type: what you type next is bold. The arrow keys and Backspace step over formatting as if it weren't there.
+- **Links:** select some words and tap **Link** in the formatting bar to link them to a web address, or put the cursor in a link and tap **Link** to change, open or remove it. In Read mode, tap a link to open it.
+- **In tasks, table cells and toggles** the formatting bar works too: it formats the one you're typing in.
+- Typing Markdown still works: `**word**` becomes **word** once you close it. Prefer to see the symbols? Turn on **Settings → Show Markdown while editing**.
 - Made a mistake? Tap **Undo** (↶) at the left of the toolbar, and **Redo** (↷) to bring the change back. They undo typing and formatting alike, a few words at a time.
 - **Copy and paste:** copying gives other apps clean text (and formatted text to apps like mail and documents); pasting it back into a note keeps every format. Pasting from a web page, Google Docs or Word keeps its headings, bold, italic, links, lists, tables and colours. Paste a web address over selected words to link them. Long-press (or right-click) the text for **Copy as Markdown** (the text with its symbols) and **Paste as Plain Text** (no formatting; Ctrl+Shift+V on Windows). In a code block, text is always pasted as it is.
 - Very long notes are edited in parts behind the scenes so typing stays smooth. You won't see the parts, but in a very long note a text selection (and Undo) covers one part, a few paragraphs, at a time.
@@ -602,7 +633,8 @@ The drawing board is endless in every direction, with faint dots so you can see 
 - **Add one:** in the Calendar, tap a day and then **Add event**, **Important** or **Birthday** (or just **hold a day**). Elsewhere: **+ New → Event**, or on Windows Ctrl+P → **New Event…**. To put a note you already have on the calendar, open it and tap **⋮ → Add to Calendar…**.
 - **What it is:** Birthday, Anniversary, Meeting, Appointment, Event, Important, Holiday or Other. Birthdays, anniversaries, important dates and holidays start as **all day**; birthdays and anniversaries repeat **every year**.
 - **When:** the day, **All day** or a start and end time; an all-day event can last several days (**Add end**). **Repeats:** never, every day, week, month or year.
-- **Birthdays:** leave **The year is the birth year** on and OffNote counts the years ("turns 30"). Turn it off if you don't know the year.
+- **Birthdays:** type the person's **Name** (the title follows: "Asha's Birthday") and, if you know it, their **Current age**: OffNote works out the birth year and shows "Turns 36 on 24 Jun 2027" so you can check it. The reminder says "Asha turns 36 today". Leave the age empty if you don't know it.
+- **Just a date:** a birthday or event made from **Reminders → +** (or with only a title) is kept in Reminders and the Calendar, not among your notes. Give it some writing, a task list or a picture and it becomes a note.
 - **Remind me:** tick as many as you like. All-day events: **On the day**, **1 day**, **2 days** or **1 week before**, at the time shown (9:00 unless you change it). Events at a time: **At start**, 5, 15 or 30 minutes, 1 hour, 1 day or 1 week before. They are ordinary reminders: Snooze and Done work, and they're listed in **Reminders** (tap ✎ there to change the event).
 - **On the calendar:** days with events get a dot in the event's colour (an important date's number turns red). Tap a day to see its **Events** (with the time, place and years, and a bell if it reminds you); tap one to open its note, or **⋮** to **Edit** it or **Remove from Calendar** (the note stays).
 - **Upcoming:** tap **Upcoming** above the day to see the next two months of events.
@@ -669,6 +701,25 @@ OffNote reads the text in your photos, whiteboard shots, scanned pages and paste
 - **The text of a picture:** open a photo or scanned page and tap the **Text** button at the top. The text appears under the picture (beside it on Windows) and every line is outlined. **Copy** it, or tap **Add to Note** to put it in the note right under the picture. Both take a moment ("Finding tables and pictures…") and keep the layout: headings, lists, tables as tables, boxed or coloured text as callouts, checkboxes as tasks, and photos or diagrams on the page as pictures. After Add to Note, **Undo** takes it all out again. If the picture hasn't been read yet, tap **Read Now**. A photo or scan whose text has been read also has a **Text** button on its card in the note.
 - **Picture to note:** **+ New → Picture to note** (on Windows: the arrow next to New Note) turns a photo into a new note laid out the same way, with the photo itself at the end (turn **Keep the picture in the note** off to leave it out). Pick several photos for one note.
 - **Find in a note** finds words in the note's pictures too.
+
+### On-device AI
+OffNote can search your notes by what they mean, answer questions from them and summarise them, **all on your phone or PC**. Your notes and questions never leave the device, and after the download no internet is needed. It's optional: nothing is downloaded until you ask.
+
+**Set it up:** **Settings → On-device AI**. Two downloads, each asked for first:
+- **Search by meaning** (25 MB): finds notes by what they're about, not only their words, shows the passages a question is about, and picks out a note's key sentences. Searching by meaning turns on with it (switch it off there any time). OffNote then reads your notes once in the background ("Reading your notes… 40 of 68").
+- **Answers in its own words** (1.0 GB, Wi-Fi recommended): writes answers and summaries. Needs the first one, and a phone with **6 GB of memory or more**.
+- **Delete** frees the space again.
+
+**Using it:**
+- **Search:** type in the search bar as usual. Under the results, **About this, by meaning** shows notes about what you typed even if they don't use the same words ("holiday plans" finds a note about your Goa trip).
+- **Ask My Notes:** the **✨** button at the top of Search (on Windows: Ctrl+P → **Ask My Notes**). Ask a question; OffNote finds the passages of your notes it's about and writes a short answer with numbers like **[1]** pointing to them. Tap a passage to open its note. Without the large download you get the passages themselves. If your notes don't say, it tells you so.
+- **Summarise:** in a note, **⋮ → Summarise** shows its key sentences at once; **Write a summary** (large download) writes a few bullet points. **Copy** copies either.
+
+**Good to know:**
+- AI can be wrong: answers show the passages they came from, so you can check them.
+- Notes in **locked folders**, sealed **time capsules** and the **Trash** are never read for search or answers. A note in a locked folder can still be summarised while you have it open; nothing is kept.
+- English works best. Answers take a few seconds (longer the first time, while the model loads).
+- On phones, On-device AI needs a 64-bit (arm64) phone; it's not offered on others.
 - **Settings → Text in Pictures:** see how many pictures have been read, turn reading off, read Hindi too (phone; each picture takes a little longer), pick the language (Windows), read all pictures again, or remove the text read from them.
 - Small pictures are enlarged before they're read, and pictures taken sideways or upside down are read the right way round. For Copy, Add to Note and Picture to note the picture is also cleaned up (shadows and coloured light evened out, table lines kept away from the letters), straightened if it was taken at a slight angle, small print on big photos read up close, and bits missed the first time read again enlarged. Lines that were wrapped are joined, split words put back together and bullets turned into a list.
 - Tables are found from their lines, or from columns that line up. Very unusual layouts (text on a slant, handwriting, several overlapping columns) may still come out as plain text.
@@ -743,6 +794,8 @@ When the day comes, open the note and tap **Open Time Capsule**: everything come
 
 Reminders for birthdays, meetings and other dates are set on the event itself: see [Birthdays, events and important dates](#birthdays-events-and-important-dates).
 
+**A reminder without a note:** open **Reminders** and tap **+**. Give it a title, a date and time (and whether it repeats), or make it a birthday or an event. It lives in Reminders and the Calendar, not in your notes. Deleting it asks first, then removes its alarms.
+
 When the reminder goes off you can tap **Snooze 10 min**, **Snooze 1 hour** or **Done**, or tap the notification to open the note.
 
 To see or change all your reminders, open the menu (☰) → **Reminders**. Swipe a reminder to delete it.
@@ -789,7 +842,7 @@ To **turn App Lock off**, you'll be asked for your PIN (or your fingerprint / Wi
 On the lock screen (or the folder PIN screen), tap **Forgot PIN?**, enter your recovery code (capitals, spaces and dashes don't matter) and choose a new PIN. The code is then used up: OffNote shows you a new one to save. The App Lock and folder PINs have separate codes. Without the code a forgotten PIN can't be reset.
 
 ### Hide in Recent apps
-**Settings → Hide in Recent Apps** (on by default) keeps your notes out of the Recent apps screen: OffNote shows there as a blank card, and the app blurs whenever it isn't in front. Screenshots inside OffNote still work. On Windows, **Hide in Taskbar Previews** makes the preview over the taskbar button show the OffNote icon instead of the window.
+**Settings → Hide in Recent Apps** (on by default) keeps your notes out of the Recent apps screen: OffNote shows there as a blank card, and the app is covered whenever it isn't in front. Screenshots inside OffNote still work. On Windows, **Hide in Taskbar Previews** makes the preview over the taskbar button show the OffNote icon instead of the window.
 
 > ⚠️ **Keep your recovery code safe.** Without it there is no way to reset a forgotten PIN: the only option would be to clear the app's data, which **deletes all your notes**. Keep regular backups too (see below).
 
@@ -824,6 +877,16 @@ To change it later, open **Folder Lock → Change Folder PIN**, enter your curre
 
 ### Lock a folder
 On the Folders screen, tap **⋯** on a folder and choose **Lock** (or **Lock Folder** from the menu inside the folder). If you haven't set a folder PIN yet, you'll be asked to create one first. Locked folders show a small lock badge.
+
+### Encrypted (4.0)
+The notes in locked folders are **encrypted**: their text, task lists, photos, files, recordings and versions are stored scrambled, and only your folder PIN (or fingerprint, if turned on, or the recovery code) opens them. Someone who copies the phone's storage or a backup can't read them.
+- **After updating from an older version**, the first time you enter your folder PIN OffNote explains this, shows a **new recovery code** (save it and tick **I've saved it**; your old code stops working), then encrypts the notes while you watch a progress bar. **Not now** asks again next time; until then the folder is hidden as before.
+- Moving a note into a locked folder encrypts it; moving it out (or unlocking the folder for good) makes it normal again. **Deleting** a locked folder makes its notes normal and moves them out.
+- While a folder is locked, its notes can't be searched, their reminders show "Note Reminder", and the home screen widget shows **Locked**. You can still see that the notes exist, their dates and colour, and the tags on them.
+- **On your other devices** (sync), the same folder PIN opens them.
+- **Backups** keep these notes encrypted. Restoring on this phone needs the folder PIN; on another phone it needs the **recovery code** that was current when the backup was made.
+
+> ⚠️ **Don't lose both.** If you forget the folder PIN *and* lose the recovery code, the notes in locked folders can't be opened by anyone, not even OffNote.
 
 ### How locked folders behave
 - Opening, editing or removing the lock from a locked folder asks for your folder PIN or fingerprint.
@@ -872,11 +935,22 @@ Changing the password or turning automatic backups off asks for your App Lock PI
 **To restore a locked backup**, use **Restore from Backup** as usual and type its password when asked.
 
 ### Moving to a new phone
-Make a backup on the old phone, copy the file to the new phone (or save it to Drive), install OffNote on the new phone, then restore (with the backup's password if it has one).
+Make a backup on the old phone, copy the file to the new phone (or save it to Drive), install OffNote on the new phone, then restore (with the backup's password if it has one). Notes in **locked folders** stay encrypted in the backup: on the new phone OffNote asks for your folder **recovery code** (the one current when the backup was made) the first time you open a locked folder. Keep that code with your backups.
+
+Restoring needs OffNote 4.0 or newer if the backup has encrypted locked folders.
 
 ---
 
 ## Import and Export
+
+### Export all your notes
+**Settings → Export Data** (on Windows also Ctrl+P → **Export Data**) saves your notes in one ZIP file, in folders like your own:
+- **Which notes:** everything, chosen folders, or the notes not in a folder; with or without the Archive and the Trash.
+- **What:** everything (photos, drawings, files, recordings) or just the text.
+- **Format:** Markdown, text, HTML, Word, JSON, or PDF (phone).
+- **Where:** a folder you choose, or Share.
+- **Password** (optional, at least 8 characters, asked each time): the ZIP is encrypted (AES-256), and 7-Zip, WinRAR or ZArchiver open it with the password. Up to 256 MB on a phone.
+- Notes in **locked folders** are included only if you enter your folder PIN; otherwise they're left out and the result says how many. Sealed **time capsules** are always left out. Reminders and events come as a calendar file (`.ics`).
 
 ### Export notes
 Open a note and tap **⋮** → choose a format. To export **several notes at once**, long-press a note, tap the others, then **More → Export**: each note becomes its own file and they are all shared together.
@@ -914,7 +988,8 @@ Tap or click a photo or drawing in the exported page to open the viewer:
 
 ### Import notes
 **Settings → Import Notes** (on Windows also Ctrl+P → **Import Notes…**), then choose where they come from:
-- **Files:** **PDF** files (see below), and **.md**, **.txt** and **.json** files, including notes previously exported from OffNote (their title, tags, folder and task lists, with their names, come back too).
+- **Files:** **PDF** files (see below), **Word (.docx)** documents (headings, lists, tables, tasks, colours, links and pictures come in; text boxes don't, and you're told), **CSV** and **TSV** spreadsheets (see below), and **.md**, **.txt** and **.json** files, including notes previously exported from OffNote (their title, tags, folder and task lists, with their names, come back too).
+- **Spreadsheets (CSV):** each file becomes a note with the spreadsheet in it: scroll it in the note, or tap it to see it full screen with row numbers and the first row and column kept in view. It's read-only. The words in it can be searched.
 - **Evernote**, **Obsidian** and **Notion**: see [Import from other apps](#import-from-other-apps).
 - **Google Keep** notes: download them from [Google Takeout](https://takeout.google.com) (choose *Keep*), unzip the download, and import the `.json` files.
 - **Other calendars:** events from Google Calendar, Outlook or Apple Calendar: see [Import from other calendars](#import-from-other-calendars).
@@ -933,7 +1008,7 @@ Each event becomes an event note in a folder named after its calendar. Birthdays
 Notes keep their **dates** (when they were written and last changed), **tags**, **folders** (inside folders too), **pictures** in their places and **links** between them. Importing the same notes twice makes copies.
 - **Evernote:** in Evernote, right-click a notebook → **Export notebook** → **ENEX**, then pick the `.enex` file. The notebook becomes a folder; tick boxes become tasks; pictures stay where they were and other attachments (PDFs, recordings) are attached. Text you encrypted in Evernote can't be brought over (decrypt it in Evernote first); OffNote tells you if any was left out.
 - **Obsidian:** on Windows pick the vault's folder (or drop it onto the window); on the phone, pick a `.zip` of the vault. Folders become folders inside one named after the vault; `#tags` and the tags at the top of a note become tags; `[[links]]` link to the notes; pictures (`![[photo.png]]`) appear in place; other embedded files are attached. Obsidian's own settings folder is left out.
-- **Notion:** in Notion, **Settings → Export all workspace content → Markdown & CSV**, with *Include subpages*, then pick the `.zip` (big workspaces come as ZIPs inside a ZIP: that's fine). Pages go into a **Notion** folder, sub-pages into a folder named after their page; links between pages work; a page's *Created* date and *Tags* are kept; databases become a note with a table, with their pages in a folder of their own.
+- **Notion:** in Notion, **Settings → Export all workspace content → Markdown & CSV**, with *Include subpages*, then pick the `.zip` (big workspaces come as ZIPs inside a ZIP: that's fine). Pages go into a **Notion** folder, sub-pages into a folder named after their page; links between pages work; a page's *Created* date and *Tags* are kept; to-dos become task lists you can tick, toggles and callouts come in as toggles and callouts; databases become a note with a spreadsheet, with their pages in a folder of their own.
 - On Windows you can also drop an `.enex` file, a Notion or Markdown `.zip`, or a vault folder onto the window.
 
 ### Import a PDF
@@ -960,7 +1035,10 @@ Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **S
 | **Show Notes in Home Screen Widgets** | With App Lock on: let Sticky note and Checklist widgets show their note (off: they show "Locked") |
 | **Sync Devices** | Pair your phone and computer and keep your notes in sync over Wi-Fi; connect, disconnect or unpair devices |
 | **Backup & Restore** | Automatic backups (daily or weekly, to a folder you choose, locked with a password), or save or restore all your data yourself |
-| **Import Notes** | Bring in notes from Evernote, Obsidian, Notion, Google Keep or files |
+| **Import Notes** | Bring in notes from Evernote, Obsidian, Notion, Google Keep, Word, spreadsheets (CSV) or files |
+| **Export Data** | Save all your notes, or chosen folders, in one ZIP (Markdown, text, HTML, Word, JSON or PDF), optionally with a password |
+| **On-device AI** | Download (or delete) the models for search by meaning, Ask My Notes and summaries; turn search by meaning on or off |
+| **Show Markdown while editing** | Show the formatting symbols (`#`, `**`) in notes while you write (off: formatting only) |
 | **Daily Note Template** | What each day's new note starts from (blank, or a template) |
 | **Voice Notes** | The offline English speech pack, whether new recordings are turned into text, and the English accent |
 | **Text in Pictures** | Whether the text in photos and scans is read so you can search it, Hindi too (phone) or the language (Windows), read everything again or remove it |
@@ -973,7 +1051,9 @@ Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **S
 
 - **Your notes never go to any server.** There are no accounts, no cloud, no ads, no analytics and no tracking.
 - **Sync stays on your own network.** If you pair your devices, notes go directly from one of your devices to another over your local Wi-Fi, encrypted end to end, and only to devices you paired. Nothing goes through the internet.
-- The only internet use is checking this page for app updates and downloading them. You can use the app fully offline.
+- The only internet use is checking this page for app updates and downloading them, and the downloads you ask for in Settings (the Windows speech model, the On-device AI models, each checked to be exactly the expected file). You can use the app fully offline.
+- **On-device AI runs on your device.** Searching by meaning, answers and summaries are worked out on your phone or PC; notes and questions are never sent anywhere. What it learns about your notes stays on the device (not in backups, not synced), and never covers notes in locked folders.
+- **Notes in locked folders are encrypted** on your device, in sync and in backups (see [Locked Folders](#locked-folders)).
 - **Voice notes are turned into text on your phone.** Recordings and their text never go to any server (only to your own paired devices, if you sync). The speech recognition is your phone's own (Google's on-device speech service); the one-time English speech pack is downloaded by your phone, not by OffNote.
 - **The text in your pictures is read on your device**, by text recognition built into OffNote on the phone and by Windows itself on a PC. Pictures and their text never go to any server.
 - Notes are only shared when **you** choose to export, share or back them up.
