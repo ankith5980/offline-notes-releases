@@ -19,6 +19,17 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 4.1.0
+
+> ⚠️ **If you sync, update all your devices.** Devices only sync with others on OffNote 4.1. If one isn't updated yet, Sync Devices says which device to update; nothing is lost in the meantime.
+
+- **Passwords.** A new, separate place for your passwords, cards and secure notes, encrypted with a **master password** only you know (plus your fingerprint or Windows Hello if you like, and a recovery code). Generate strong passwords, see **2FA codes**, check your **password health**, import from your browser or another password manager, and keep them in step on your devices, still encrypted. On Android, OffNote can **fill passwords in other apps and websites**. Open it from the menu (☰) → **Passwords**. See [Passwords](#passwords).
+- **Folders inside folders.** Make a folder inside another (**⋯ → New Folder Inside**), or move one with **⋯ → Move to…**. A folder shows its folders above its notes and where it is ("Work / Clients"). On Windows the sidebar is a tree: drag a folder onto another, or onto **Folders** for the top level. A locked folder locks everything inside it, and one PIN opens it all. See [Folders inside folders](#folders-inside-folders).
+- **Fixed: locked folders from your other device on the phone.** Notes of a locked folder encrypted on another device stayed "Locked note" on the phone, even after the fingerprint. Now the phone asks for your **folder PIN once** for them; after that your fingerprint opens them too.
+- **Fixed:** a locked folder's screen no longer flickers or jumps back to the top while it's open.
+- **Fixed (Windows):** after a folder you were viewing locked itself again, **Unlock** in the list didn't ask for the PIN.
+- Imports from Evernote, Obsidian and Notion now keep their folders inside folders.
+
 ## What's new in 4.0.0
 
 > ⚠️ **Before you update, please read:**
@@ -417,7 +428,7 @@ Your notes, attachments and backups are in `%APPDATA%\OffNote\OffNote` on your P
 Open **Sync Devices** in the sidebar (or **Settings → Sync Devices**), click **Pair a new device → Show a QR code**, and scan it with the phone. See [Sync between your devices](#sync-between-your-devices). The PC connects to your phone by itself, so Windows doesn't need to let anything in; closing the window keeps OffNote (and the connection) running in the tray.
 
 ### Not on Windows yet
-PDF export (export as HTML and print that to PDF from your browser instead), taking photos or scanning with a camera (scan from pictures instead), home-screen widgets, and the Windows **Share** panel (use **Send to → OffNote** in File Explorer instead). Unlocking locked folders with Windows Hello (folders open with their folder PIN on Windows; the app itself can unlock with Windows Hello).
+PDF export (export as HTML and print that to PDF from your browser instead), taking photos or scanning with a camera (scan from pictures instead), home-screen widgets, and the Windows **Share** panel (use **Send to → OffNote** in File Explorer instead). Unlocking locked folders with Windows Hello (folders open with their folder PIN on Windows; the app itself can unlock with Windows Hello). Filling passwords in other apps (copy them from **Passwords** instead), and scanning 2FA QR codes with a camera (paste the setup key or the `otpauth://` link).
 
 ---
 
@@ -582,6 +593,14 @@ The drawing board is endless in every direction, with faint dots so you can see 
 - The buttons along the top of the home screen (**All Notes, Pinned, Favorites, Tasks, Reminders**) filter your list.
 - Tap the layout icon at the top to switch between **grid, list and compact** views.
 - Tap the theme icon next to it to switch between **Auto, Light and Dark**. Each tap moves to the next one, and the colours change smoothly. **Auto** follows your phone's own light/dark setting.
+
+### Folders inside folders
+- **Make one:** on the Folders screen (or inside a folder), tap **⋯** on a folder → **New Folder Inside**. When you make a folder, **Inside** shows where it goes; tap it to choose.
+- **Move one:** **⋯ → Move to…** and pick where it goes (or **Top level**). A folder can't go inside itself.
+- The Folders screen shows your top-level folders; each card says what it holds ("2 notes · 1 folder"). Inside a folder, its folders come first, then its notes, and the path is shown above its name.
+- **Deleting** a folder that has folders inside asks first; their notes move up to the folder above, nothing is deleted.
+- **Locked folders:** a locked folder locks everything inside it. One PIN opens the folder and all its folders, and they lock again together.
+- **Windows:** the sidebar shows the tree (the arrows fold a branch). Drag a folder onto another to put it inside, or onto **Folders** to bring it to the top level. Right-click a folder for **New Folder Inside** and **Move to…**; the command palette (Ctrl+P) shows each folder's path.
 
 ### Select several notes at once
 1. **Long-press** a note. A tick appears on it and the bar at the top shows how many notes are selected.
@@ -863,6 +882,59 @@ If someone ever makes you unlock OffNote, you can type a **duress PIN** instead 
 - Settings in the decoy looks like the real one; changing the PIN there changes only the duress PIN, and turning App Lock off there only turns it off for the decoy.
 - **Settings → Duress PIN → Remove Duress PIN** deletes the decoy notebook. Turning App Lock off also removes the duress PIN.
 
+## Passwords
+
+**Passwords** (menu ☰ → **Passwords**; on Windows, **Passwords** in the sidebar) keeps your logins, cards and secure notes encrypted with a **master password** that only you know. It's separate from your notes, your App Lock PIN and your folder PIN.
+
+### Set it up
+1. Open **Passwords** and choose a **master password**: at least 10 characters, typed twice. A few random words work well; the meter under it shows how strong it is.
+2. Tick that you understand that nobody can open your passwords if you forget **both** the master password and the recovery code.
+3. Save the **recovery code** it shows you (on paper, away from your phone), and tick **I've saved my recovery code**.
+4. Optionally turn on your **fingerprint** (Windows: Windows Hello) to unlock it.
+
+> ⚠️ **Don't lose both.** If you forget the master password *and* lose the recovery code, your passwords can't be opened by anyone, not even OffNote.
+
+### Add and use logins, cards and notes
+- Tap **+ New** and choose **Login**, **Card** or **Secure Note**. A login can have a username, password, several websites, Android apps, a 2FA key, notes and extra fields (hidden or not). Tap the dice to **generate** a password.
+- Tap an item to see it. Passwords and card numbers stay hidden until you tap the eye. Tap **Copy** next to any field; a copied password is cleared from the clipboard after 30 seconds (if you haven't copied something else since).
+- Search, sort, and filter by **Logins, Cards, Notes, Favorites** or **2FA**. Star an item to keep it at the top.
+- A login keeps its **last 10 passwords** (Password history), with when each was changed.
+- On a wide window (Windows), the list and the open item are side by side.
+
+### Generate passwords
+The dice (in Passwords, the editor, or Windows' command palette: **Generate Password**) makes a random **password** (8 to 64 characters, choose capitals, small letters, numbers and symbols; look-alikes such as O and 0 are left out) or a **passphrase** of random words (3 to 10, with a separator and a number if you like).
+
+### 2FA codes
+Give a login its **2FA key** (the code a site shows when you turn on two-step verification): paste the `otpauth://` link or the setup key, or on the phone tap the **scan** button and point the camera at the site's QR code. The login then shows the current **6-digit code** with a countdown, ready to copy.
+- **From Google Authenticator:** Settings (in Passwords) → **Import 2FA codes from Google Authenticator**, then scan its **Transfer accounts → Export accounts** QR code. Each code becomes a login.
+
+### Password health
+The shield in Passwords lists logins with **weak** passwords, passwords **reused** for more than one login, and **old** passwords (not changed in over a year), each with **Fix**. It's worked out on your device; OffNote doesn't check online lists of leaked passwords.
+
+### Fill passwords in other apps (Android)
+1. In Passwords → **⚙ (settings) → Fill passwords in other apps**, choose **OffNote** in the list Android shows.
+2. In **Chrome**, also turn on **Settings → Autofill services → Autofill using another service**.
+3. On a sign-in screen, tap the username or password field and choose **Unlock OffNote to fill**. Unlock with your master password or fingerprint and pick the login: logins saved for that app or site are shown first.
+- If you pick a login saved for a different app or site, OffNote asks first, so a look-alike app or site can't get your password without you noticing. You can let it remember the new app or site.
+- After you sign in somewhere new, Android offers to **save** the sign-in to OffNote (as a new login, or as a new password for the one you have).
+- Some apps hide their fields from autofill; copy and paste the password there instead.
+
+### Import and export
+- **Import:** Passwords → ⚙ → **Import passwords**, then choose the file exported from Chrome, Edge, Firefox, Bitwarden (CSV or JSON), 1Password or KeePass/KeePassXC. You see what's in it first; logins you already have are skipped. **Delete the exported file afterwards**: it holds your passwords as plain text.
+- **Export (encrypted):** saves a `.offnotevault` file locked with a password you choose. Import it on another device the same way.
+- **Export as plain text (CSV):** for moving to another password manager. It asks for your master password, and the file is readable by anyone: delete it once you've imported it.
+
+### Locking and privacy
+- Passwords locks itself after **5 minutes** without use (choose 1, 5, 15 or 30 in Passwords → ⚙), whenever you leave the app or minimise the window, when App Lock locks, and when you tap the lock.
+- While it's open, screenshots and screen recording show nothing of it (phone), and it's left out of screen sharing (Windows).
+- **Forgot the master password?** Tap **Use Recovery Code** on the unlock screen, enter the code, and choose a new master password (you get a new recovery code too).
+- **Change the master password** or make a **new recovery code** in Passwords → ⚙.
+
+### On your other devices
+Paired devices (see [Sync between your devices](#sync-between-your-devices)) keep Passwords in step, **still encrypted**: on the other device, open Passwords and unlock with the **same master password**. If you set up Passwords on two devices before they synced, each with its own master password, the other device's items show **Open**: enter that device's master password once, then choose one master password for all of them. Backups include Passwords too (encrypted); after restoring on a new phone, your master password or recovery code opens them.
+
+---
+
 ## Locked Folders
 
 You can lock any folder so its notes stay private, even from someone who can open the app. All locked folders share one **folder PIN**, which is **separate from your App Lock PIN**. Unlocking the app does not unlock your folders.
@@ -883,7 +955,8 @@ The notes in locked folders are **encrypted**: their text, task lists, photos, f
 - **After updating from an older version**, the first time you enter your folder PIN OffNote explains this, shows a **new recovery code** (save it and tick **I've saved it**; your old code stops working), then encrypts the notes while you watch a progress bar. **Not now** asks again next time; until then the folder is hidden as before.
 - Moving a note into a locked folder encrypts it; moving it out (or unlocking the folder for good) makes it normal again. **Deleting** a locked folder makes its notes normal and moves them out.
 - While a folder is locked, its notes can't be searched, their reminders show "Note Reminder", and the home screen widget shows **Locked**. You can still see that the notes exist, their dates and colour, and the tags on them.
-- **On your other devices** (sync), the same folder PIN opens them.
+- **On your other devices** (sync), the same folder PIN opens them. The first time, notes from another device need your **folder PIN once**, even if you use your fingerprint; after that the fingerprint opens them too (4.1).
+- **Folders inside a locked folder** are locked with it, and their notes are encrypted too (4.1).
 - **Backups** keep these notes encrypted. Restoring on this phone needs the folder PIN; on another phone it needs the **recovery code** that was current when the backup was made.
 
 > ⚠️ **Don't lose both.** If you forget the folder PIN *and* lose the recovery code, the notes in locked folders can't be opened by anyone, not even OffNote.
@@ -1037,6 +1110,7 @@ Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **S
 | **Backup & Restore** | Automatic backups (daily or weekly, to a folder you choose, locked with a password), or save or restore all your data yourself |
 | **Import Notes** | Bring in notes from Evernote, Obsidian, Notion, Google Keep, Word, spreadsheets (CSV) or files |
 | **Export Data** | Save all your notes, or chosen folders, in one ZIP (Markdown, text, HTML, Word, JSON or PDF), optionally with a password |
+| **Passwords** | Open your password vault (its own settings: lock time, clipboard, fingerprint, master password, recovery code, import/export, filling in other apps) |
 | **On-device AI** | Download (or delete) the models for search by meaning, Ask My Notes and summaries; turn search by meaning on or off |
 | **Show Markdown while editing** | Show the formatting symbols (`#`, `**`) in notes while you write (off: formatting only) |
 | **Daily Note Template** | What each day's new note starts from (blank, or a template) |
