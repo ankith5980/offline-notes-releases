@@ -19,6 +19,12 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 4.1.1
+
+- **A proper clock for reminder and event times.** On Windows (and on a phone held sideways) the clock for picking a time was squeezed: its numbers ran into each other and the **OK** button was cut off. The clock and the calendar now open at full size; on Windows the clock sits under the time, as on the phone. With the phone held sideways the whole clock fits on screen, with **Cancel** and **OK** in sight.
+- **Passwords on Windows use the window's width.** The list and the open item had been squeezed into the middle of the window. Now the list sits beside the item at a comfortable width, every filter (including **Favorites** and **2FA**) is in view without scrolling sideways, and the search box, filters and items line up neatly on the left.
+- **Quieter touch feedback, everywhere.** Tapping a row, button or field no longer spreads a ripple or flashes a grey block; it shows a soft, brief tint instead. On the phone and on Windows.
+
 ## What's new in 4.1.0
 
 > ⚠️ **If you sync, update all your devices.** Devices only sync with others on OffNote 4.1. If one isn't updated yet, Sync Devices says which device to update; nothing is lost in the meantime.
