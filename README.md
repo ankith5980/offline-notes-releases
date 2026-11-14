@@ -19,6 +19,19 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 4.1.2
+
+> ⚠️ **If you sync, update all your devices.** Devices only sync with others on OffNote 4.1.2. If one isn't updated yet, Sync Devices says which device to update; nothing is lost in the meantime.
+
+- **More than passwords in Passwords.** Tap **+ New** and you can now keep your **Aadhaar card**, **PAN card**, **driving licence**, **voter ID**, **bank accounts**, **Wi-Fi networks** and **SSH keys** there too, encrypted with your master password like everything else. See [What you can keep](#what-you-can-keep).
+- **Catches typing mistakes.** OffNote checks an Aadhaar number's last digit, the shape of a PAN and an IFSC, and a Wi-Fi password's length, and marks anything that looks wrong. It never stops you: tap **Save** again to keep it as it is.
+- **Numbers stay hidden.** Lists and items show only the last four digits (an Aadhaar shows as **XXXX XXXX 1234**) until you tap the eye.
+- **Wi-Fi made easy.** Scan the QR code on your router to fill in a network, and show a network as a QR code so a friend's phone can join by pointing its camera at it.
+- **SSH keys.** Paste a key or load it from its file (`id_ed25519`, `id_rsa`, a PuTTY `.ppk`): OffNote shows its type and fingerprint, fills in the public key, tells you whether a passphrase protects it, and warns if the public and private keys don't belong together.
+- **Bank accounts.** One tap on **Copy Account Details** copies the holder, account number, IFSC, bank and branch to send to someone; your net-banking password and PINs are left out.
+- **Driving licence expiry.** A licence that has expired, or runs out within two months, says so in the list.
+- Filters for **Bank**, **IDs**, **Wi-Fi** and **SSH Keys** appear once you have such items. Weak or reused **Wi-Fi passwords** now show up in **Password Health** too.
+
 ## What's new in 4.1.1
 
 - **A proper clock for reminder and event times.** On Windows (and on a phone held sideways) the clock for picking a time was squeezed: its numbers ran into each other and the **OK** button was cut off. The clock and the calendar now open at full size; on Windows the clock sits under the time, as on the phone. With the phone held sideways the whole clock fits on screen, with **Cancel** and **OK** in sight.
@@ -890,7 +903,7 @@ If someone ever makes you unlock OffNote, you can type a **duress PIN** instead 
 
 ## Passwords
 
-**Passwords** (menu ☰ → **Passwords**; on Windows, **Passwords** in the sidebar) keeps your logins, cards and secure notes encrypted with a **master password** that only you know. It's separate from your notes, your App Lock PIN and your folder PIN.
+**Passwords** (menu ☰ → **Passwords**; on Windows, **Passwords** in the sidebar) keeps your logins, cards, bank accounts, identity cards, Wi-Fi networks, SSH keys and secure notes encrypted with a **master password** that only you know. It's separate from your notes, your App Lock PIN and your folder PIN.
 
 ### Set it up
 1. Open **Passwords** and choose a **master password**: at least 10 characters, typed twice. A few random words work well; the meter under it shows how strong it is.
@@ -901,11 +914,24 @@ If someone ever makes you unlock OffNote, you can type a **duress PIN** instead 
 > ⚠️ **Don't lose both.** If you forget the master password *and* lose the recovery code, your passwords can't be opened by anyone, not even OffNote.
 
 ### Add and use logins, cards and notes
-- Tap **+ New** and choose **Login**, **Card** or **Secure Note**. A login can have a username, password, several websites, Android apps, a 2FA key, notes and extra fields (hidden or not). Tap the dice to **generate** a password.
-- Tap an item to see it. Passwords and card numbers stay hidden until you tap the eye. Tap **Copy** next to any field; a copied password is cleared from the clipboard after 30 seconds (if you haven't copied something else since).
-- Search, sort, and filter by **Logins, Cards, Notes, Favorites** or **2FA**. Star an item to keep it at the top.
+- Tap **+ New** and choose what to add (see [What you can keep](#what-you-can-keep)). A login can have a username, password, several websites, Android apps, a 2FA key, notes and extra fields (hidden or not). Tap the dice to **generate** a password.
+- Tap an item to see it. Passwords, card numbers, ID and account numbers stay hidden until you tap the eye. Tap **Copy** next to any field; a copied password is cleared from the clipboard after 30 seconds (if you haven't copied something else since).
+- Search, sort, and filter by **Logins, Cards, Bank, IDs, Wi-Fi, SSH Keys, Notes, Favorites** or **2FA** (a kind's filter appears once you have one). Star an item to keep it at the top.
 - A login keeps its **last 10 passwords** (Password history), with when each was changed.
 - On a wide window (Windows), the list and the open item are side by side.
+
+### What you can keep
+Tap **+ New**. The choices are grouped: **Passwords** (Login, Wi-Fi Network, SSH Key), **Cards and bank** (Card, Bank Account), **Identity documents** (Aadhaar Card, PAN Card, Driving Licence, Voter ID) and **Other** (Secure Note). Fill in what you have; every field is optional, and you can add your own fields and notes. If you leave the name empty, OffNote names the item for you (for example "PAN Card · Asha Menon", or the Wi-Fi network's name).
+
+- **Aadhaar Card**: name, Aadhaar number, Virtual ID, date of birth, linked mobile number, address. The number shows as **XXXX XXXX 1234** until you tap the eye. OffNote checks the number's last digit, so most typing mistakes are caught.
+- **PAN Card**: name, PAN, father's name, date of birth. Letters are typed in capitals for you, and the item shows who the PAN belongs to (an individual, a company…) from its 4th letter.
+- **Driving Licence**: name, licence number, date of birth, date of issue, **valid till**, vehicle classes, the RTO that issued it, address. Pick dates from the calendar. When the licence has expired, or runs out within two months, the list and the item say so.
+- **Voter ID**: name, EPIC number, relative's name, date of birth, constituency, part and serial number, address.
+- **Bank Account**: bank, account holder, account number, account type, IFSC, branch, UPI ID, SWIFT/BIC, customer ID, net-banking password and mobile-banking PIN (MPIN). The list shows the bank and the last four digits. **Copy Account Details** copies what someone needs to pay you (holder, number, IFSC, bank, branch, type, UPI ID), never your passwords or PINs.
+- **Wi-Fi Network**: network name, security (WPA/WPA2, WPA3, WEP, or none), password, and whether it's a hidden network. On the phone, tap the **scan** button next to the network name and point the camera at the QR code on your router (or on another phone sharing its Wi-Fi). On a saved network, **Share With a QR Code** shows a code another phone's camera can join from. Anyone who sees that code can join, so show it only to people you'd give the password to.
+- **SSH Key** (for Git sites such as GitHub and for signing in to servers): server, username, private key, public key, passphrase. Paste the keys, or tap the file button to load them (`id_ed25519`, `id_rsa`, `id_ecdsa`, their `.pub` files, or a PuTTY `.ppk`). OffNote shows the key's **type** and **fingerprint** (the same `SHA256:…` that GitHub and `ssh-keygen -l` show), fills in the public key when you only gave the private one, and says whether a passphrase protects it. It warns if the public key doesn't belong to the private key. The private key stays hidden until you tap the eye.
+
+OffNote checks some numbers as you type (an Aadhaar number's last digit, the shape of a PAN and an IFSC, a UPI ID, a Wi-Fi password's length). Anything that looks wrong is marked in red. If you're sure it's right (an old card, for example), tap **Save** again to keep it as it is.
 
 ### Generate passwords
 The dice (in Passwords, the editor, or Windows' command palette: **Generate Password**) makes a random **password** (8 to 64 characters, choose capitals, small letters, numbers and symbols; look-alikes such as O and 0 are left out) or a **passphrase** of random words (3 to 10, with a separator and a number if you like).
@@ -915,7 +941,7 @@ Give a login its **2FA key** (the code a site shows when you turn on two-step ve
 - **From Google Authenticator:** Settings (in Passwords) → **Import 2FA codes from Google Authenticator**, then scan its **Transfer accounts → Export accounts** QR code. Each code becomes a login.
 
 ### Password health
-The shield in Passwords lists logins with **weak** passwords, passwords **reused** for more than one login, and **old** passwords (not changed in over a year), each with **Fix**. It's worked out on your device; OffNote doesn't check online lists of leaked passwords.
+The shield in Passwords lists logins and Wi-Fi networks with **weak** passwords, passwords **reused** for more than one of them, and logins with **old** passwords (not changed in over a year), each with **Fix**. It's worked out on your device; OffNote doesn't check online lists of leaked passwords.
 
 ### Fill passwords in other apps (Android)
 1. In Passwords → **⚙ (settings) → Fill passwords in other apps**, choose **OffNote** in the list Android shows.
