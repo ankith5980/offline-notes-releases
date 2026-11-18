@@ -19,6 +19,18 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 4.2.0
+
+- **File Converter.** Change files from one format to another on your phone or PC, without uploading them anywhere: pictures, PDFs and documents, spreadsheets, archives, sound and videos. Open it from the menu (☰) → **File Converter** (on Windows: **Tools → File Converter** at the bottom of the sidebar, or Ctrl+P). See [File Converter](#file-converter).
+- **Pictures:** JPEG, PNG, WebP, HEIC, GIF, TIFF, icons and more, made smaller or resized, with the photo's location removed if you like. Put many pictures into **one PDF**, turn PDF pages into pictures, or turn a photo of a page into a **Word** document or text.
+- **Documents:** **PDF → Word** (text you can edit, or pages exactly as they look), Word, OpenDocument, RTF, EPUB e-books, web pages, Markdown and text, into one another and into PDF.
+- **Spreadsheets and data:** Excel, CSV and OpenDocument sheets into one another; JSON, XML and YAML; calendars (.ics) and contacts (.vcf) into a spreadsheet and back.
+- **Archives:** open ZIP, TAR, GZ and similar files; pack files into a ZIP (with a password if you like) or TAR.GZ.
+- **Sound:** MP3, M4A, WAV, FLAC, Ogg and Opus (and AMR on the phone, WMA on Windows), with the quality you choose, and keep only part of a recording.
+- **Videos:** make an MP4 smaller or lower its resolution, remove its sound, keep only part of it, make a **GIF** from a video, take its sound as MP3, or turn a GIF into an MP4.
+- **From wherever the file is:** share a file to OffNote and tap **Convert**, or in a note select attachments (or open a picture) and tap **Convert**. Converted files can be saved, shared, put into a note or attached to the note they came from.
+- Devices on 4.1.2 and 4.2.0 keep syncing with each other: there's no need to update them at the same time.
+
 ## What's new in 4.1.2
 
 > ⚠️ **If you sync, update all your devices.** Devices only sync with others on OffNote 4.1.2. If one isn't updated yet, Sync Devices says which device to update; nothing is lost in the meantime.
@@ -306,6 +318,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Reminders, birthdays and events** on their own (no note needed), with names and ages for birthdays.
 - **Spreadsheets**: CSV files open as a scrollable grid, and their words are searchable.
 - **Export Data**: all your notes in one ZIP, in the format you choose, optionally with a password.
+- **File Converter**: pictures, PDFs and documents, spreadsheets, archives, sound and videos into other formats, on your device (PDF to Word, pictures to PDF, video to GIF, WAV to MP3 and many more).
 - **Private in the app switcher**: Recent apps (and the Windows taskbar preview) never show your notes.
 - **Backup and restore** everything to a single file, **automatically** every day or week, locked with your password.
 - **Share to OffNote** from any app; **daily notes** and a **calendar** of your notes and reminders.
@@ -319,7 +332,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 
 ## Requirements
 
-- **Phone:** an Android phone or tablet running **Android 7.0 or newer**, with about 250 MB of free space to install or update (the app itself takes about 120 MB, plus your notes)
+- **Phone:** an Android phone or tablet running **Android 7.0 or newer**, with about 250 MB of free space to install or update (the app itself takes about 145 MB, plus your notes)
 - **PC:** Windows 10 or 11 (64-bit), with about 100 MB of free space (plus 57 or 181 MB for the speech model, if you use voice-to-text)
 - **On-device AI (optional):** 25 MB for search by meaning, 1.0 GB more for written answers (on phones with 6 GB of memory or more); a 64-bit (arm64) phone
 
@@ -543,7 +556,7 @@ Read mode is only for reading: the text, title, tags, task lists and attachments
 In a note, tap **⋮** (top right) and choose **Scan Document**, **Take Photo**, **Pick Image from Gallery**, **Attach Document** or **Add Hand Drawing**. Tap an attachment to open it: photos and scanned pages open full screen, drawings open on the drawing board.
 - **Draw on a photo:** tap **Mark up** on a photo or scanned page; it opens on the drawing board with your strokes on top. After saving it's a drawing in the note.
 - **Several at once:** in **Pick Image from Gallery** and **Attach Document** you can choose as many photos or files as you like in one go.
-- **Select several in a note:** long-press a photo, drawing or file, then tap others to add them (tap again to leave one out). The bar at the bottom shows how many are selected, with **Select All**, **Share** (sends them together) and **Delete** (asks first). Tap **✕** or Back to stop selecting.
+- **Select several in a note:** long-press a photo, drawing or file, then tap others to add them (tap again to leave one out). The bar at the bottom shows how many are selected, with **Select All**, **Share** (sends them together), **Convert** (into another format, see [File Converter](#file-converter)) and **Delete** (asks first). Tap **✕** or Back to stop selecting.
 
 ### Scan documents
 Tap **+ → Scan Document** on the home screen (a new note is made for the scan), or **⋮ → Scan Document** in a note. Take a photo of the page; no Google services or internet are needed, everything happens on your phone.
@@ -689,6 +702,8 @@ Save something from another app without opening OffNote first:
    - **Today**: added at the end of today's note (made if there isn't one yet).
    - **A note**: type part of its name and tap it; it's added at the end of that note.
 4. Tap **Save** to keep it and go straight back to the app you were in, or **Save & open** to open the note.
+
+To change a shared file's format instead (a HEIC photo into a JPEG, a PDF into Word…), tap **Convert**: see [File Converter](#file-converter).
 
 A web link becomes a tidy link with its title; pictures go into the note, other files are attached. A single **PDF** can instead be **read into the note** (its text, tables and pictures, as with [Import a PDF](#import-a-pdf)). On the phone up to 50 files (250 MB) can be shared at once.
 
@@ -1130,6 +1145,64 @@ Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **S
 
 ---
 
+## File Converter
+
+Change a file into another format: a HEIC photo into a JPEG, a PDF into a Word document, a WAV recording into an MP3, a video into a smaller MP4 or a GIF. **Everything happens on your phone or PC: your files are never uploaded**, and it works without internet.
+
+### Open it
+- **Phone:** the menu (☰) → **File Converter**, or **Settings → Data & Storage → File Converter**.
+- **Windows:** **Tools → File Converter** at the bottom of the sidebar, or Ctrl+P → **Go to File Converter**.
+- **From another app:** **Share** the file → **OffNote** → **Convert**.
+- **From a note:** long-press its photos or files to select them, then tap **Convert** in the bar at the bottom; or open a picture and tap **Convert** at the top.
+
+### Convert files
+1. Tap **Choose files to convert** and pick one or more files (**Add files** adds more; **✕** takes one out). OffNote looks inside each file to see what it really is, whatever its name says.
+2. Under **Convert to**, tap the format you want. Only the formats those files can become are shown. A greyed-out one isn't possible on this device: tap it to see why (for example, Windows needs a free extension from the Microsoft Store to read HEIC photos).
+3. Change the **Options** if you like (see below). OffNote remembers them for next time, except a ZIP's password and the part of a recording or video to keep.
+4. Tap **Convert to …**. A bar shows how far it has got; **Cancel** stops it and leaves nothing half-made behind.
+5. When it's done:
+   - **Open** a converted file to look at it.
+   - **Save or share** it: on the phone, to **A folder on this phone** (like Downloads or Pictures) or **Share** it to Drive, email or another app; on Windows, **Save** it where you choose. With several files, **Save all** saves them together.
+   - **Save to a note**: into a new note, today's note or a note you choose.
+   - **Attach to this note**, if you started from a note.
+   - **Convert other files** to start again.
+
+The converted files are kept only until you close the converter, so save the ones you want.
+
+### What it converts
+
+| Kind | Reads | Makes |
+|---|---|---|
+| **Pictures** | JPEG, PNG, WebP, HEIC, GIF, BMP, TIFF, ICO, TGA, SVG, Photoshop (PSD), OpenEXR, PNM, AVIF and camera RAW (JPEG XR on Windows) | JPEG, PNG, WebP, HEIC (phone only), GIF, BMP, TIFF, ICO, TGA, and PDF |
+| **Documents** | PDF, Word (.docx), OpenDocument (.odt), Rich Text (.rtf), EPUB e-books, web pages (.html), Markdown, plain text | all of those, and pictures of a PDF's pages |
+| **Spreadsheets and data** | Excel (.xlsx), CSV, TSV, OpenDocument sheets (.ods), JSON, XML, YAML, calendars (.ics), contacts (.vcf) | all of those, and tables in PDF, Word and other documents |
+| **Archives** | ZIP, TAR, TAR.GZ, TAR.BZ2, TAR.XZ, GZ, BZ2 | ZIP (with an optional password), TAR, TAR.GZ, TAR.BZ2, GZ |
+| **Sound** | MP3, M4A, AAC, WAV, FLAC, Ogg Vorbis, Opus, AMR (phone only), WMA (Windows only), and the sound of a video | MP3, M4A, WAV, FLAC, Ogg Vorbis, Opus, AMR (phone only), WMA (Windows only) |
+| **Videos** | MP4, MOV, MKV, WebM, 3GP (and AVI and WMV on Windows), animated GIF and WebP | MP4, GIF, and the video's sound in any of the sound formats |
+
+Any files can also be packed into a ZIP or TAR archive.
+
+### Options
+- **Pictures:** **Quality** for JPEG, WebP and HEIC (lower makes a smaller file); **Size** (the same, a long side in pixels, a percentage, or fitted into a box of a width and height you type, keeping its shape); **Photo details**: **Without location** (the default: the date and camera are kept, where it was taken is removed), **Keep all** or **Remove all**; a background colour for transparent parts when the format can't keep them; for animated GIFs and WebPs, keep them moving, the first frame only, or every frame as its own picture.
+- **Pictures into a PDF:** the **Page** (usual paper for your country, A4, Letter or each picture's own size) and the **Margin**. Turn on **Combine into one file** for one PDF with a page per picture, in the order shown.
+- **PDF into pictures:** **Page sharpness**: Screen (72 dpi), Good (150 dpi) or Print (300 dpi).
+- **PDF into Word:** **Editable text** rebuilds the headings, paragraphs, lists, tables and pictures so you can change them; **Pages as they look** puts each page in as a picture, exactly like the PDF, but its text can't be edited. **Read scanned pages** reads pages that are photos of text with text recognition.
+- **Documents and spreadsheets:** several files can be combined into one document, or one workbook with a sheet for each file.
+- **Sound:** the **Bitrate** (OffNote tells you what it suits: speech, everyday music or high quality), the **Sample rate** and **Channels** (mono or stereo), 16- or 24-bit for WAV and FLAC, and **Keep only part**: type where it starts and ends, like `0:30` and `1:45` (leave **To** empty to keep it to the end).
+- **Videos into MP4:** **Quality**: **As it is** (about the video's own quality), **High** (hardly any loss), **Medium** (good for sharing and watching on a phone) or **Small file** (for sending); **Size**: as it is, 1080p, 720p, 480p or 360p (never made bigger); **Remove the sound**; and **Keep only part**.
+- **Videos into a GIF:** the **Width** (320 to 800 pixels) and **Frames a second** (5 to 20). GIFs get large, so a GIF can be at most 600 frames long (30 seconds at 20 a second, 2 minutes at 5): use **Keep only part** to choose which part.
+- **ZIP:** an optional **Password** (AES-256), which 7-Zip, WinRAR, ZArchiver and macOS can open. OffNote doesn't keep it, so remember it.
+
+### Good to know
+- **Sideways videos** (filmed with the phone upright) stay upright in MP4s and GIFs.
+- **Speed:** most pictures, documents and short recordings take a second or two. Long recordings and big videos take longer, and GIFs are the slowest on a phone (a few seconds for a short one). **Cancel** stops a conversion at any time.
+- **Phone:** some formats need a newer Android: HEIC photos and camera RAW files need Android 9, AVIF pictures Android 12. Converting sound and making WebP pictures need a 64-bit phone (almost every phone from the last few years).
+- **Windows:** HEIC photos, AVIF pictures and camera RAW files need Windows' free extensions from the Microsoft Store (**HEIF Image Extensions**, **AV1 Video Extension**, **Raw Image Extension**); the converter tells you which. On Windows "N" editions, MP3, M4A and WMA sound and videos need Microsoft's free **Media Feature Pack** (WAV, FLAC, Ogg and Opus work without it).
+- **Archives** that need a password to open can't be unpacked by OffNote, and very large archives (over 20,000 files or 4 GB unpacked) are refused, to protect your device.
+- **Converting doesn't change the original file.**
+
+---
+
 ## Settings at a glance
 
 | Setting | What it does |
@@ -1142,6 +1215,7 @@ Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **S
 | **Backup & Restore** | Automatic backups (daily or weekly, to a folder you choose, locked with a password), or save or restore all your data yourself |
 | **Import Notes** | Bring in notes from Evernote, Obsidian, Notion, Google Keep, Word, spreadsheets (CSV) or files |
 | **Export Data** | Save all your notes, or chosen folders, in one ZIP (Markdown, text, HTML, Word, JSON or PDF), optionally with a password |
+| **File Converter** | Convert pictures, documents, spreadsheets, archives, sound and videos into other formats, on your device (also in the menu ☰) |
 | **Passwords** | Open your password vault (its own settings: lock time, clipboard, fingerprint, master password, recovery code, import/export, filling in other apps) |
 | **On-device AI** | Download (or delete) the models for search by meaning, Ask My Notes and summaries; turn search by meaning on or off |
 | **Show Markdown while editing** | Show the formatting symbols (`#`, `**`) in notes while you write (off: formatting only) |
@@ -1161,6 +1235,7 @@ Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **S
 - **On-device AI runs on your device.** Searching by meaning, answers and summaries are worked out on your phone or PC; notes and questions are never sent anywhere. What it learns about your notes stays on the device (not in backups, not synced), and never covers notes in locked folders.
 - **Notes in locked folders are encrypted** on your device, in sync and in backups (see [Locked Folders](#locked-folders)).
 - **Voice notes are turned into text on your phone.** Recordings and their text never go to any server (only to your own paired devices, if you sync). The speech recognition is your phone's own (Google's on-device speech service); the one-time English speech pack is downloaded by your phone, not by OffNote.
+- **Files you convert stay on your device.** The File Converter works entirely on your phone or PC; nothing is uploaded, and its working copies are deleted when you close it.
 - **The text in your pictures is read on your device**, by text recognition built into OffNote on the phone and by Windows itself on a PC. Pictures and their text never go to any server.
 - Notes are only shared when **you** choose to export, share or back them up.
 - **Backups with a password are encrypted.** Without the password nobody can read them, wherever the file ends up (an SD card, a synced folder, an email). OffNote keeps only a key made from the password, in your phone's secure storage, never the password itself.
