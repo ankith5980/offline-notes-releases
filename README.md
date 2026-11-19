@@ -19,6 +19,16 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 4.2.1
+
+- **Documents keep their formatting when you convert them.** Fonts, sizes and colours; bold, italic, underline, strikethrough, highlighting, superscript and subscript, small capitals; centred, right-aligned and justified text, indents and spacing; headings; numbered and bulleted lists with their own numbering (a list that starts at 5 still starts at 5, a lettered level stays lettered); tables with their column widths, merged cells, shading and borders; pictures at their size; page breaks; the page's size, margins, header and footer with page numbers. This works between **Word, OpenDocument, Rich Text, web pages, EPUB e-books and PDF**. See [Formatting is kept](#formatting-is-kept).
+- **Word → PDF → Word comes back exactly.** PDFs made by OffNote carry an editable copy of the document inside them, so turning them back into Word (or another document) gives you the document you started with.
+- **PDFs made elsewhere** are turned into documents from how they look: their fonts, sizes, colours, alignment, lists, tables, pictures, page size, margins, header and footer. Words whose letters the PDF stores without their text (this happens with some Indian scripts) are read from the page with text recognition, when **Read scanned pages** is on.
+- **PDFs on the phone** are now made the same way as on Windows, so a document looks the same as a PDF on both.
+- **A document's title isn't printed** at the top of the converted file any more (it's kept as the file's title), and documents combined into one each start on a new page.
+- **A simpler start in the File Converter:** tap the kind of file you have (Pictures, Documents, Sound…) and the file browser shows only that kind. The format and option buttons no longer move when you tap them.
+- Devices on 4.2.0 and 4.2.1 keep syncing with each other: there's no need to update them at the same time.
+
 ## What's new in 4.2.0
 
 - **File Converter.** Change files from one format to another on your phone or PC, without uploading them anywhere: pictures, PDFs and documents, spreadsheets, archives, sound and videos. Open it from the menu (☰) → **File Converter** (on Windows: **Tools → File Converter** at the bottom of the sidebar, or Ctrl+P). See [File Converter](#file-converter).
@@ -1156,7 +1166,7 @@ Change a file into another format: a HEIC photo into a JPEG, a PDF into a Word d
 - **From a note:** long-press its photos or files to select them, then tap **Convert** in the bar at the bottom; or open a picture and tap **Convert** at the top.
 
 ### Convert files
-1. Tap **Choose files to convert** and pick one or more files (**Add files** adds more; **✕** takes one out). OffNote looks inside each file to see what it really is, whatever its name says.
+1. Tap the kind of file you have: **Pictures**, **Documents**, **Spreadsheets & data**, **Archives**, **Sound** or **Videos** (or **Any other file**, to pack it into an archive), and pick one or more files. The file browser shows only that kind. **Add more** adds more of the same kind; **✕** takes one out. OffNote looks inside each file to see what it really is, whatever its name says. A kind your device can't convert is greyed out: tap it to see why.
 2. Under **Convert to**, tap the format you want. Only the formats those files can become are shown. A greyed-out one isn't possible on this device: tap it to see why (for example, Windows needs a free extension from the Microsoft Store to read HEIC photos).
 3. Change the **Options** if you like (see below). OffNote remembers them for next time, except a ZIP's password and the part of a recording or video to keep.
 4. Tap **Convert to …**. A bar shows how far it has got; **Cancel** stops it and leaves nothing half-made behind.
@@ -1186,12 +1196,22 @@ Any files can also be packed into a ZIP or TAR archive.
 - **Pictures:** **Quality** for JPEG, WebP and HEIC (lower makes a smaller file); **Size** (the same, a long side in pixels, a percentage, or fitted into a box of a width and height you type, keeping its shape); **Photo details**: **Without location** (the default: the date and camera are kept, where it was taken is removed), **Keep all** or **Remove all**; a background colour for transparent parts when the format can't keep them; for animated GIFs and WebPs, keep them moving, the first frame only, or every frame as its own picture.
 - **Pictures into a PDF:** the **Page** (usual paper for your country, A4, Letter or each picture's own size) and the **Margin**. Turn on **Combine into one file** for one PDF with a page per picture, in the order shown.
 - **PDF into pictures:** **Page sharpness**: Screen (72 dpi), Good (150 dpi) or Print (300 dpi).
-- **PDF into Word:** **Editable text** rebuilds the headings, paragraphs, lists, tables and pictures so you can change them; **Pages as they look** puts each page in as a picture, exactly like the PDF, but its text can't be edited. **Read scanned pages** reads pages that are photos of text with text recognition.
-- **Documents and spreadsheets:** several files can be combined into one document, or one workbook with a sheet for each file.
+- **PDF into Word:** **Editable text** rebuilds the document with its look (fonts, sizes, colours, alignment, headings, lists, tables, pictures, the page, header and footer) so you can change it; **Pages as they look** puts each page in as a picture, exactly like the PDF, but its text can't be edited. **Read scanned pages** reads pages that are photos of text with text recognition (and words a PDF stores without their text).
+- **Documents into a PDF:** the **Page**: **As in the document** (Word, OpenDocument and Rich Text files keep their own page size and margins) or **Usual paper** (for other documents), **A4** or **Letter**, and then the **Margin**.
+- **Documents and spreadsheets:** several files can be combined into one document (each starting on a new page), or one workbook with a sheet for each file.
 - **Sound:** the **Bitrate** (OffNote tells you what it suits: speech, everyday music or high quality), the **Sample rate** and **Channels** (mono or stereo), 16- or 24-bit for WAV and FLAC, and **Keep only part**: type where it starts and ends, like `0:30` and `1:45` (leave **To** empty to keep it to the end).
 - **Videos into MP4:** **Quality**: **As it is** (about the video's own quality), **High** (hardly any loss), **Medium** (good for sharing and watching on a phone) or **Small file** (for sending); **Size**: as it is, 1080p, 720p, 480p or 360p (never made bigger); **Remove the sound**; and **Keep only part**.
 - **Videos into a GIF:** the **Width** (320 to 800 pixels) and **Frames a second** (5 to 20). GIFs get large, so a GIF can be at most 600 frames long (30 seconds at 20 a second, 2 minutes at 5): use **Keep only part** to choose which part.
 - **ZIP:** an optional **Password** (AES-256), which 7-Zip, WinRAR, ZArchiver and macOS can open. OffNote doesn't keep it, so remember it.
+
+### Formatting is kept
+When you convert a document, its look comes along: fonts, sizes, colours, bold, italic, underline, strikethrough, highlighting, superscript and subscript, small capitals, alignment, indents, spacing between lines and paragraphs, headings, lists with their own numbering, tables (column widths, merged cells, shading, borders), pictures at their size, page breaks, and the page itself (size, margins, header and footer with page numbers).
+- **Word, OpenDocument and Rich Text** keep all of it, into each other and into PDF.
+- **Web pages and EPUB e-books** keep it too; a page's header and footer keep their text, page numbers and place, but not their spacing.
+- **PDFs made by OffNote** carry the document they were made from, so they turn back into exactly that document. If the PDF is changed in another app afterwards, it's read from how it looks instead.
+- **Other PDFs** are read from how they look, which is close but not always exact: fonts the PDF doesn't name come back in the document's usual font, and tables drawn without lines may lose some merged cells.
+- **Markdown and plain text** keep only what they can hold: the text, headings, lists, bold, italic and links.
+- Fonts your device doesn't have are shown with a similar one (on the phone, for example, Calibri looks like the phone's own font), but the document still names the original, so it looks right again on a computer that has it.
 
 ### Good to know
 - **Sideways videos** (filmed with the phone upright) stay upright in MP4s and GIFs.
