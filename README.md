@@ -19,6 +19,16 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 4.3.0
+
+- **One file or separate files.** When you convert several files, choose **One file** or **Separate files** right under the formats. A line says what you'll get ("One PDF of 3 files, in this order"), you can drag the files into order and name the one file. See [One file or separate files](#one-file-or-separate-files).
+- **Merge PDFs** into one PDF (with a bookmark for each file), **mix pictures, documents and PDFs into one PDF**, and put pictures into **one multi-page TIFF** or an **animated GIF or WebP** slideshow.
+- **Fixed:** converting two PDFs to Word as one file gave nothing when **Pages as they look** was chosen; resizing a PNG or WebP with see-through parts failed on the phone. Slideshows are made much faster on the phone.
+- **More in the formatting bar:** **underline**, **subscript** and **superscript** (H₂O, x²), **Clear formatting**, **indent and outdent** for list items (Tab and Shift+Tab on a keyboard), and an **Insert** menu for the date, the time, a picture, a photo, a file or a scan. See [Format your text](#format-your-text).
+- **Folders, reworked:** the Folders screen shows your folders as a **tree** (or a grid), folding branches the way you leave them. Long-press a folder to **drag it into place** or hold it over another to put it inside. **Sort** folders by name, date or by hand, and each folder's notes the way you like. Folders show **breadcrumbs** you can tap, search inside a folder looks through the folders in it too, and selected notes can be dragged onto a folder to move them. New cards, 16 colours and 24 icons. See [Folders inside folders](#folders-inside-folders).
+- **A quick tour** after the welcome pages points at the main features on the real screens, and a tip shows the formatting bar the first time you open a note. Take the tour again from **Settings → About → Take the app tour**.
+- **Before you update one device only:** OffNote 4.2.x shows underline, subscript and superscript as text like `<u>word</u>` in synced notes, so update all your synced devices. Devices on 4.2.x and 4.3.0 still sync with each other.
+
 ## What's new in 4.2.1
 
 - **Documents keep their formatting when you convert them.** Fonts, sizes and colours; bold, italic, underline, strikethrough, highlighting, superscript and subscript, small capitals; centred, right-aligned and justified text, indents and spacing; headings; numbered and bulleted lists with their own numbering (a list that starts at 5 still starts at 5, a lettered level stays lettered); tables with their column widths, merged cells, shading and borders; pictures at their size; page breaks; the page's size, margins, header and footer with page numbers. This works between **Word, OpenDocument, Rich Text, web pages, EPUB e-books and PDF**. See [Formatting is kept](#formatting-is-kept).
@@ -302,7 +312,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 ## Features
 
 - **Picture to note**: a photo of a page becomes a note with its text, tables, boxes, tasks and pictures.
-- **Notes with formatting**: headings, bold, italic, strikethrough, highlights, **text colours**, lists, quotes and code, shown right in the note as you write. Copy and paste keep the formatting.
+- **Notes with formatting**: headings, bold, italic, underline, strikethrough, highlights, **text colours**, subscript and superscript, lists you can indent, quotes and code, shown right in the note as you write. Copy and paste keep the formatting.
 - **Select several notes at once**: long-press a note, tap others, then pin, favourite, archive, move, tag, colour, duplicate, export or delete them all together.
 - **Checklists**: add as many named task lists as you like to a note (for example "Groceries" and "Packing") and tick off tasks right inside it. Each list shows how many tasks are done, and the note's card shows the overall percentage. Press Enter to add the next task; long tasks wrap onto more lines.
 - **Templates**: start a note from a ready-made layout (Daily Journal & Gratitude, Meeting Minutes, Project Plan / Sprint Log, Cornell Study Notes, Weekly Review & Habit Tracker), or save any note as your own template.
@@ -312,7 +322,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Action items**: OffNote finds the things to do in your notes and voice recordings and adds the ones you pick to a task list.
 - **Photos and files**: take a photo, pick from your gallery, or attach documents (PDF, Word, Excel and more).
 - **Reminders**: one-time or repeating (daily, weekly, monthly), with Snooze and Done buttons on the notification.
-- **Folders, tags and colours** to keep things organised. Long folder names, note titles and tags scroll by themselves so you can read them in full.
+- **Folders, tags and colours** to keep things organised: folders inside folders as a tree you can drag into order, sorted the way you like. Long folder names, note titles and tags scroll by themselves so you can read them in full.
 - **Pin and favourite** your most important notes.
 - **Archive** notes you want to keep but don't need to see every day.
 - **Trash** with automatic clean-up after the number of days you choose.
@@ -328,7 +338,8 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **Reminders, birthdays and events** on their own (no note needed), with names and ages for birthdays.
 - **Spreadsheets**: CSV files open as a scrollable grid, and their words are searchable.
 - **Export Data**: all your notes in one ZIP, in the format you choose, optionally with a password.
-- **File Converter**: pictures, PDFs and documents, spreadsheets, archives, sound and videos into other formats, on your device (PDF to Word, pictures to PDF, video to GIF, WAV to MP3 and many more).
+- **File Converter**: pictures, PDFs and documents, spreadsheets, archives, sound and videos into other formats, on your device (PDF to Word, pictures to PDF, video to GIF, WAV to MP3 and many more), as one file or separate files; merge PDFs.
+- **App tour**: a quick look at the main features on the real screens, any time from Settings.
 - **Private in the app switcher**: Recent apps (and the Windows taskbar preview) never show your notes.
 - **Backup and restore** everything to a single file, **automatically** every day or week, locked with your password.
 - **Share to OffNote** from any app; **daily notes** and a **calendar** of your notes and reminders.
@@ -415,12 +426,15 @@ While writing in a note:
 
 | Keys | What it does |
 |---|---|
-| **Ctrl+B** / **Ctrl+I** | Bold / italic (with nothing selected, the word the cursor is in) |
+| **Ctrl+B** / **Ctrl+I** / **Ctrl+U** | Bold / italic / underline (with nothing selected, the word the cursor is in) |
 | **Ctrl+Shift+X** / **Ctrl+Shift+H** | Strikethrough / highlight |
+| **Ctrl+=** / **Ctrl+Shift+=** | Subscript / superscript |
 | **Ctrl+E** | Code |
+| **Ctrl+\\** | Clear formatting |
 | **Ctrl+K** | Link to another note |
 | **Ctrl+1**, **Ctrl+2**, **Ctrl+3** | Heading 1, 2, 3 |
 | **Ctrl+Shift+8** / **Ctrl+Shift+7** / **Ctrl+Shift+9** | Bullet list / numbered list / quote |
+| **Tab** / **Shift+Tab** | On a list item: indent / outdent it |
 | **Ctrl+Z** / **Ctrl+Y** | Undo / redo |
 | **Ctrl+Shift+D** | Start or stop dictation |
 | **Ctrl+F** | Find in the note (**Enter** / **F3**: next match, **Shift+Enter** / **Shift+F3**: previous, **Esc**: close) |
@@ -476,6 +490,11 @@ PDF export (export as HTML and print that to PDF from your browser instead), tak
 
 ## Getting started
 
+### The app tour
+After the welcome pages, a short tour lights up the main parts of the app one by one: search, the layouts, the filters, **New**, and in the menu Folders, Tasks and Calendar, Passwords, the File Converter, Sync and Settings (on Windows: New Note, search, folders, the tools and pages in the sidebar, and the keyboard). Tap anywhere or **Next** to go on, **Back** to go back, or **Skip tour**; on Windows the arrow keys, Enter and Esc work too. The first time you open a note, two tips show the formatting bar and the note's menu.
+- Take the tour again any time: **Settings → About → Take the app tour**. **Show the note tips again** brings the note tips back for the next note you open.
+- If your phone is set to reduce motion, the tour doesn't animate.
+
 ### Create a note
 Tap **+ New** at the bottom right (also inside a folder or a tag, where the note goes into that folder or tag). A panel opens:
 - **Start writing…** Type a line and press Enter (or the arrow) to save it as a note straight away, without leaving the list. The **⤢** button next to it opens a blank note instead.
@@ -501,7 +520,7 @@ Templates give a new note its headings, prompts and task lists, so you only fill
 - Your templates are included in backups.
 
 ### Format your text
-Use the formatting toolbar at the bottom of the note to add headings (**H1**, **H2**, **H3**), **bold**, *italic*, ~~strikethrough~~, highlights, bullet and numbered lists, quotes, code and dividers.
+Use the formatting toolbar at the bottom of the note to add headings (**H1**, **H2**, **H3**), **bold**, *italic*, underline, ~~strikethrough~~, highlights, colours, subscript and superscript, bullet and numbered lists, quotes, code and dividers. On the phone the bar scrolls sideways; on Windows it wraps onto a second row.
 
 - The formatting shows **right in the note**: headings are large, bold text is bold, highlights are highlighted, quotes have a coloured bar down their side, dividers are drawn as a line across the note, and code blocks sit in a shaded box.
 - Select some text first to format it, or tap a button and start typing.
@@ -509,6 +528,10 @@ Use the formatting toolbar at the bottom of the note to add headings (**H1**, **
 - Lists, quotes and headings apply to every line you've selected.
 - The buttons light up to show the formatting where your cursor is.
 - **No symbols:** you never see `#`, `**` or `-`, not even on the line you're writing. Bullets and checkboxes are drawn (tap a checkbox to tick it). With nothing selected, tap **Bold** (or Italic…) and type: what you type next is bold. The arrow keys and Backspace step over formatting as if it weren't there.
+- **Underline, subscript and superscript:** select the words (or put the cursor in one) and tap **U**, **X₂** or **X²** (on Windows **Ctrl+U**, **Ctrl+=**, **Ctrl+Shift+=**). Subscript and superscript replace each other. In Markdown files they're kept as `<u>…</u>`, `<sub>…</sub>` and `<sup>…</sup>`; Word, PDF and HTML exports show them properly. Where your phone's font has no raised letters, OffNote draws them raised itself.
+- **Clear formatting** (the crossed-out T, **Ctrl+\\** on Windows) takes bold, italic, underline, colours and the rest off the selected words. With just the cursor on a line, it clears the whole line, including a heading, list or quote. Links stay.
+- **Indent and outdent:** on a list item, tap the indent buttons (or press **Tab** / **Shift+Tab** on a keyboard) to move it one level in or out. Numbered lists number themselves again for each level. Elsewhere Tab works as before.
+- **Insert** (⊕): put in today's **date**, the **time**, or both, where the cursor is; or add a **Picture**, a **Camera** photo (phone), a **File** or a **Scan** to the note.
 - **Links:** select some words and tap **Link** in the formatting bar to link them to a web address, or put the cursor in a link and tap **Link** to change, open or remove it. In Read mode, tap a link to open it.
 - **In tasks, table cells and toggles** the formatting bar works too: it formats the one you're typing in.
 - Typing Markdown still works: `**word**` becomes **word** once you close it. Prefer to see the symbols? Turn on **Settings → Show Markdown while editing**.
@@ -639,10 +662,17 @@ The drawing board is endless in every direction, with faint dots so you can see 
 ### Folders inside folders
 - **Make one:** on the Folders screen (or inside a folder), tap **⋯** on a folder → **New Folder Inside**. When you make a folder, **Inside** shows where it goes; tap it to choose.
 - **Move one:** **⋯ → Move to…** and pick where it goes (or **Top level**). A folder can't go inside itself.
-- The Folders screen shows your top-level folders; each card says what it holds ("2 notes · 1 folder"). Inside a folder, its folders come first, then its notes, and the path is shown above its name.
+- **The Folders screen** shows your folders as a **tree**: every level, indented, with an arrow to fold a branch away (OffNote remembers which are folded, on the phone and on Windows). Tap the grid button at the top to see the top level as **cards** instead. Each folder says how much it holds, its folders included ("12 notes · 2 folders"). A locked folder's contents aren't shown or counted until you open it.
+- **Arrange them:** long-press a folder in the tree and drag it. Drop it **between two folders** to put it there (a line shows where), **hold it over a folder** for half a second to put it **inside** (the folder lights up), or drop it on **Move to top level**. Dragging works in the manual order; in another order, OffNote offers to switch to it.
+- **Sort folders** with the sort button: **Manual** (the order you drag them into), **Name A–Z**, **Name Z–A**, **Recently changed** or **Newest first**.
+- **The menu (☰) → Folders** opens the same tree in the menu, with **All folders** under it.
+- **Inside a folder,** its folders come first, then its notes. **Breadcrumbs** under the top bar show where it is ("Folders › Work › Clients"): tap one to go back there. The sort button orders that folder's notes (by date changed, date made or title), remembered for each folder.
+- **Search inside a folder** looks through the folders in it too, and shows where each note is.
+- **Move notes by dragging:** select notes, then long-press one of the selected notes and drop them on a folder card or a breadcrumb.
+- **Colours and icons:** 16 colours and 24 icons for your folders.
 - **Deleting** a folder that has folders inside asks first; their notes move up to the folder above, nothing is deleted.
 - **Locked folders:** a locked folder locks everything inside it. One PIN opens the folder and all its folders, and they lock again together.
-- **Windows:** the sidebar shows the tree (the arrows fold a branch). Drag a folder onto another to put it inside, or onto **Folders** to bring it to the top level. Right-click a folder for **New Folder Inside** and **Move to…**; the command palette (Ctrl+P) shows each folder's path.
+- **Windows:** the sidebar shows the tree (the arrows fold a branch, remembered). Drag a folder between two others to reorder it (a line shows where), hold it over another to put it inside, or drop it on **Folders** to bring it to the top level. Right-click a folder for **New Folder Inside** and **Move to…**; the command palette (Ctrl+P) shows each folder's path.
 
 ### Select several notes at once
 1. **Long-press** a note. A tick appears on it and the bar at the top shows how many notes are selected.
@@ -1194,11 +1224,21 @@ Any files can also be packed into a ZIP or TAR archive.
 
 ### Options
 - **Pictures:** **Quality** for JPEG, WebP and HEIC (lower makes a smaller file); **Size** (the same, a long side in pixels, a percentage, or fitted into a box of a width and height you type, keeping its shape); **Photo details**: **Without location** (the default: the date and camera are kept, where it was taken is removed), **Keep all** or **Remove all**; a background colour for transparent parts when the format can't keep them; for animated GIFs and WebPs, keep them moving, the first frame only, or every frame as its own picture.
-- **Pictures into a PDF:** the **Page** (usual paper for your country, A4, Letter or each picture's own size) and the **Margin**. Turn on **Combine into one file** for one PDF with a page per picture, in the order shown.
+- **Pictures into a PDF:** the **Page** (usual paper for your country, A4, Letter or each picture's own size) and the **Margin**.
+- **Slideshows** (pictures into one GIF or WebP): **seconds per picture** (0.5 to 5), **Loop** or play once, and the frame size (the largest picture or the first one); pictures keep their shape on the background colour.
 - **PDF into pictures:** **Page sharpness**: Screen (72 dpi), Good (150 dpi) or Print (300 dpi).
 - **PDF into Word:** **Editable text** rebuilds the document with its look (fonts, sizes, colours, alignment, headings, lists, tables, pictures, the page, header and footer) so you can change it; **Pages as they look** puts each page in as a picture, exactly like the PDF, but its text can't be edited. **Read scanned pages** reads pages that are photos of text with text recognition (and words a PDF stores without their text).
 - **Documents into a PDF:** the **Page**: **As in the document** (Word, OpenDocument and Rich Text files keep their own page size and margins) or **Usual paper** (for other documents), **A4** or **Letter**, and then the **Margin**.
-- **Documents and spreadsheets:** several files can be combined into one document (each starting on a new page), or one workbook with a sheet for each file.
+
+### One file or separate files
+With more than one file, **Output** (right under the formats) chooses **One file** or **Separate files**, and the line under it says what you'll get, for example "One PDF of 7 pages, in this order" or "3 Word documents, one for each file". The button says it too ("Make one PDF of 3 files").
+- **One file:** drag the files by their handle into the order you want (screen readers have Move up and Move down), and type a **name** for the file (the first file's name is suggested).
+- What can become one file:
+  - **PDFs** merge into one PDF, with a bookmark for each file. Their text stays selectable and their pages look exactly the same. (The editable copy inside a PDF made by OffNote isn't carried into the merged file.) Password-protected PDFs can't be merged.
+  - **Pictures, documents and PDFs mixed** become one PDF, in the order you choose.
+  - **Pictures** become one PDF, one multi-page **TIFF**, or an animated **GIF** or **WebP** slideshow.
+  - **Documents** become one document, each starting on a new page; **spreadsheets** one workbook with a sheet for each file; any files one **ZIP** or **TAR**.
+- If one file can't be read, the others are still made, and OffNote says which file and why.
 - **Sound:** the **Bitrate** (OffNote tells you what it suits: speech, everyday music or high quality), the **Sample rate** and **Channels** (mono or stereo), 16- or 24-bit for WAV and FLAC, and **Keep only part**: type where it starts and ends, like `0:30` and `1:45` (leave **To** empty to keep it to the end).
 - **Videos into MP4:** **Quality**: **As it is** (about the video's own quality), **High** (hardly any loss), **Medium** (good for sharing and watching on a phone) or **Small file** (for sending); **Size**: as it is, 1080p, 720p, 480p or 360p (never made bigger); **Remove the sound**; and **Keep only part**.
 - **Videos into a GIF:** the **Width** (320 to 800 pixels) and **Frames a second** (5 to 20). GIFs get large, so a GIF can be at most 600 frames long (30 seconds at 20 a second, 2 minutes at 5): use **Keep only part** to choose which part.
