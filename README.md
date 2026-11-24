@@ -19,6 +19,15 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 4.3.1
+
+- **Enter after bold, underline and other formatting works again.** In text that had more than one kind of formatting (bold and underlined, say), pressing Enter at its end showed the `**` symbols and pulled the next line into the formatting. The new line now starts as plain text, and Enter in the middle of formatted text keeps both halves formatted.
+- **Notes in their own window (Windows) answer every key.** Home, End, Page Up and Page Down, with or without Shift, now work there as in the main window, also on laptops where these keys are on the number pad. **Ctrl+S** saves and **Ctrl+/** lists the shortcuts in a note window too; **Ctrl+W** closes it.
+- **Back in the app tour really goes back.** Going back now closes the menu again (or opens it again) so the highlighted part is the one on screen, on the phone and on Windows.
+- **The Folders entry in the phone's menu opens the folder tree** right there in the menu, also when your folders are locked. With no folders yet it opens the Folders screen, and then shows no arrow.
+- **Tidier layouts:** the colours and icons in the folder window line up in even rows; the "Saved" message on Windows has its close button at the right; the buttons at the ends of the search bar and the selection bar no longer touch their rounded edges when you point at or press them; and on Windows the formatting bar keeps each group of buttons together when it wraps onto more rows, with the **Toggle** button drawn as large as the others.
+- **Windows fits narrow windows better:** when the note area is narrow, **Pin**, **Favorite**, **Reminder** and **Colour** move into the note's **⋮** menu instead of being cut off, the inspector steps aside until there's room, and the selection bar, the note's word count row, the Trash preview and the empty-note page all fit. Buttons inside fields, banners and the list's hover buttons no longer touch the edges around them.
+
 ## What's new in 4.3.0
 
 - **One file or separate files.** When you convert several files, choose **One file** or **Separate files** right under the formats. A line says what you'll get ("One PDF of 3 files, in this order"), you can drag the files into order and name the one file. See [One file or separate files](#one-file-or-separate-files).
