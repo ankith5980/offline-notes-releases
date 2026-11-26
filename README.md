@@ -19,6 +19,14 @@
 
 OffNote is a notes app that keeps everything on your phone. There is no account to create, nothing is uploaded to the cloud, and it works without an internet connection. If you also use OffNote on your computer, your notes can sync between your own devices directly over your Wi-Fi, still without any cloud. Write notes, make checklists, sketch drawings, attach photos and files, set reminders, and lock the app or individual folders behind a PIN or your fingerprint.
 
+## What's new in 4.4.0
+
+- **File Drop: send anything between your phone and your computer.** Files, photos, videos, GIFs, voice recordings, what you copied (text or a picture) and typed text go straight to your other paired device over your Wi-Fi, encrypted, with no cloud and no account. Big files go on from where they stopped if the Wi-Fi drops or OffNote closes, and every file is checked to arrive exactly as it was sent. On the other device it waits in File Drop until you open it, save it (Gallery, Downloads or a folder you pick), copy it, share it or put it into a note. Send from the File Drop screen, from **Share → OffNote → Send** in any app, from a note's photos, files and voice notes, or on Windows by dragging files onto File Drop or pressing **Ctrl+V**. See [File Drop](#file-drop).
+- **The Folders entry in the phone's menu opens the Folders screen** again. The folder tree in the menu is gone: opening a locked folder from it asked for your PIN or fingerprint and then left you on All Notes. On the Folders screen a locked folder opens as it should after the PIN.
+- **Smoother sync.** Encrypting what goes between your devices now happens away from the screen, so syncing big photos and files no longer makes OffNote stutter, and it's faster.
+- **Share to OffNote takes more at once:** up to 200 files and 4 GB (it stops before your phone runs out of room).
+- **Before you update one device only:** File Drop needs OffNote 4.4.0 on both devices. Notes still sync between 4.3.x and 4.4.0; files you send to a device on 4.3.x wait until it's updated.
+
 ## What's new in 4.3.1
 
 - **Enter after bold, underline and other formatting works again.** In text that had more than one kind of formatting (bold and underlined, say), pressing Enter at its end showed the `**` symbols and pulled the next line into the formatting. The new line now starts as plain text, and Enter in the middle of formatted text keeps both halves formatted.
@@ -359,6 +367,7 @@ OffNote is a notes app that keeps everything on your phone. There is no account 
 - **In-app updates**: get new versions without the Play Store.
 - **Windows app**: the same notes app on your PC, in three columns, with shortcuts, a command palette, smart folders, Quick Capture from the tray, and voice-to-text with dictation.
 - **Sync between your devices**: pair your phone and computer once and your notes stay in step over your Wi-Fi, encrypted, with no cloud and no account.
+- **File Drop**: send files, photos, videos, voice recordings, the clipboard and text between your phone and computer, encrypted, over your Wi-Fi; big files go on after a dropped connection and arrive checked.
 
 ## Requirements
 
@@ -754,7 +763,9 @@ Save something from another app without opening OffNote first:
 
 To change a shared file's format instead (a HEIC photo into a JPEG, a PDF into Word…), tap **Convert**: see [File Converter](#file-converter).
 
-A web link becomes a tidy link with its title; pictures go into the note, other files are attached. A single **PDF** can instead be **read into the note** (its text, tables and pictures, as with [Import a PDF](#import-a-pdf)). On the phone up to 50 files (250 MB) can be shared at once.
+To send what you shared to your computer (or your phone) instead, tap **Send**: see [File Drop](#file-drop). Big shares (a long video) take a moment to get ready: OffNote shows how far it is, and **Cancel** stops it.
+
+A web link becomes a tidy link with its title; pictures go into the note, other files are attached. A single **PDF** can instead be **read into the note** (its text, tables and pictures, as with [Import a PDF](#import-a-pdf)). On the phone up to 200 files (4 GB) can be shared at once; OffNote stops before your phone runs out of room.
 
 **On Windows:** select files in File Explorer, right-click → **Send to → OffNote** (on Windows 11, **Show more options** first). OffNote comes to the front with the same choices.
 
@@ -1191,6 +1202,58 @@ Tap **+ New → Import PDF** on the home screen, in a folder or in a tag (or **S
 - Everything happens on your device, without internet.
 - PDFs with a password to open them can't be imported: open them in another app, remove the password, and import them again. (PDFs that open without a password but limit printing or copying import fine.)
 - Some PDFs made with unusual fonts have no readable text; their pages are then read like scans.
+
+---
+
+## File Drop
+
+Send files and text between your phone and your computer, the way your notes sync: straight over your Wi-Fi, encrypted, with no cloud, no account and no size limit.
+
+### Before you start
+File Drop uses the same connection as [sync](#sync-between-your-devices): **pair the two devices once** in Sync Devices, keep them on the **same Wi-Fi**, and leave them **Connected**. Both need OffNote 4.4.0 or later.
+
+### Open it
+- **Phone:** the menu (☰) → **File Drop**. A number next to it counts what arrived that you haven't looked at yet.
+- **Windows:** **Tools → File Drop** in the sidebar, or Ctrl+P → **Go to File Drop**.
+
+### Send
+At the top you see the device it goes to (with several paired devices, tap the one you want) and whether it's connected; if it isn't, tap **Connect**. Then choose what to send:
+- **Files**: any kind (documents, archives, apps...), several at once.
+- **Photos & videos** (phone): from your gallery, GIFs included.
+- **Camera** (phone): take a photo or record a video now.
+- **Clipboard**: what you copied: text, a picture, or (on Windows) files copied in File Explorer.
+- **Record**: a voice recording made right there.
+- **Text**: type or paste a note, a link, a code.
+
+Also:
+- **From any app:** **Share** → **OffNote** → **Send**.
+- **From a note:** long-press its photos or files and tap **Send to device** in the bar at the bottom; open a picture and tap **Send to device** at the top; or in a voice note's **⋮** menu, **Send to Device**.
+- **On Windows:** drag files or pictures from File Explorer onto the File Drop page, or press **Ctrl+V** there.
+
+Sending to a device that isn't connected right now? It waits (**Waiting for ...**) and goes as soon as the device connects.
+
+### Receive
+Paired devices are your own, so what they send comes in by itself: OffNote tells you with a short message, or with a notification (phone; OffNote asks once if it may show notifications) or a Windows notification when it isn't in front. Tap it to open File Drop.
+
+Received files stay inside OffNote until you choose what to do with them. Tap one to open it, or tap **⋮** for:
+- **Save to this phone**: pictures go to **Pictures/OffNote** (your Gallery shows them), videos to **Movies/OffNote**, sound to **Music/OffNote**, anything else to **Download/OffNote**. On Android 9 and older you pick a folder.
+- **Save to Downloads** (Windows): into **Downloads\OffNote**.
+- **Save to a folder...** (phone) or **Save as...** (Windows).
+- **Copy picture** or **Copy** (text), **Share** (phone), **Save to a note**, **Remove from the list**.
+
+Long-press items to pick several and save, share or remove them together.
+
+### Big files and dropped connections
+- A progress bar shows how far each file is, with its speed.
+- If the Wi-Fi drops, a device goes to sleep or OffNote closes, the file **goes on from where it stopped** when the devices meet again; it doesn't start over.
+- Every file is **checked when it arrives** (SHA-256): it's only shown as received once it's exactly the file that was sent. A damaged part is sent again.
+- **Cancel** (✕) on either device stops it on both. Your own file is never changed; a file you edit or delete before it has gone is not sent (**Try again** sends it as it is now).
+
+### Space
+Received files take room inside OffNote until you remove them; the bottom of the File Drop screen says how much. **⋮ → Clear finished** removes everything that's done. File Drop isn't part of backups: save what you want to keep.
+
+### Is it private?
+Yes, as private as sync: only your paired devices can send to each other, they check each other's keys every time, and everything is encrypted end to end. Nothing goes through the internet or any server. On Windows, programs and scripts you save from File Drop are marked as coming from another computer, so Windows checks them before they run.
 
 ---
 
